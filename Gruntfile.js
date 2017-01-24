@@ -2,20 +2,24 @@ module.exports = function(grunt) {
   require('time-grunt')(grunt);
     
   var vendor_styles_build_path        = 'build/css/vendor-styles.css';
-      vendor_styles_min_build_path    = 'build/css/vendor-styles.min.css';
-      vendor_styles_min_load_path     = 'css/vendor-styles.min.css';
+  var vendor_styles_min_build_path    = 'build/css/vendor-styles.min.css';
+  var vendor_styles_min_load_path     = 'css/vendor-styles.min.css';
 
-      layout_styles_build_path        = 'build/css/layout-styles.css';
-      layout_styles_min_build_path    = 'build/css/layout-styles.min.css';
-      layout_styles_min_load_path     = 'css/layout-styles.min.css';
+  var layout_styles_build_path        = 'build/css/layout-styles.css';
+  var layout_styles_min_build_path    = 'build/css/layout-styles.min.css';
+  var layout_styles_min_load_path     = 'css/layout-styles.min.css';
 
-      vendor_scripts_build_path       = 'build/js/vendor-scripts.js';
-      vendor_scripts_min_build_path   = 'build/js/vendor-scripts.min.js';
-      vendor_scripts_min_load_path    = 'js/vendor-scripts.min.js';
+  var layout_styles_source_path        = 'source/global_css_components/layout.less';
+  var layout_styles_source_load_path   = 'source/global_css_components/layout.css';
 
-      layout_scripts_build_path       = 'build/js/layout-scripts.js';
-      layout_scripts_min_build_path   = 'build/js/layout-scripts.min.js';
-      layout_scripts_min_load_path    = 'js/layout-scripts.min.js';
+  var vendor_scripts_build_path       = 'build/js/vendor-scripts.js';
+  var vendor_scripts_min_build_path   = 'build/js/vendor-scripts.min.js';
+  var vendor_scripts_min_load_path    = 'js/vendor-scripts.min.js';
+
+  var layout_scripts_source_path      = 'source/global_js_components/layout.js';
+  var layout_scripts_build_path       = 'build/js/layout-scripts.js';
+  var layout_scripts_min_build_path   = 'build/js/layout-scripts.min.js';
+  var layout_scripts_min_load_path    = 'js/layout-scripts.min.js';
 
 
   // Project configuration.
@@ -23,7 +27,9 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     clean: {
-      build: ["build"]
+      build:       ["build"],
+      source_less: [layout_styles_source_path],
+      source_js:   [layout_scripts_source_path]
     },
 
     copy: {
@@ -93,8 +99,28 @@ module.exports = function(grunt) {
       options: {
         separator: '\n /*SeparatoR*/ \n'
       },
-      main_scripts: {
-        src: ['source/global_js_components/layout.js'],
+      layout_styles: {
+        src: [
+          'source/global_css_components/**/*.less',
+          'source/main_modules/**/*.less',
+          'source/other_modules/**/*.less'
+        ],
+        dest: layout_styles_source_path
+      },
+      vendor_styles: {
+        src: [
+          'source/global_third_components/libs/normalize-css/normalize.css',
+          'source/global_third_components/frameworks/bootstrap/dist/css/bootstrap.css',
+          'source/global_third_components/libs/owl-carousel-1/owl-carousel/owl.carousel.css'
+        ],
+        dest: vendor_styles_build_path
+      },
+      layout_scripts_source: {
+        src: ['source/global_js_components/layout_inception.js', 'source/main_modules/**/*.js', 'source/other_modules/**/*.js', 'source/global_js_components/layout_completion.js'],
+        dest: layout_scripts_source_path
+      },
+      layout_scripts_build: {
+        src: ['source/global_js_components/layout.js', 'source/main_modules/**/*.js', 'source/other_modules/**/*.js'],
         dest: layout_scripts_build_path
       },
       vendor_scripts: {
@@ -104,6 +130,17 @@ module.exports = function(grunt) {
           'source/global_third_components/libs/owl-carousel-1/owl-carousel/owl.carousel.js',
         ],
         dest: vendor_scripts_build_path
+      }
+    },
+
+    less: {
+      development: {
+        options: {
+          paths: ['source']
+        },
+        files: {
+          'source/global_css_components/layout.css': 'source/global_css_components/layout.less'
+        }
       }
     },
 
@@ -298,12 +335,23 @@ module.exports = function(grunt) {
           }
         ]
       }
+    },
+
+    watch: {
+      options: {
+        livereload: true
+      },
+      source_files: {
+        files: ['source/**/*.php', 'source/**/*.less'],
+        tasks: ['clean', 'concat:layout_styles', 'concat:layout_scripts_source', 'less:development']
+      }
     }
 
   });
 
   // Load the plugin that provides tasks.
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
   grunt.registerTask('default', [
@@ -318,4 +366,6 @@ module.exports = function(grunt) {
     'uglify',
     'imagemin'
   ]);
+
+  grunt.registerTask('watch-manual', ['clean', 'concat:layout_styles', 'concat:layout_scripts_source', 'less:development']);
 };
