@@ -1,0 +1,116 @@
+/*Main styles*/
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  color: hsl(0, 0%, 90%);
+}
+
+.allign-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.rating-4-stars svg:nth-child(-n+4) {
+  fill: #c8a760;
+}
+.rating-5-stars svg:nth-child(-n+5) {
+  fill: #c8a760;
+}
+
+
+a {
+  color: hsl(0, 0%, 90%);
+  text-decoration: none;
+
+  &:hover {
+    color: hsl(0, 0%, 10%);
+    text-decoration: none;
+  }
+  &:focus {
+    color: #e56a6a;
+    text-decoration: none;
+  }
+}
+
+
+.marker-sale,
+.marker-discont   {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #e56a6a;
+}
+.marker-discont {
+
+}
+
+
+
+
+/*Check box styles ( begin ) */
+.schon-input {
+  display: none;
+}
+.schon-label {
+  padding-left: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+.schon-label .cr {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #a9a9a9;
+  border-radius: .25em;
+  width: 1.0em;
+  height: 1.0em;
+  float: left;
+  margin-right: .5em;
+  top: 0.3em;
+}
+.schon-label .cr .cr-icon {
+  position: absolute;
+  font-size: 1.1em;
+  line-height: 0;
+  top: 35%;
+  left: 10%;
+}
+.schon-input + .cr > .cr-icon {
+  transform: scale(3) rotateZ(-20deg);
+  opacity: 0;
+  transition: all .3s ease-in;
+}
+.schon-input:checked + .cr > .cr-icon {
+  transform: scale(1) rotateZ(0deg);
+  opacity: 1;
+}
+.schon-input:disabled + .cr {
+  opacity: .5;
+}
+.glyphicon-ok::before {
+  content: " ";
+  position: relative;
+  bottom: 7px;
+  right: 1px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url("icons/check.svg") no-repeat;
+}
+/*Check box styles ( end ) */
+
+.marker-sale,
+.marker-discont {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+.marker-sale {
+  left: 0;
+}
+.marker-discont {
+  right: 0;
+}
