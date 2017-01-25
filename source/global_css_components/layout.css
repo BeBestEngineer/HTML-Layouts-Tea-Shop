@@ -372,8 +372,21 @@ a:focus {
   background-color: transparent;
 }
 /*SeparatoR*/
+.recent-posts__image-wrapper,
+.recent-comments__image-wrapper {
+  height: 90px;
+}
+.badge {
+  border-radius: 2px;
+}
 /*SeparatoR*/
 /*SeparatoR*/
+.blog__post-image-wrapper {
+  height: 210px;
+}
+.blog__image-wrapper img {
+  max-height: inherit;
+}
 /*SeparatoR*/
 /*SeparatoR*/
 .carousel-1__container-item {
