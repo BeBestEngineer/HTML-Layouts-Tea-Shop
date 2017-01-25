@@ -1,6 +1,9 @@
 /*Color background */
 /*SeparatoR*/
 /*Color text*/
+.color-text-grey-7a7a7a {
+  color: #7a7a7a;
+}
 /*SeparatoR*/
 /*Fonts settings*/
 /*SeparatoR*/
@@ -23,43 +26,63 @@
   max-height: 100%;
 }
 /*SeparatoR*/
-/*Main styles*/
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-body {
-  color: #e6e6e6;
+a {
+  display: inline-block;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+a:hover path,
+a:focus path {
+  fill: #e56a6a;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+a:hover,
+a:focus {
+  color: #e56a6a !important;
+  text-decoration: none;
+  background-color: transparent;
+}
+path {
+  transition: fill 0.7s;
 }
 .allign-middle {
   display: inline-block;
   vertical-align: middle;
 }
-.rating-4-stars svg:nth-child(-n+4) {
-  fill: #c8a760;
-}
+/*Rating (b)*/
+.rating-3-stars svg:nth-child(-n+3),
+.rating-4-stars svg:nth-child(-n+4),
 .rating-5-stars svg:nth-child(-n+5) {
   fill: #c8a760;
 }
-a {
-  color: #e6e6e6;
-  text-decoration: none;
-}
-a:hover {
-  color: #1a1a1a;
-  text-decoration: none;
-}
-a:focus {
-  color: #e56a6a;
-  text-decoration: none;
-}
+/*Rating (e)*/
+/*Markers (b)*/
 .marker-sale,
 .marker-discont {
   display: inline-block;
   padding: 5px 10px;
   background-color: #e56a6a;
 }
+.marker-sale,
+.marker-discont {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+.marker-sale {
+  left: 0;
+}
+.marker-discont {
+  right: 0;
+}
+/*Markers (e)*/
 /*Check box styles ( begin ) */
 .schon-input {
   display: none;
@@ -110,18 +133,34 @@ a:focus {
   background: url("icons/check.svg") no-repeat;
 }
 /*Check box styles ( end ) */
-.marker-sale,
-.marker-discont {
+/*Circle icons (b)*/
+.circle-icon {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.circle-icon__icon {
   position: absolute;
   top: 0;
-  z-index: 2;
-}
-.marker-sale {
+  bottom: 0;
   left: 0;
-}
-.marker-discont {
   right: 0;
+  margin: auto;
 }
+/*Circle icons (e)*/
+/*SeparatoR*/
+/*Colors text variables*/
+/*Colors backgrounds variables*/
+/*Colors elements*/
+/*Animate*/
+/*Colors and backgrounds for them (b)*/
+/*Dark background (b)*/
+/*Dark background (e)*/
+/*Light background (b)*/
+/*Light background (e)*/
+/*Colors and backgrounds for them (e)*/
 /*SeparatoR*/
 /* 404 */
 .page-404 {
@@ -458,6 +497,7 @@ a:focus {
   max-height: inherit;
 }
 /*SeparatoR*/
+/*SeparatoR*/
 /*Sticky footer ( begin )*/
 html {
   position: relative;
@@ -540,6 +580,34 @@ body {
 /*SeparatoR*/
 .header-1 {
   background-color: #171717;
+  color: #ffffff;
+}
+.header-1 a {
+  color: #ffffff;
+}
+.header-1 .top-nav__button:hover {
+  background-color: transparent;
+}
+.header-1 .top-nav__button:focus,
+.header-1 .navbar-default .navbar-nav > li > a:focus,
+.header-1 .shopping-cart__button:focus {
+  background-color: #ffffff !important;
+}
+.header-1 .navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.header-1 .circle-icon {
+  margin-right: 15px;
+  margin-bottom: 10px;
+  background-color: #e56a6a;
+}
+.header-1__form-1 {
+  margin-top: 50px;
+}
+.logo-link {
+  width: 180px;
+  height: 50px;
+  position: absolute;
 }
 .shopping-bag-dropdown-menu {
   min-width: 315px;
@@ -547,10 +615,11 @@ body {
 .shopping-basket-dropdown__image-wrapper {
   height: 78px;
 }
-.logo-link {
-  width: 180px;
-  height: 50px;
+.shopping-cart__badge {
   position: absolute;
+  right: 4px;
+  bottom: 10px;
+  padding: 5px 7px;
 }
 .navbar-default {
   background-color: transparent;
@@ -565,15 +634,28 @@ body {
 .navbar-default .navbar-form {
   border: none;
 }
-.shopping-cart__badge {
-  position: absolute;
-  right: 4px;
-  bottom: 10px;
-  padding: 5px 7px;
-}
 .navbar-toggle {
   margin-bottom: 30px;
 }
 .navbar {
   margin-bottom: 0;
 }
+/*top-nav (b)*/
+.top-nav__text {
+  margin-left: 5px;
+  margin-right: 20px;
+}
+.top-nav a {
+  padding: 15px 5px 15px 5px;
+  margin-right: 3px;
+}
+/*top-nav (e)*/
+/*bottom-nav (b)*/
+a .shopping-cart__badge {
+  transition: background-color 1s;
+}
+a:hover .shopping-cart__badge,
+a:focus .shopping-cart__badge {
+  background-color: #e56a6a;
+}
+/*bottom-nav (e)*/

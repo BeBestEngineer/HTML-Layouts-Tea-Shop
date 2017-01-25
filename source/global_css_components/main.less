@@ -1,13 +1,29 @@
-/*Main styles*/
-
-ul {
+ul, ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-body {
-  color: hsl(0, 0%, 90%);
+a {
+  display: inline-block;
+  text-decoration: none;
+  transition: color @hover-change-color-text-time;
+
+  &:hover path,
+  &:focus path {
+    fill: @color-text-red-e56a6a;
+  }
+
+  .navbar-default .navbar-nav > li > &:hover,
+  .navbar-default .navbar-nav > li > &:focus,
+  &:hover, &:focus {
+    color: @color-text-red-e56a6a !important;
+    text-decoration: none;
+    background-color: transparent;
+  }
+}
+path {
+  transition: fill @hover-change-color-svg-time;
 }
 
 .allign-middle {
@@ -15,29 +31,15 @@ body {
   vertical-align: middle;
 }
 
-.rating-4-stars svg:nth-child(-n+4) {
-  fill: #c8a760;
-}
+/*Rating (b)*/
+.rating-3-stars svg:nth-child(-n+3),
+.rating-4-stars svg:nth-child(-n+4),
 .rating-5-stars svg:nth-child(-n+5) {
-  fill: #c8a760;
+  fill: @color-rating-enabled;
 }
+/*Rating (e)*/
 
-
-a {
-  color: hsl(0, 0%, 90%);
-  text-decoration: none;
-
-  &:hover {
-    color: hsl(0, 0%, 10%);
-    text-decoration: none;
-  }
-  &:focus {
-    color: #e56a6a;
-    text-decoration: none;
-  }
-}
-
-
+/*Markers (b)*/
 .marker-sale,
 .marker-discont   {
   display: inline-block;
@@ -47,9 +49,19 @@ a {
 .marker-discont {
 
 }
-
-
-
+.marker-sale,
+.marker-discont {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+.marker-sale {
+  left: 0;
+}
+.marker-discont {
+  right: 0;
+}
+/*Markers (e)*/
 
 /*Check box styles ( begin ) */
 .schon-input {
@@ -102,15 +114,20 @@ a {
 }
 /*Check box styles ( end ) */
 
-.marker-sale,
-.marker-discont {
+/*Circle icons (b)*/
+.circle-icon {
+  position: relative;
+  display: inline-block;
+  width:  50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.circle-icon__icon {
   position: absolute;
   top: 0;
-  z-index: 2;
-}
-.marker-sale {
+  bottom: 0;
   left: 0;
-}
-.marker-discont {
   right: 0;
+  margin: auto;
 }
+/*Circle icons (e)*/
