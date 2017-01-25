@@ -38,7 +38,7 @@
       </div>
       <div class="row">
         <div class="col-sm-6  col-sm-offset-3">
-          <b>Leave a comment</b>
+          <b>Send a message</b>
           <form action="" class="contact-form" role="form">
             <div class="row">
               <div class="col-sm-6">
@@ -55,7 +55,7 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="form-group">
-                  <textarea class="form-control contact-form-message" rows="3" placeholder="Comment"></textarea>
+                  <textarea class="form-control contact-form-message" rows="3" placeholder="Message"></textarea>
                 </div>
               </div>
             </div>
