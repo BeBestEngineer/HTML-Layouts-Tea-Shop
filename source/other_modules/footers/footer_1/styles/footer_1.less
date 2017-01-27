@@ -9,82 +9,203 @@ body {
 }
 
 .page-wrapper {
-  margin-bottom: 960px;
+  margin-bottom: @footer-height;
 }
 
 .footer-1 {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height: 960px;
+  & {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: @footer-height;
+  }
+
+  &__titles {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__phone-lg {
+    font-size: 36px;
+  }
+
+  &__middle {
+    padding: 50px 0px;
+  }
 }
+
+@media ( max-width: 1199px ) {
+  .footer-1 {
+    height: 1425px;
+  }
+}
+@media ( max-width: 991px ) {
+  .footer-1 {
+    height: 1555px;
+  }
+}
+@media ( max-width: 767px ) {
+  .footer-1 {
+    height: 3145px;
+
+    & .circle-icons__icon-wrapper {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+
+    & .circle-icons__item-wrapper {
+      margin-top: 20px;
+    }
+
+    & .logo-link {
+      width: 210px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+    
+    .list-with-title-1__text {
+      text-align: left;
+    }
+
+    & .contact-form {
+      margin-bottom: 30px;
+    }
+
+    & .form-newsletter__link {
+      position: absolute;
+      top: -55px;
+    }
+
+    & .contact-form__button-wrapper {
+      text-align: right;
+    }
+  }
+}
+
 
 /*Sticky footer ( end )*/
 
 .footer-1 {
-  background-color: #171717;
-}
+  .mixin_light-text-over-dark-background( @color-4-layout );
 
+  a {
+    color: @color-4-layout;
+  }
+
+  .circle-icons {
+    &__icon-wrapper {
+      background-color: @color-4-layout;
+    }
+
+    &__icon {
+      fill: @color-1-layout;
+    }
+  }
+
+  .logo-link {
+    position: relative;
+    display: block;
+    height: 72px;
+    margin-bottom: 30px;
+  }
+
+  .teashop-button {
+    color: @color-4-layout;
+  }
+
+  input, textarea {
+    color: @color-4-layout;
+    background-color: transparent;
+  }
+
+  .form-control::-moz-placeholder {
+    color: @color-1-layout;
+  }
+}
 
 .payments-system {
-  font-size: 0;
-}
-.payment-system {
-  display: inline-block;
-  width: 45px;
-  height: 29px;
-  background: #ffffff url('../images/footer-1/payment-methods.png') no-repeat;
-}
-.payment-system:nth-child(1) {
-  background-position: 0px 0px;
-}
-.payment-system:nth-child(2) {
-  background-position: -55px 0px;
-}
-.payment-system:nth-child(3) {
-  background-position: -110px 0px;
-}
-.payment-system:nth-child(4) {
-  background-position: -165px 0px;
-}
-.payment-system:nth-child(5) {
-  background-position: -220px 0px;
+  & {
+    font-size: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 45px;
+    height: 29px;
+    background: #ffffff url('../images/footer-1/payment-methods.png') no-repeat;
+  }
+
+  &__item:nth-child(1) {
+    background-position: 0px 0px;
+  }
+  &__item:nth-child(2) {
+    background-position: -55px 0px;
+  }
+  &__item:nth-child(3) {
+    background-position: -110px 0px;
+  }
+  &__item:nth-child(4) {
+    background-position: -165px 0px;
+  }
+  &__item:nth-child(5) {
+    background-position: -220px 0px;
+  }
 }
 
-.footer-1__phone-lg {
-  font-size: 36px;
+.social-icons {
+  & {
+    padding: 30px 0px;
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 50%;
+    margin-left: 12px;
+
+    &:hover {
+      bottom: 10px;
+    }
+  }
+
+  &__link:nth-child(1) {
+    background-color: #45619d;
+  }
+  &__link:nth-child(2) {
+    background-color: #e56a6a;
+  }
+  &__link:nth-child(3) {
+    background-color: #42c0fb;
+  }
+  &__link:nth-child(4) {
+    background-color: #009ee5;
+  }
+  &__link:nth-child(5) {
+    background-color: #fd9f13;
+  }
+
+  &__link svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
 }
 
-.social-icons__link {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  padding: 20px;
-  border-radius: 50%;
-  margin-left: 12px;
+.social-posts-list {
+  & {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 10px;
+    color: @color-1-layout;
+  }
 }
 
-.social-icons__link:nth-child(1) {
-  background-color: #45619d;
-}
-.social-icons__link:nth-child(2) {
-  background-color: #e56a6a;
-}
-.social-icons__link:nth-child(3) {
-  background-color: #42c0fb;
-}
-.social-icons__link:nth-child(4) {
-  background-color: #009ee5;
-}
-.social-icons__link:nth-child(5) {
-  background-color: #fd9f13;
-}
-
-.social-icons__link svg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -10px;
-  margin-top: -10px;
-}

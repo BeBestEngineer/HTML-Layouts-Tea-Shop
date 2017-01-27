@@ -1,45 +1,55 @@
 <footer class="footer-1">
-  <section class="footer-1__top">
+  <section class="circle-icons">
     <div class="container">
-      <div class="row  text-center">
+      <div class="row  text-center  ">
         <div class="col-sm-3  col-xs-12">
-          <svg class="allign-middle" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"
-               fill="#ffffff">
-            <path
-                d="M1152 640q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm256 0q0 109-33 179l-364 774q-16 33-47.5 52t-67.5 19-67.5-19-46.5-52l-365-774q-33-70-33-179 0-212 150-362t362-150 362 150 150 362z"></path>
-          </svg>
-          <b class="allign-middle">Our adress</b>
+          <div class="circle-icons__item-wrapper">
+            <span class="allign-middle  circle-icons__icon-wrapper">
+              <svg class="circle-icons__icon" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+                <path d="M1152 640q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm256 0q0 109-33 179l-364 774q-16 33-47.5 52t-67.5 19-67.5-19-46.5-52l-365-774q-33-70-33-179 0-212 150-362t362-150 362 150 150 362z"></path>
+              </svg>
+            </span>
+            <b class="allign-middle  title-for-circle-icon--font">Our address</b>
+          </div>
           <p class="">Vivamus faucibus Morokko, 23</p>
         </div>
         <div class="col-sm-3 col-xs-12">
-          <svg class="allign-middle" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"
-               fill="#ffffff">
-            <path
-                d="M1600 1240q0 27-10 70.5t-21 68.5q-21 50-122 106-94 51-186 51-27 0-52.5-3.5t-57.5-12.5-47.5-14.5-55.5-20.5-49-18q-98-35-175-83-128-79-264.5-215.5t-215.5-264.5q-48-77-83-175-3-9-18-49t-20.5-55.5-14.5-47.5-12.5-57.5-3.5-52.5q0-92 51-186 56-101 106-122 25-11 68.5-21t70.5-10q14 0 21 3 18 6 53 76 11 19 30 54t35 63.5 31 53.5q3 4 17.5 25t21.5 35.5 7 28.5q0 20-28.5 50t-62 55-62 53-28.5 46q0 9 5 22.5t8.5 20.5 14 24 11.5 19q76 137 174 235t235 174q2 1 19 11.5t24 14 20.5 8.5 22.5 5q18 0 46-28.5t53-62 55-62 50-28.5q14 0 28.5 7t35.5 21.5 25 17.5q25 15 53.5 31t63.5 35 54 30q70 35 76 53 3 7 3 21z"></path>
-          </svg>
-          <b class="allign-middle">Phone support</b>
-          <p class="">Phone: <a href="tel:(+11)15553332211">(+11)15553332211</a></p>
+          <div class="circle-icons__item-wrapper">
+            <span class="allign-middle  circle-icons__icon-wrapper">
+              <svg class="circle-icons__icon" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+                <path d="M1600 1240q0 27-10 70.5t-21 68.5q-21 50-122 106-94 51-186 51-27 0-52.5-3.5t-57.5-12.5-47.5-14.5-55.5-20.5-49-18q-98-35-175-83-128-79-264.5-215.5t-215.5-264.5q-48-77-83-175-3-9-18-49t-20.5-55.5-14.5-47.5-12.5-57.5-3.5-52.5q0-92 51-186 56-101 106-122 25-11 68.5-21t70.5-10q14 0 21 3 18 6 53 76 11 19 30 54t35 63.5 31 53.5q3 4 17.5 25t21.5 35.5 7 28.5q0 20-28.5 50t-62 55-62 53-28.5 46q0 9 5 22.5t8.5 20.5 14 24 11.5 19q76 137 174 235t235 174q2 1 19 11.5t24 14 20.5 8.5 22.5 5q18 0 46-28.5t53-62 55-62 50-28.5q14 0 28.5 7t35.5 21.5 25 17.5q25 15 53.5 31t63.5 35 54 30q70 35 76 53 3 7 3 21z"></path>
+              </svg>
+            </span>
+            <b class="allign-middle  title-for-circle-icon--font">Phone support</b>
+          </div>
+          <p class="">Phone: <a href="tel:+1-200-488-04-09">+1-200-488-04-09</a></p>
         </div>
         <div class="col-sm-3 col-xs-12">
-          <svg class="allign-middle" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"
-               fill="#ffffff">
-            <path
-                d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"></path>
-          </svg>
-          <b class="allign-middle">Email support</b>
-          <p class=""><a href="mailte:24webgroup@gmail.com">24webgroup@gmail.com</a></p>
+          <div class="circle-icons__item-wrapper">
+            <span class="allign-middle  circle-icons__icon-wrapper">
+              <svg class="circle-icons__icon" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+                <path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"></path>
+              </svg>
+            </span>
+            <b class="allign-middle  title-for-circle-icon--font">Email support</b>
+          </div>
+          <p class=""><a href="mailte:support@tea-shop.ru">support@tea-shop.ru</a></p>
         </div>
         <div class="col-sm-3 col-xs-12">
-          <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
-            <path d="M1792 640q0 26-19 45l-512 512q-19 19-45 19t-45-19-19-45v-256h-224q-98 0-175.5 6t-154 21.5-133 42.5-105.5 69.5-80 101-48.5 138.5-17.5 181q0 55 5 123 0 6 2.5 23.5t2.5 26.5q0 15-8.5 25t-23.5 10q-16 0-28-17-7-9-13-22t-13.5-30-10.5-24q-127-285-127-451 0-199 53-333 162-403 875-403h224v-256q0-26 19-45t45-19 45 19l512 512q19 19 19 45z"/>
-          </svg>
-          <b class="allign-middle">Payment</b>
+          <div class="circle-icons__item-wrapper">
+            <span class="allign-middle  circle-icons__icon-wrapper">
+              <svg class="circle-icons__icon" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+                <path d="M1792 640q0 26-19 45l-512 512q-19 19-45 19t-45-19-19-45v-256h-224q-98 0-175.5 6t-154 21.5-133 42.5-105.5 69.5-80 101-48.5 138.5-17.5 181q0 55 5 123 0 6 2.5 23.5t2.5 26.5q0 15-8.5 25t-23.5 10q-16 0-28-17-7-9-13-22t-13.5-30-10.5-24q-127-285-127-451 0-199 53-333 162-403 875-403h224v-256q0-26 19-45t45-19 45 19l512 512q19 19 19 45z"/>
+              </svg>
+            </span>
+            <b class="allign-middle  title-for-circle-icon--font">Payment</b>
+          </div>
           <div class="payments-system">
-            <span class="payment-system">Visa</span>
-            <span class="payment-system">Paypal</span>
-            <span class="payment-system">Mastercard</span>
-            <span class="payment-system">Discover</span>
-            <span class="payment-system">Amazon</span>
+            <span class="payments-system__item">Visa</span>
+            <span class="payments-system__item">Paypal</span>
+            <span class="payments-system__item">Mastercard</span>
+            <span class="payments-system__item">Discover</span>
+            <span class="payments-system__item">Amazon</span>
           </div>
         </div>
       </div>
@@ -55,67 +65,73 @@
           <div class="row text-justify">
 
             <div class="col-sm-6">
+<!--
               <a class="image-wrapper  logo-link" href="#" style="position: relative;">
                 <img class="image" alt="Brand" src="images/header-1/logo-color.png">
               </a>
-              <p>
-                Fusce sed mi nec quam cursus iaculis. Fusce ac libero tincidunt, suscipit tortor non, prem lacus.
-                Maecenas ac vehicula enim. Nu lorem libero, sodales ac eros ac, consectetur congu tellus. Curabitur
-                porta tortor in felis accuan, at sodales ex semper. Proin commodo saen
-                lacus. Maecenas ac vehicula enim. Nu lorem
-                in gravida tristique.
+-->
+              <a class="logo-link" href="?page=home">
+                <div class="logo-link__title-fitst-letter  color-1-layout  open-sans-extra-bold-50">T</div>
+                <div class="logo-link__title-last-letters">
+                  <span class="color-1-layout  open-sans-extra-bold-20">ea</span>
+                  <span class="color-4-layout  open-sans-extra-bold-20">shop</span>
+                </div>
+                <div class="logo-link__sub-title           open-sans-extra-bold-10">Oneline E-Commerce</div>
+              </a>
+              <p class="paragraph-2--font">
+                Founded in 1988, The Republic of Tea sparked a Tea Revolution. We began by canvassing the most prized tea gardens of the world.
               </p>
             </div>
 
             <div class="col-sm-6">
-              <b class="footer-1__titles">Latest Twitter</b>
+              <b class="footer-1__titles  title-1-for-columns--font">Latest Twitter</b>
 
-              <div class="social-group__item">
-                <svg class="social-group__item-icon" width="20" height="20" viewBox="0 0 1792 1792"
-                     xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
-                  <path
-                      d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path>
-                </svg>
-                <p class="social-group__item-text">
-                  <b>@24WebGroup</b>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita nostrum ullam voluptatum. Dicta
-                  facere laboriosam, laudantium modi obcaecati vero voluptatibus! Animi cumque delectus dolores ex illum
-                  magnam nemo omnis.
-                </p>
-                <svg width="10" height="10" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                      d="M192 1664h288v-288h-288v288zm352 0h320v-288h-320v288zm-352-352h288v-320h-288v320zm352 0h320v-320h-320v320zm-352-384h288v-288h-288v288zm736 736h320v-288h-320v288zm-384-736h320v-288h-320v288zm768 736h288v-288h-288v288zm-384-352h320v-320h-320v320zm-352-864v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm736 864h288v-320h-288v320zm-384-384h320v-288h-320v288zm384 0h288v-288h-288v288zm32-480v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm384-64v1280q0 52-38 90t-90 38h-1408q-52 0-90-38t-38-90v-1280q0-52 38-90t90-38h128v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h384v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h128q52 0 90 38t38 90z"
-                      fill="#fff"/>
-                </svg>
-                <a href="#">June/10/2016</a>
+
+              <div class="media  social-posts-list">
+                <div class="media-left">
+                  <svg class="social-group__item-icon" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+                    <path                      d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path>
+                  </svg>
+                </div>
+                <div class="media-body">
+                  <b class="social-posts-list__title">@24WebGroup</b>
+                  <p class="paragraph-2--font">
+                    Questions about our social network? Need access to tea, herb and industry experts?
+                  </p>
+                  <svg class="allign-middle" width="10" height="10" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                    <path                      d="M192 1664h288v-288h-288v288zm352 0h320v-288h-320v288zm-352-352h288v-320h-288v320zm352 0h320v-320h-320v320zm-352-384h288v-288h-288v288zm736 736h320v-288h-320v288zm-384-736h320v-288h-320v288zm768 736h288v-288h-288v288zm-384-352h320v-320h-320v320zm-352-864v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm736 864h288v-320h-288v320zm-384-384h320v-288h-320v288zm384 0h288v-288h-288v288zm32-480v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm384-64v1280q0 52-38 90t-90 38h-1408q-52 0-90-38t-38-90v-1280q0-52 38-90t90-38h128v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h384v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h128q52 0 90 38t38 90z"                      fill="#fff"/>
+                  </svg>
+                  <a   class="allign-middle" href="#">June/10/2016</a>
+                </div>
               </div>
-              <div class="social-group__item">
-                <svg class="social-group__item-icon" width="20" height="20" viewBox="0 0 1792 1792"
-                     xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
-                  <path
-                      d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path>
-                </svg>
-                <p class="social-group__item-text">
-                  <b>@24WebGroup</b>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita nostrum ullam voluptatum. Dicta
-                  facere laboriosam, laudantium modi obcaecati vero voluptatibus! Animi cumque delectus dolores ex illum
-                  magnam nemo omnis.
-                </p>
-                <svg width="10" height="10" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                      d="M192 1664h288v-288h-288v288zm352 0h320v-288h-320v288zm-352-352h288v-320h-288v320zm352 0h320v-320h-320v320zm-352-384h288v-288h-288v288zm736 736h320v-288h-320v288zm-384-736h320v-288h-320v288zm768 736h288v-288h-288v288zm-384-352h320v-320h-320v320zm-352-864v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm736 864h288v-320h-288v320zm-384-384h320v-288h-320v288zm384 0h288v-288h-288v288zm32-480v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm384-64v1280q0 52-38 90t-90 38h-1408q-52 0-90-38t-38-90v-1280q0-52 38-90t90-38h128v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h384v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h128q52 0 90 38t38 90z"
-                      fill="#fff"/>
-                </svg>
-                <a href="#">June/10/2016</a>
+
+
+              <div class="media  social-posts-list">
+                <div class="media-left">
+                  <svg class="social-group__item-icon" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+                    <path                      d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path>
+                  </svg>
+                </div>
+                <div class="media-body">
+                  <b class="social-posts-list__title">@24WebGroup</b>
+                  <p class="paragraph-2--font">
+                    The Republic of Tea’s Commitment to Good Will and Social Responsibility – Impacting social change on a global scale.
+                  </p>
+                  <svg class="allign-middle" width="10" height="10" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                    <path                      d="M192 1664h288v-288h-288v288zm352 0h320v-288h-320v288zm-352-352h288v-320h-288v320zm352 0h320v-320h-320v320zm-352-384h288v-288h-288v288zm736 736h320v-288h-320v288zm-384-736h320v-288h-320v288zm768 736h288v-288h-288v288zm-384-352h320v-320h-320v320zm-352-864v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm736 864h288v-320h-288v320zm-384-384h320v-288h-320v288zm384 0h288v-288h-288v288zm32-480v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm384-64v1280q0 52-38 90t-90 38h-1408q-52 0-90-38t-38-90v-1280q0-52 38-90t90-38h128v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h384v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h128q52 0 90 38t38 90z"                      fill="#fff"/>
+                  </svg>
+                  <a   class="allign-middle" href="#">June/10/2016</a>
+                </div>
               </div>
+
 
             </div>
 
           </div>
 
           <div class="row  text-center">
-            <a class="footer-1__phone-lg" href="tel:(+11)15553332211">(+11)15553332211</a><br>
-            <span>Support 9:00 Am - 11:00 Pm</span>
+            <a class="footer-1__phone-lg  phone-number-1--font" href="tel:+1-200-488-04-09">+1-200-488-04-09</a>
+            <p class="opening-hours--font"><span class="first-word">Support</span> 9:00 Am - 11:00 Pm</p>
           </div>
         </div>
 
@@ -123,101 +139,17 @@
         <div class="col-sm-6">
           <div class="row">
             <div class="col-sm-6">
-              <b class="footer-1__titles">Latest Twitter</b>
-              <ul class="footer-1__info-list">
-                <li class="footer-1__info-item">
-                  <a href="#">About us</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">My account</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">Privacy policy</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">Terms & Conditions</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">Delivery information</a>
-                </li>
-              </ul>
+              <?php require $list_with_title_1_data -> Get_data( 'all', 'footer-position-1' )['path']; ?>
 
-              <b class="footer-1__titles">Latest Twitter</b>
-              <ul class="footer-1__info-list">
-                <li class="footer-1__info-item">
-                  <a href="#">About us</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">My account</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">Privacy policy</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">Terms & Conditions</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">Delivery information</a>
-                </li>
-              </ul>
+              <?php require $list_with_title_1_data -> Get_data( 'all', 'footer-position-4' )['path']; ?>
 
-              <b class="footer-1__titles">Latest Twitter</b>
-              <ul class="footer-1__info-list">
-                <li class="footer-1__info-item">
-                  <a href="#">About us</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">My account</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">Privacy policy</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">Terms & Conditions</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">Delivery information</a>
-                </li>
+              <?php require $list_with_title_1_data -> Get_data( 'all', 'footer-position-5' )['path']; ?>
               </ul>
             </div>
             <div class="col-sm-6">
-              <b class="footer-1__titles">Latest Twitter</b>
-              <ul class="footer-1__info-list">
-                <li class="footer-1__info-item">
-                  <a href="#">About us</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">My account</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">Privacy policy</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">Terms & Conditions</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">Delivery information</a>
-                </li>
-              </ul>
+              <?php require $list_with_title_1_data -> Get_data( 'all', 'footer-position-2' )['path']; ?>
 
-              <b class="footer-1__titles">Latest Twitter</b>
-              <ul class="footer-1__info-list">
-                <li class="footer-1__info-item">
-                  <a href="#">About us</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">My account</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">Privacy policy</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">Terms & Conditions</a>
-                </li>
-                <li class="footer-1__info-item">
-                  <a href="#">Delivery information</a>
-                </li>
-              </ul>
+              <?php require $list_with_title_1_data -> Get_data( 'all', 'footer-position-3' )['path']; ?>
             </div>
           </div>
         </div>
@@ -225,8 +157,9 @@
 
       </div>
       <div class="row">
+
         <div class="col-sm-6">
-          <b class="footer-1__titles">Contact us</b>
+          <b class="footer-1__titles  title-1-for-columns--font">Contact us</b>
           <form action="" class="contact-form" role="form">
             <div class="row">
               <div class="col-sm-6">
@@ -248,34 +181,42 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-12">
-                <button class="">Submit</button>
+              <div class="col-md-12  contact-form__button-wrapper">
+                <button class="btn  btn-default  teashop-button">Submit</button>
               </div>
             </div>
           </form>
         </div>
+
         <div class="col-sm-6">
-          <b class="footer-1__titles">Newsletter</b>
-          <form class="form-horizontal">
+          <b class="footer-1__titles  title-1-for-columns--font">Newsletter</b>
+          <form class="form-horizontal  form-newsletter">
 
-            <div class="row">
-              <div class="col-sm-10">
+
+              <div class="col-sm-9">
+                <div class="form-group">
                 <input type="email" class="form-control" id="" placeholder="Please enter your email">
+                </div>
               </div>
-              <div class="col-sm-2" style="padding: 0;">
-                <button type="submit" class="">Sign in</button>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-sm-12">
-                <a href="#">Sign up for our Newsletter</a>
+              <div class="col-sm-3  text-right">
+                <div class="form-group">
+                <button type="submit" class="btn  btn-default  teashop-button">Submit</button>
+                </div>
               </div>
+
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <a class="form-newsletter__link" href="#">Sign up for our Newsletter</a>
+                </div>
             </div>
 
           </form>
 
-          <div class="social-icons  text-right">
+
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="social-icons  text-right">
 
             <a class="social-icons__link" href="#">
               <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
@@ -305,6 +246,8 @@
             </a>
 
           </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -312,6 +255,6 @@
 
 
   <section class="footer-1__bottom">
-    <p class="text-center">CopyRight ©2016 Design by 24WebGroup. All Rights Reserved.</p>
+    <p class="paragraph-1--font  text-center">CopyRight ©2016 Design by 24WebGroup. All Rights Reserved.</p>
   </section>
 </footer>
