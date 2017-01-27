@@ -1,4 +1,12 @@
 <header class="header-1">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle  collapsed  main-menu-button-mobile" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar  main-menu-button-mobile__rectangle"></span>
+      <span class="icon-bar  main-menu-button-mobile__rectangle"></span>
+      <span class="icon-bar  main-menu-button-mobile__rectangle"></span>
+    </button>
+  </div>
 
   <div class="header-1__top">
     <div class="container">
@@ -126,63 +134,58 @@
     </div>
   </div>
 
-  <nav class=" header-1__middle  navbar  navbar-default">
+  <nav class=" header-1__middle">
     <div class="container">
 
+      <a class="logo-link" href="?page=home">
+        <div class="logo-link__title-fitst-letter  color-1-layout  open-sans-extra-bold-50">T</div>
+        <div class="logo-link__title-last-letters">
+          <span class="color-1-layout  open-sans-extra-bold-20">ea</span>
+          <span class="color-4-layout  open-sans-extra-bold-20">shop</span>
+        </div>
+        <div class="logo-link__sub-title           open-sans-extra-bold-10">Oneline E-Commerce</div>
+      </a>
 
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="image-wrapper  logo-link" href="#">
-          <img class="image" alt="Brand" src="images/header-1/logo-color.png">
-        </a>
-      </div>
-
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding: 0;">
-
-
-      <div class="row  header-1__wrapper-1">
+      <div class="mobile-menu-row  search-and-delivery-row">
+        <div class="row">
           <div class="col-sm-3  col-sm-offset-4">
-            <span class="allign-middle  circle-icon">
-              <svg class="circle-icon__icon" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                <path d="M640 1408q0-52-38-90t-90-38-90 38-38 90 38 90 90 38 90-38 38-90zm-384-512h384v-256h-158q-13 0-22 9l-195 195q-9 9-9 22v30zm1280 512q0-52-38-90t-90-38-90 38-38 90 38 90 90 38 90-38 38-90zm256-1088v1024q0 15-4 26.5t-13.5 18.5-16.5 11.5-23.5 6-22.5 2-25.5 0-22.5-.5q0 106-75 181t-181 75-181-75-75-181h-384q0 106-75 181t-181 75-181-75-75-181h-64q-3 0-22.5.5t-25.5 0-22.5-2-23.5-6-16.5-11.5-13.5-18.5-4-26.5q0-26 19-45t45-19v-320q0-8-.5-35t0-38 2.5-34.5 6.5-37 14-30.5 22.5-30l198-198q19-19 50.5-32t58.5-13h160v-192q0-26 19-45t45-19h1024q26 0 45 19t19 45z" fill="#fff"/>
-              </svg>
-            </span>
-            <b class="allign-middle">Free home Delivery</b>
-            <p class="header-1__delivery-text  text-justify  color-text-grey-7a7a7a">
+            <div class="circle-icons__item-wrapper">
+                  <span class="allign-middle  circle-icons__icon-wrapper">
+                    <svg class="circle-icons__icon" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M640 1408q0-52-38-90t-90-38-90 38-38 90 38 90 90 38 90-38 38-90zm-384-512h384v-256h-158q-13 0-22 9l-195 195q-9 9-9 22v30zm1280 512q0-52-38-90t-90-38-90 38-38 90 38 90 90 38 90-38 38-90zm256-1088v1024q0 15-4 26.5t-13.5 18.5-16.5 11.5-23.5 6-22.5 2-25.5 0-22.5-.5q0 106-75 181t-181 75-181-75-75-181h-384q0 106-75 181t-181 75-181-75-75-181h-64q-3 0-22.5.5t-25.5 0-22.5-2-23.5-6-16.5-11.5-13.5-18.5-4-26.5q0-26 19-45t45-19v-320q0-8-.5-35t0-38 2.5-34.5 6.5-37 14-30.5 22.5-30l198-198q19-19 50.5-32t58.5-13h160v-192q0-26 19-45t45-19h1024q26 0 45 19t19 45z" fill="#fff"/>
+                    </svg>
+                  </span>
+              <b class="allign-middle  title-for-circle-icon--font">Free home Delivery</b>
+            </div>
+            <p class="paragraph-1--font  text-justify">
               TeaShop is the best way to find Tea restaurants that deliver to you. Whether looking for breakfast, lunch, dinner or late night snack, Yelp TeaShop has it all. Read restaurants reviews, browse restaurants menus and easily order online from any restaurant with no extra charge!!!
             </p>
           </div>
-
           <div class="col-md-4  col-md-offset-1  col-sm-5">
             <form class="header-1__form-1" action="">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
               <span class="input-group-btn">
-                <button class="btn btn-default" type="submit">
+                <button class="btn  btn-default  button-bg" type="submit">
                   <svg width="15" height="15" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"></path>
                   </svg>
                 </button>
               </span>
-            </div><!-- /input-group -->
+              </div><!-- /input-group -->
             </form>
 
           </div>
         </div>
+      </div>
 
 
-      <div class="row">
-        <ul class="nav navbar-nav  navbar-left">
+      <div class="collapse navbar-collapse" id="main-menu">
+
+        <div class="mobile-menu-row">
+          <ul class="nav  navbar-nav  navbar-left   main-menu__list  header-1__main-menu-links-font">
 
             <li><a href="?page=home">Home</a></li>
-
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 <span class="allign-middle">Products lists</span>
@@ -198,51 +201,44 @@
                 <li><a href="?page=products-list">Other list</a></li>
               </ul>
             </li>
-
             <li><a href="?page=product">Some tea page</a></li>
-
             <li><a href="?page=shopping-cart">Shopping cart</a></li>
-
             <li><a href="?page=about-us">About us</a></li>
-
             <li><a href="?page=contact-us">Contact us</a></li>
-
             <li><a href="?page=blog">Blog</a></li>
-
             <li><a href="?page=blog-single-post">Single post</a></li>
-
             <li><a href="?page=404">404 page</a></li>
 
           </ul>
+        </div>
 
-        <ul class="nav navbar-nav navbar-right" style="margin-right: 15px;">
-            <!--Shopping bag-->
+        <div class="mobile-menu-row">
+          <ul class="nav  navbar-nav  navbar-right">
+            <!--Shopping basket-->
             <li class="dropdown">
-              <a href="#" class="shopping-cart__button  dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              <a href="#" class="shopping-basket__button  dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                  aria-expanded="false">
                 <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                      d="M1792 768q53 0 90.5 37.5t37.5 90.5-37.5 90.5-90.5 37.5h-15l-115 662q-8 46-44 76t-82 30h-1280q-46 0-82-30t-44-76l-115-662h-15q-53 0-90.5-37.5t-37.5-90.5 37.5-90.5 90.5-37.5h1792zm-1435 800q26-2 43.5-22.5t15.5-46.5l-32-416q-2-26-22.5-43.5t-46.5-15.5-43.5 22.5-15.5 46.5l32 416q2 25 20.5 42t43.5 17h5zm411-64v-416q0-26-19-45t-45-19-45 19-19 45v416q0 26 19 45t45 19 45-19 19-45zm384 0v-416q0-26-19-45t-45-19-45 19-19 45v416q0 26 19 45t45 19 45-19 19-45zm352 5l32-416q2-26-15.5-46.5t-43.5-22.5-46.5 15.5-22.5 43.5l-32 416q-2 26 15.5 46.5t43.5 22.5h5q25 0 43.5-17t20.5-42zm-1156-1217l-93 412h-132l101-441q19-88 89-143.5t160-55.5h167q0-26 19-45t45-19h384q26 0 45 19t19 45h167q90 0 160 55.5t89 143.5l101 441h-132l-93-412q-11-44-45.5-72t-79.5-28h-167q0 26-19 45t-45 19h-384q-26 0-45-19t-19-45h-167q-45 0-79.5 28t-45.5 72z"
-                      fill="#fff"/>
+                  <path d="M1792 768q53 0 90.5 37.5t37.5 90.5-37.5 90.5-90.5 37.5h-15l-115 662q-8 46-44 76t-82 30h-1280q-46 0-82-30t-44-76l-115-662h-15q-53 0-90.5-37.5t-37.5-90.5 37.5-90.5 90.5-37.5h1792zm-1435 800q26-2 43.5-22.5t15.5-46.5l-32-416q-2-26-22.5-43.5t-46.5-15.5-43.5 22.5-15.5 46.5l32 416q2 25 20.5 42t43.5 17h5zm411-64v-416q0-26-19-45t-45-19-45 19-19 45v416q0 26 19 45t45 19 45-19 19-45zm384 0v-416q0-26-19-45t-45-19-45 19-19 45v416q0 26 19 45t45 19 45-19 19-45zm352 5l32-416q2-26-15.5-46.5t-43.5-22.5-46.5 15.5-22.5 43.5l-32 416q-2 26 15.5 46.5t43.5 22.5h5q25 0 43.5-17t20.5-42zm-1156-1217l-93 412h-132l101-441q19-88 89-143.5t160-55.5h167q0-26 19-45t45-19h384q26 0 45 19t19 45h167q90 0 160 55.5t89 143.5l101 441h-132l-93-412q-11-44-45.5-72t-79.5-28h-167q0 26-19 45t-45 19h-384q-26 0-45-19t-19-45h-167q-45 0-79.5 28t-45.5 72z" fill="#fff"/>
                 </svg>
-                <span class="shopping-cart__badge  badge">4</span>
+                <span class="shopping-basket__badge  badge">4</span>
               </a>
-              <div class="dropdown-menu  shopping-bag-dropdown-menu">
-                <ul class="shopping-basket-dropdown">
+              <div class="dropdown-menu  shopping-basket">
+                <ul class="shopping-basket__dropdown-list">
 
                   <?php for ($i = 0; $i <= 3; ++$i): ?>
-                    <li class="shopping-basket-dropdown__item">
+                    <li class="shopping-basket__item">
                       <div class="container-fluid">
                         <div class="row">
                           <div class="col-xs-4">
-                            <div class="image-wrapper  shopping-basket-dropdown__image-wrapper">
+                            <a class="image-wrapper  shopping-basket__image-wrapper" href="?page=product">
                               <img class="image" src="images/header-1/shopping-basket-dropdown-menu.png" alt="...">
-                            </div>
+                            </a>
                           </div>
                           <div class="col-xs-6">
-                            <div class="shopping-basket-dropdown__desc-wrapper">
-                              <h3 class="">
-                                <a class="text-source-sans-pro-semibold-14  grey-757575" href="#">Herbal tea</a>
+                            <div class="shopping-basket__desc-wrapper">
+                              <h3 class="shopping-basket__title-product">
+                                <a class="shopping-basket__dropdown-list-link" href="#">Herbal tea</a>
                               </h3>
                               <div class="rating  rating-4-stars">
                                 <svg width="15" height="15" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
@@ -267,17 +263,18 @@
                                 </svg>
                               </div>
 
-                        <span class="product-prices">
-                          <span class="price-with-discount  text-montserrat-bold-18-upper  black-000000">
-                            <span class="">$</span>
-                            <span class="">255</span>
-                          </span>
-                        </span>
-                              <br>
-                        <span class="shopping-basket-dropdown__qty  text-source-sans-pro-semibold-14  grey-757575">
-                          <span class="">Qty:</span>
-                          <span class="">1</span>
-                        </span>
+                            <span class="product-price">
+                              <s class="product-price__without-discount--font">
+                                <span class="">€</span>
+                                <span class="">500</span>
+                              </s>
+                              <span class="product-price__with-discount--font  ">
+                                <span class="">$</span>
+                                <span class="">255</span>
+                              </span>
+                            </span>
+
+
                             </div>
                           </div>
                           <div class="col-xs-2  text-right">
@@ -295,53 +292,62 @@
 
                 </ul>
 
+                
+                <div class="shopping-basket__footer">
+                  <div class="container-fluid">
 
-                <div class="container-fluid">
-                  <div class="shopping-bag-dropdown-menu__sub-total-price">
-                    <div class="row">
-                      <div class="col-xs-4">
-                        <span class="text-source-sans-pro-semibold-14  grey-757575">Sub total</span>
-                      </div>
-                      <div class="col-xs-8  text-right">
-                      <span class="text-montserrat-bold-18-upper  black-000000">
+                  <div class="row  shopping-basket__footer-row">
+                    <div class="col-xs-4">
+                      <span class="">Sub total</span>
+                    </div>
+                    <div class="col-xs-8  text-right">
+                      <span class="">
                         <span class="">&dollar;</span>
                         <span class="">2 550</span>
                       </span>
-                      </div>
                     </div>
-                    <div class="row">
-                      <div class="col-xs-4">
-                        <span class="text-source-sans-pro-semibold-14  grey-757575">Total</span>
-                      </div>
-                      <div class="col-xs-8  text-right">
-                      <span class="text-montserrat-bold-18-upper  black-000000">
+                  </div>
+                    
+                  <div class="row  shopping-basket__footer-row">
+                    <div class="col-xs-4">
+                      <span class="">Total</span>
+                    </div>
+                    <div class="col-xs-8  text-right">
+                      <span class="">
                         <span class="">&dollar;</span>
                         <span class="">10 200</span>
                       </span>
-                      </div>
                     </div>
                   </div>
 
                   <div class="row">
-                    <div class="col-xs-6  shopping-bag-dropdown-menu__button-container">
-                      <a class="schon-button  text-montserrat-bold-18-upper  white-ffffff  black-282828-bg"
-                         href="?page=shopping-cart">View cart</a>
+                    <div class="col-xs-6  ">
+                      <a class="teashop-button  " href="?page=shopping-cart">View cart</a>
                     </div>
-                    <div class="col-xs-6  text-right  shopping-bag-dropdown-menu__button-container">
-                      <a class="schon-button  text-montserrat-bold-18-upper  white-ffffff  black-282828-bg" href="#">Checkout</a>
+                    <div class="col-xs-6  text-right  ">
+                      <a class="teashop-button  " href="#">Checkout</a>
                     </div>
                   </div>
 
+
                 </div>
+                </div>
+                
+                
               </div>
             </li>
 
           </ul>
-      </div>
-
+        </div>
 
       </div><!-- /.navbar-collapse -->
+
+
     </div><!-- /.container-fluid -->
   </nav>
 
+
+
 </header>
+
+
