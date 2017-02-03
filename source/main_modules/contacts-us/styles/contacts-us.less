@@ -1,0 +1,19 @@
+.contact-us {
+  &__head-column {
+    .mixin_custom-font( @font-family-3-semi-bold-typeface; 15; );
+  }
+  &__form-title {
+    .mixin_custom-font( @font-family-3-bold-typeface; 18; );
+  }
+
+  .teashop-button {
+    .mixin_bg_color( 4 );
+    border-color: @color-2-layout;
+
+    &:hover, &:focus {
+      .mixin_color( 4 );
+      .mixin_bg_color( 1 );
+      border-color: @color-4-layout;
+    }
+  }
+}
