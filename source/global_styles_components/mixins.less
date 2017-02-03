@@ -1,0 +1,124 @@
+/*Примешать к кнопке цвета текста и текстовые стили(семья, размер)*/
+
+/*Colors and backgrounds for them (b)*/
+/*Dark background */
+.mixin_light-text-over-dark-background( @color ) {
+  & when ( lightness( @color ) >= 50%  ) {
+    background-color: @color-2-layout;
+  }
+  & when ( lightness( @color ) < 50%  ) {
+    background-color: @color-4-layout;
+  }
+  & {
+    color: @color;
+  }
+}
+
+/*Buttons background*/
+.mixin_button-background ( @color ) {
+  & when ( lightness( @color ) >= 50%  ) {
+    background-color: @color-2-layout;
+  }
+  & when ( lightness( @color ) < 50%  ) {
+    background-color: @color-4-layout;
+  }
+  & {
+    & svg {
+      fill: @color;
+    }
+  }
+}
+
+
+/*Absolute stretching mixin*/
+.mixin_absolute_stretching () {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+/*Absolute alignment mixin*/
+.mixin_absolute_alignment () {
+  .mixin_absolute_stretching ();
+
+  margin: auto;
+}
+
+
+/*Max stretching*/
+.mixin_max-stretching() {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*LESS Hat Font Face mixin*/
+.font-face(@fontname, @fontfile, @fontweight:normal, @fontstyle:normal) {
+  font-family: "@{fontname}";
+          src: url("@{fontfile}.eot");
+          src: url("@{fontfile}.eot?#iefix") format("embedded-opentype"),
+               url("@{fontfile}.woff") format("woff"),
+               url("@{fontfile}.ttf") format("truetype"),
+               url("@{fontfile}.svg#@{fontname}") format("svg");
+  font-weight: @fontweight;
+  font-style:  @fontstyle;
+}
+
+
+/*Custom font mixin*/
+// .custom-font( @font-family, @font-size, @text-transform, @letter-spacing ) {
+
+.mixin_custom-font( @font-family:@body--font-family; @font-size:@body--font-size; @text-transform:none; @letter-spacing:normal; @line-height:normal; ) {
+  font-family:    @font-family;
+  font-size:      unit(@font-size, @measures-of-font);
+  text-transform: @text-transform;
+
+  & when ( isnumber( @letter-spacing ) ) {
+    letter-spacing: unit(@letter-spacing, @measures-of-font-letter-spacing);
+  }
+  & when not ( isnumber( @letter-spacing ) ) {
+    letter-spacing: @letter-spacing;
+  }
+
+  & when ( isnumber( @line-height ) ) {
+    line-height: unit(@line-height, @measures-of-font-line-height);
+  }
+  & when not ( isnumber( @line-height ) ) {
+    line-height: @line-height;
+  }
+
+}
+
+
+.mixin_svg-text-color( @color ) {
+  color: @color;
+  & path {
+    fill: @color;
+  }
+  & a {
+    color: @color;
+  }
+}
+
+.mixin_color ( @color ) {
+    color: ~'@{color-@{color}-layout}';
+}
+
+.mixin_bg_color ( @color ) {
+  background-color: ~'@{color-@{color}-layout}';
+}
+
+
+.mixin_inline-vertical-allign ( @position ) {
+  display: inline-block;
+  vertical-align: @position;
+}
+
+
+.mixin_form-height( @font-height; @padding-top-bottom; ) {
+  @height:     @font-height + @padding-top-bottom * 2;
+  height:      unit( @height, @measures-of-font );
+  line-height: unit( @height, @measures-of-font );
+}
