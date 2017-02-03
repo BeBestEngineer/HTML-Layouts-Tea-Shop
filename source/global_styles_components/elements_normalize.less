@@ -1,0 +1,55 @@
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-control {
+  font-size: @body--font-size;
+  .mixin_form-height( @body--font-size; 10; );
+}
+
+.btn {
+  line-height: @body--font-size;
+  .mixin_form-height( @body--font-size; 10; );
+}
+
+
+
+body {
+  font-size:   @body--font-size;
+  font-family: @body--font-family;
+}
+
+.media {
+  margin-top: 0px;
+}
+
+.navbar-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.btn {
+  font-size: @body--font-size;
+}
+
+.pagination > li > a {
+  color: inherit;
+}
+
+.pager li > a, .pager li > span {
+  border-radius: 4px;
+}
