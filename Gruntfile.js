@@ -9,8 +9,8 @@ module.exports = function(grunt) {
   var layout_styles_min_build_path    = 'build/css/layout-styles.min.css';
   var layout_styles_min_load_path     = 'css/layout-styles.min.css';
 
-  var layout_styles_source_path        = 'source/global_css_components/layout.less';
-  var layout_styles_source_load_path   = 'source/global_css_components/layout.css';
+  var layout_styles_source_path        = 'source/global_styles_components/collected_styles/layout.less';
+  var layout_styles_source_load_path   = 'source/global_styles_components/collected_styles/layout.css';
 
   var vendor_scripts_build_path       = 'build/js/vendor-scripts.js';
   var vendor_scripts_min_build_path   = 'build/js/vendor-scripts.min.js';
@@ -101,7 +101,7 @@ module.exports = function(grunt) {
       },
       layout_styles: {
         src: [
-          'source/global_css_components/**/*.less',
+          'source/global_styles_components/**/*.less',
           'source/main_modules/**/*.less',
           'source/other_modules/**/*.less'
         ],
@@ -139,7 +139,7 @@ module.exports = function(grunt) {
           paths: ['source']
         },
         files: {
-          'source/global_css_components/layout.css': 'source/global_css_components/layout.less'
+          'source/global_styles_components/collected_styles/layout.css': 'source/global_styles_components/collected_styles/layout.less'
         }
       }
     },
