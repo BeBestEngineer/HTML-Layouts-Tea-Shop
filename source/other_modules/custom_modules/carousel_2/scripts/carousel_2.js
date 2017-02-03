@@ -9,10 +9,10 @@
 	});
 
 	// Custom Navigation Events
-	$(".carousel-2__navigation-next-all-pos-1").click(function(){
+	$("#carousel-2__navigation-next-all-pos-1").click(function(){
 		owl_2_home_pos_1.trigger('owl.next');
 	})
-	$(".carousel-2__navigation-prev-all-pos-1").click(function(){
+	$("#carousel-2__navigation-prev-all-pos-1").click(function(){
 		owl_2_home_pos_1.trigger('owl.prev');
 	});
 	/*Carousel-2 (home, position-1) scripts (e)*/

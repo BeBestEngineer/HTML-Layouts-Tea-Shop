@@ -10,10 +10,10 @@ owl_3_home_pos_1.owlCarousel({
 });
 
 // Custom Navigation Events
-$(".carousel-3__navigation-next-home-pos-1").click(function(){
+$("#carousel-3__navigation-next-home-pos-1").click(function(){
 	owl_3_home_pos_1.trigger('owl.next');
 });
-$(".carousel-3__navigation-prev-home-pos-1").click(function(){
+$("#carousel-3__navigation-prev-home-pos-1").click(function(){
 	owl_3_home_pos_1.trigger('owl.prev');
 });
 /*Carousel-3 (home, position-1) scripts (e)*/
@@ -29,10 +29,10 @@ owl_4_home_pos_1.owlCarousel({
 });
 
 // Custom Navigation Events
-$(".carousel-4__navigation-next-home-pos-1").click(function(){
+$("#carousel-4__navigation-next-home-pos-1").click(function(){
 	owl_4_home_pos_1.trigger('owl.next');
 });
-$(".carousel-4__navigation-prev-home-pos-1").click(function(){
+$("#carousel-4__navigation-prev-home-pos-1").click(function(){
 	owl_4_home_pos_1.trigger('owl.prev');
 });
 /*Carousel-4 (home, position-1) scripts (e)*/
@@ -48,10 +48,10 @@ owl_5_home_pos_1.owlCarousel({
 });
 
 // Custom Navigation Events
-$(".carousel-5__navigation-next-home-pos-1").click(function(){
+$("#carousel-5__navigation-next-home-pos-1").click(function(){
 	owl_5_home_pos_1.trigger('owl.next');
 });
-$(".carousel-5__navigation-prev-home-pos-1").click(function(){
+$("#carousel-5__navigation-prev-home-pos-1").click(function(){
 	owl_5_home_pos_1.trigger('owl.prev');
 });
 /*Carousel-5 (home, position-1) scripts (e)*/

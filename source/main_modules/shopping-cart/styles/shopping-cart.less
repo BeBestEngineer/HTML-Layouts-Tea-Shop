@@ -5,3 +5,25 @@
 .product__quantity-value {
   width: 60px;
 }
+
+.shopping-cart {
+  &__head {
+    .mixin_custom-font( @text-transform: uppercase; );
+  }
+
+  .teashop-button {
+    .mixin_bg_color( 4 );
+    border-color: @color-2-layout;
+
+    &:hover, &:focus {
+      .mixin_color( 4 );
+      .mixin_bg_color( 1 );
+      border-color: @color-4-layout;
+    }
+  }
+
+  &__result-title {
+    .mixin_custom-font( @font-family-3-bold-typeface; 15; );
+  }
+
+}

@@ -1,4 +1,4 @@
-<main class="shopping-cart">
+<main class="main-modules  shopping-cart">
   <?php require $breadcrumbs_1_data -> Get_data( 'shopping-cart', 'position-1' )['path']; ?>
 
 
@@ -27,13 +27,13 @@
             <li class="shopping-cart__item">
               <div class="row">
                 <div class="col-sm-2  hidden-xs  shopping-cart__col-product-photo">
-                  <a class="image-wrapper  shopping-cart__image-wrapper" href="#">
+                  <a class="links  image-wrapper  shopping-cart__image-wrapper" href="#">
                     <img class="image" src="images/shopping-cart/shopping-cart-<?php echo $sc; ?>.jpg" alt="carousel-1-4-home image">
                   </a>
                 </div>
 
                 <div class="col-sm-4  col-xs-6   shopping-cart__col-product-info">
-                  <h3 class=""><a class="" href="#">Anise (Star Anise)</a></h3>
+                  <h3 class="product__title"><a class="links" href="#">Anise (Star Anise)</a></h3>
                 </div>
 
                 <div class="col-sm-2  hidden-xs   shopping-cart__col-product-price">
@@ -68,7 +68,7 @@
 
                 <div class="col-sm-1  ">
                   <div class="action">
-                    <a href="#" class="shopping-cart__delete-item">
+                    <a href="#" class="links  shopping-cart__delete-item">
                       <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z"/>
                       </svg>
@@ -81,6 +81,9 @@
           <? endfor; ?>
 
         </ul>
+      </div>
+      <div class="text-right">
+        <a class="links  teashop-button" href="?page=products-list">Continue shoppping</a>
       </div>
     </div>
   </div>
@@ -103,14 +106,14 @@
                 </svg>
               </button>
               <ul class="dropdown-menu dropdown-menu-right">
-                <li><a href="#">Russia</a></li>
-                <li><a href="#">China</a></li>
+                <li><a class="links" href="#">Russia</a></li>
+                <li><a class="links" href="#">China</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">USA</a></li>
-                <li><a href="#">Canada</a></li>
+                <li><a class="links" href="#">USA</a></li>
+                <li><a class="links" href="#">Canada</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Germany</a></li>
-                <li><a href="#">Franca</a></li>
+                <li><a class="links" href="#">Germany</a></li>
+                <li><a class="links" href="#">Franca</a></li>
               </ul>
             </div><!-- /btn-group -->
           </div><!-- /input-group -->
@@ -125,13 +128,13 @@
                 </svg>
               </button>
               <ul class="dropdown-menu dropdown-menu-right">
-                <li><a href="#">West Siberis</a></li>
-                <li><a href="#">East Siberia</a></li>
+                <li><a class="links" href="#">West Siberis</a></li>
+                <li><a class="links" href="#">East Siberia</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Far East</a></li>
+                <li><a class="links" href="#">Far East</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Moskowia</a></li>
-                <li><a href="#">West North</a></li>
+                <li><a class="links" href="#">Moskowia</a></li>
+                <li><a class="links" href="#">West North</a></li>
               </ul>
             </div><!-- /btn-group -->
           </div><!-- /input-group -->
@@ -146,17 +149,17 @@
                 </svg>
               </button>
               <ul class="dropdown-menu dropdown-menu-right">
-                <li><a href="#">644000</a></li>
-                <li><a href="#">655000</a></li>
+                <li><a class="links" href="#">644000</a></li>
+                <li><a class="links" href="#">655000</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">675000</a></li>
+                <li><a class="links" href="#">675000</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">600000</a></li>
-                <li><a href="#">700000</a></li>
+                <li><a class="links" href="#">600000</a></li>
+                <li><a class="links" href="#">700000</a></li>
               </ul>
             </div><!-- /btn-group -->
           </div><!-- /input-group -->
-          <button type="submit" class="schon-button  shopping-cart__form-button  ">
+          <button class="teashop-button" type="submit">
             <span class="button-text">Get quite</span>
           </button>
         </form>
@@ -165,13 +168,13 @@
 
 
       <div class="col-md-4">
-        <b>Discont code</b>
+        <b class="shopping-cart__result-title">Discont code</b>
         <form class="form  shopping-cart__form-apply">
           <div class="form-group">
             <label for="shopping-cart-discont-code">Enter your coupon code</label>
             <input type="text" class="form-control     form-input-middle  forms-input" id="shopping-cart-discont-code" placeholder="You coupon code">
-            <button type="submit" class="schon-button  form-button-middle  shopping-cart__form-apply-button  ">
-              <span class="">Apply</span>
+            <button class="teashop-button" type="submit">
+              Apply
             </button>
           </div>
         </form>
@@ -179,7 +182,7 @@
 
 
       <div class="col-md-4" style="position: static;">
-        <b class="shopping-cart__result-title  shopping-cart__result-title-cart ">Cart total</b>
+        <b class="shopping-cart__result-title ">Cart total</b>
 
         <div class="shopping-cart__cart-result">
           <table class="table  shopping-cart__table-cart-result">
@@ -220,7 +223,7 @@
           </table>
         </div>
 
-        <button type="button" class="schon-button  shopping-cart__procwwd-checkout-button  text-montserrat-bold-18-upper  white-ffffff  green-88bd6e-bg">
+        <button class="teashop-button" type="button" >
           <span class="button-text">Proceed to checkout</span>
         </button>
       </div>

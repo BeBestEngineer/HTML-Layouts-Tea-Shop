@@ -1,4 +1,4 @@
-<main class="blog">
+<main class="main-modules  blog">
   <?php require $breadcrumbs_1_data->Get_data('blog', 'position-1')['path']; ?>
 
   <div class="container">
@@ -9,11 +9,11 @@
       <div class="col-md-9  col-sm-6">
         <div class="row">
           <?php for ($ba = 1; $ba <= 8; ++$ba): ?>
-          <div class="col-sm-6">
-            <article class="blog__post">
+
+            <article class="col-sm-6  blog__post">
             <?php require $blog_post_data->Get_data('blog', 'recent-posts')['path']; ?>
             </article>
-          </div>
+          
           <? endfor; ?>
         </div>
 

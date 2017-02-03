@@ -10,3 +10,24 @@
 .carousel-1__image-wrapper {
   height: 270px;
 }
+
+
+.carousel-1__product-title,
+.carousel-1__product-title a {
+  .mixin_custom-font( @font-family-3-semi-bold-typeface; 16; );
+  .mixin_color( 1 );
+}
+
+.carousel-1 {
+  .product-price__with-discont {
+    .mixin_color( 1 );
+  }
+  .marker {
+    &-sale {
+      left: 15px;
+    }
+    &-discont {
+      right: 15px;
+    }
+  }
+}

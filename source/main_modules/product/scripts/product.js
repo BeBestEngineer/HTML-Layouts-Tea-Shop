@@ -12,10 +12,10 @@ owl_product__carousel.owlCarousel({
 });
 
 // Custom Navigation Events
-$(".product__carousel-navigation-prev-product").click(function(){
+$("#product__carousel-navigation-prev-product").click(function(){
 	owl_product__carousel.trigger('owl.next');
 })
-$(".product__carousel-navigation-next-product").click(function(){
+$("#product__carousel-navigation-next-product").click(function(){
 	owl_product__carousel.trigger('owl.prev');
 });
 /*Carousel-product (home, position-1) scripts (e)*/

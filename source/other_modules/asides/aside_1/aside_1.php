@@ -3,12 +3,12 @@
   <form class="" action="" id="">
 
     <fieldset class="">
-      <legend class="">Sort of tea</legend>
+      <legend class="aside-1__filter-title">Sort of tea</legend>
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default  aside-1__ac-panel">
           <div class="panel-heading  aside-1__panel-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
-              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <a class="links" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Herbal Tea
               </a>
             </h4>
@@ -105,7 +105,7 @@
         <div class="panel panel-default  aside-1__ac-panel">
           <div class="panel-heading  aside-1__panel-heading" role="tab" id="headingTwo">
             <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <a class="links  collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Green Tea
               </a>
             </h4>
@@ -201,7 +201,7 @@
         <div class="panel panel-default  aside-1__ac-panel">
           <div class="panel-heading  aside-1__panel-heading" role="tab" id="headingThree">
             <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <a class="links  collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 White tea
               </a>
             </h4>
@@ -297,7 +297,7 @@
         <div class="panel  panel-default  aside-1__ac-panel">
           <div class="panel-heading  aside-1__panel-heading" role="tab" id="headingThree">
             <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <a class="links  collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 Black tea
               </a>
             </h4>
@@ -396,34 +396,35 @@
 
     <fieldset class="">
       <div id="keypress"></div>
+      <legend class="aside-1__filter-title">Price</legend>
       <input id="input-with-keypress-0" type="text">
       <input id="input-with-keypress-1" type="text">
 
-      <button class="" type="submit">Filter</button>
+      <button class="teashop-button" type="submit">Filter</button>
     </fieldset>
 
   </form>
 
 
   <section class="testimonial-banner-1  text-center">
-    <p>
+    <p class="  open-sans-regular-15-lh-25  text-justify">
       There are many variations of ags of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected huour, or randomised words which don't look even slightly believable.
     </p>
     <div class="image-wrapper  testimonial-banner-1__image-wrapper">
       <img class="image" src="images/testimonials/testimonial-1.png" alt="" >
     </div>
-    <span>
+    <span class="open-sans-bold-15-up">
       Monti Ipsum
     </span>
   </section>
 
   <section class="banner-2  text-center">
-    <b>Special Offer</b> <br>
-    <p>
-      <span>30%</span> off <br>
+    <b class="open-sans-regular-35-cap">Special offer</b> <br>
+    <p class="open-sans-regular-28-low-ls-4">
+      <span class="open-sans-extra-bold-48  color-1">30% off</span> <br>
       only for registered member !
     </p>
-    <a href="#">Shop now</a>
+    <a class="links" href="#">Shop now</a>
 
   </section>
 

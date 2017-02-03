@@ -5,13 +5,41 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #0d3349 url("../images/404/Cup-Splash-Warm-Coffee.jpg") no-repeat center;
+  background: #0d3349 url("@{images-path}/404/Cup-Splash-Warm-Coffee.jpg") no-repeat center;
+
+  .mixin_color( 1 );
+
+  .teashop-button {
+    .mixin_bg_color( tr );
+    border-color: @color-2-layout;
+
+    &:hover, &:focus {
+      .mixin_color( 4 );
+      .mixin_bg_color( 1 );
+      border-color: @color-4-layout;
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -170px;
+  }
+
+  &__title {
+    .mixin_custom-font( @font-family-3-bold-typeface; 120; );
+  }
+  &__subtitle-1 {
+    .mixin_custom-font( @font-family-3-semi-bold-typeface; 60; );
+  }
+  &__subtitle-2 {
+    .mixin_custom-font( @font-family-3-semi-bold-typeface; 20; );
+  }
+
+  .form-control {
+    .mixin_bg_color( tr );
+  }
 }
 
-.page-404__wrapper {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  margin-top: -150px;
-}

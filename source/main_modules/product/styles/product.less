@@ -23,6 +23,7 @@
 
 .product__image-wrapper img {
   max-height: inherit;
+  width: 100%;
 }
 .product__carousel-image-wrapper img {
   max-height: inherit;
@@ -45,7 +46,7 @@
   position: absolute;
   bottom: 20px;
   right: 20px;
-  z-index: 2;
+  z-index: 10;
 
   display: block;
   width: 40px;
@@ -53,12 +54,12 @@
   border: none;
 
   transform: rotate(45deg);
-  background-color: #e56a6a;
+  .mixin_bg_color( 1 );
 
-  transition: background-color 0.5s;
+  transition: transform @transition-duration-link;
 }
 .product__zoom-button:hover {
-  background-color: #e55c28;
+  transform: rotate(45deg) scale( 1.2, 1.2 );
   cursor: pointer;
 }
 
@@ -70,4 +71,62 @@
   left: 0;
   right: 0;
   margin: auto;
+}
+
+
+.product {
+  &__detail-title {
+    .mixin_custom-font( @font-family-3-bold-typeface; 18; );
+  }
+
+  .product-price__with-discont,
+  .product-price__ex-tax {
+    .mixin_color( 1 );
+  }
+
+  .product-price__ex-tax {
+    .mixin_custom-font( @font-family-3-semi-bold-typeface; 15; );
+  }
+
+  &__reviews-links a,
+  &__reviews-links {
+    .mixin_custom-font( @font-family-3-bold-typeface; );
+    .mixin_color( 3 );
+  }
+
+  &__short-desc {
+    .mixin_custom-font( @line-height: 25; );
+  }
+
+  &__short-desc-title {
+    .mixin_custom-font( @font-family-3-bold-typeface; 15; );
+  }
+
+  .teashop-button {
+    .mixin_bg_color( 4 );
+    border-color: @color-2-layout;
+
+    &:hover, &:focus {
+      .mixin_color( 4 );
+      .mixin_bg_color( 1 );
+      border-color: @color-4-layout;
+    }
+  }
+
+  &__info-tab-title {
+    .mixin_custom-font( @font-family-3-bold-typeface; 15; );
+    .mixin_color( 7 );
+  }
+
+  .active &__info-tab-title {
+    .mixin_color( 1 );
+  }
+
+  &__info-tab-desc {
+    .mixin_custom-font( @line-height: 25; );
+  }
+
+  &__tab-content {
+    min-height: 500px;
+  }
 }

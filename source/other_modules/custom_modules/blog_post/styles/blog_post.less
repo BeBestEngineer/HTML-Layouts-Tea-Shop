@@ -1,7 +1,17 @@
-.blog__post-image-wrapper {
+.post__image-wrapper {
   height: 210px;
 }
 
-.blog__image-wrapper img {
+.post__image-wrapper img {
   max-height: inherit;
+}
+
+.post {
+  &__title {
+    .mixin_custom-font( @font-family-3-semi-bold-typeface; 16; );
+    .mixin_color( 7 );
+  }
+  &__desc {
+    .mixin_custom-font( @line-height: 25; );
+  }
 }

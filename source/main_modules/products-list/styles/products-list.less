@@ -15,8 +15,10 @@
   padding: 50px 30px;
 }
 
-.testimonial-banner-1 {
-  background-color: #e56a6a;
+.testimonial-banner-1,
+.banner-2 {
+  .mixin_bg_color( 3 );
+  .mixin_color( 4 );
 }
 .testimonial-banner-1__image-wrapper {
   width: 94px;;
@@ -27,7 +29,30 @@
   max-width: inherit;
 }
 
-.banner-2 {
-  background-color: #fae1e1;
-  color: #2C2C2C;
+
+.products-list {
+
+  .teashop-button {
+    .mixin_bg_color( 4 );
+    border-color: @color-2-layout;
+
+    &:hover, &:focus {
+      .mixin_color( 4 );
+      .mixin_bg_color( 1 );
+      border-color: @color-4-layout;
+    }
+  }
+
+  &__title {
+    .mixin_custom-font( @font-family-3-semi-bold-typeface; 18; );
+  }
+
+  &__desc {
+    .mixin_custom-font( @line-height: 25; );
+  }
 }
+
+
+
+
+

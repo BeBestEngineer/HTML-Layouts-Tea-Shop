@@ -1,4 +1,4 @@
-<main class="product">
+<main class="main-modules  product">
 
   <?php require $breadcrumbs_1_data -> Get_data( 'product', 'position-1' )['path']; ?>
 
@@ -6,7 +6,7 @@
   <div class="container-fluid">
       <div class="product__wrapper">
         <div class="container">
-          <div class="col-md-6">
+          <div class="col-md-8">
 
             <div class="image-wrapper  product__image-wrapper">
               <img class="image" src="images/product/product-carousel-1-1.jpg" alt="...">
@@ -34,7 +34,7 @@
 
                 <?php for ($p= 1; $p <= 8; ++$p): ?>
                   <li class="product__caroisel-item">
-                    <a class="image-wrapper  product__carousel-image-wrapper" href="#">
+                    <a class="links  image-wrapper  product__carousel-image-wrapper" href="#">
                       <img class="image" src="images/product/product-carousel-1-<?php echo $p; ?>.jpg" alt="carousel-1-4-home image">
                     </a>
                   </li>
@@ -42,12 +42,12 @@
 
               </ul>
 
-              <a class="product__carousel-navigation-prev-product" role="button">
+              <a class="links  " id="product__carousel-navigation-prev-product" role="button">
                 <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
                   <path d="M793.8,10v980L206.2,500L793.8,10z"/>
                 </svg>
               </a>
-              <a class="product__carousel-navigation-next-product" role="button">
+              <a class="links  " id="product__carousel-navigation-next-product" role="button">
                 <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
                   <path d="M206.2,990V10l587.7,490L206.2,990z"/>
                 </svg>
@@ -58,10 +58,10 @@
           </div>
 
 
-          <div class="col-md-6">
+          <div class="col-md-4">
 
             <div class="product__header">
-              <h1 class="product-name  text-source-sans-pro-light-44-up  black-000000">Cascara Sagrada</h1>
+              <h1 class="product__detail-title">Cascara Sagrada</h1>
               <div class="row">
                 <div class="col-sm-6">
                   <!--
@@ -80,17 +80,22 @@
                   </p>
                 </div>
               </div>
-              <div class="product-prices">
-                <span class="price-with-discount  text-montserrat-regular-30  black-000000">
-                  <span class="price-with-discount-currency">$</span>
-                  <span class="price-with-discount-value">99.00</span>
-                </span>
-                <s class="price-without-discount  text-montserrat-regular-18  grey-b6b6b6">
-                  <span class="price-without-discount-currency">$</span>
-                  <span class="price-without-discount-value">129.00</span>
+
+              <div class="product-price">
+                <s class="product-price__without-discont">
+                  <span class="">€</span>
+                  <span class="">400</span>
                 </s>
-                <span>Ex tax: &dollar; 15</span>
+                <span class="product-price__with-discont">
+                  <span class="">€</span>
+                  <span class="">200</span>
+                </span>
+                <span>
+                  Ex tax: &dollar;
+                  <span class="product-price__ex-tax">15</span>
+                </span>
               </div>
+
 
               <div class="rating  rating-5-stars">
                 <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"/></svg>
@@ -100,10 +105,12 @@
                 <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"/></svg>
               </div>
 
-              <a href="#">6 Reviews</a> / <a href="#">Add new review</a> <br>
+              <div class="product__reviews-links">
+                <a class="links" href="#">6 Reviews</a> / <a class="links" href="#">Add new review</a>
+              </div>
 
-              <b>Short description:</b>
-              <p>
+              <b class="product__short-desc-title" >Short description:</b>
+              <p class="product__short-desc">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur ex nam nisi perspiciatis? Accusantium aperiam blanditiis, deserunt est facere facilis modi, perspiciatis possimus quae quibusdam rem repudiandae sint voluptate?
               </p>
             </div>
@@ -128,13 +135,13 @@
                         </svg>
                       </button>
                     </div>
-                    <button class="allign-middle" type="button">Add to cart</button>
-                    <a class="allign-middle" href="#">
+                    <button class="allign-middle  teashop-button" type="button">Add to cart</button>
+                    <a class="links  allign-middle" href="#">
                       <svg class="product__info-icon" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="#999999">
                         <path d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26t-55.5-65.5-68-97.5-53.5-121-23.5-138q0-220 127-344t351-124q62 0 126.5 21.5t120 58 95.5 68.5 76 68q36-36 76-68t95.5-68.5 120-58 126.5-21.5q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z"></path>
                       </svg>
                     </a>
-                    <a class="allign-middle" href="#">
+                    <a class="links  allign-middle" href="#">
                       <svg class="product__info-icon" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="#999999">
                         <path d="M1792 1184v192q0 13-9.5 22.5t-22.5 9.5h-1376v192q0 13-9.5 22.5t-22.5 9.5q-12 0-24-10l-319-320q-9-9-9-22 0-14 9-23l320-320q9-9 23-9 13 0 22.5 9.5t9.5 22.5v192h1376q13 0 22.5 9.5t9.5 22.5zm0-544q0 14-9 23l-320 320q-9 9-23 9-13 0-22.5-9.5t-9.5-22.5v-192h-1376q-13 0-22.5-9.5t-9.5-22.5v-192q0-13 9.5-22.5t22.5-9.5h1376v-192q0-14 9-23t23-9q12 0 24 10l319 319q9 9 9 23z"></path>
                       </svg>
@@ -160,15 +167,15 @@
           <div class="product__info-tabs">
             <!-- Nav tabs -->
             <ul class="nav  nav-tabs  nav-justified  product__info-tabs-titles" role="tablist">
-              <li role="presentation"><a class="text-montserrat-bold-16-cap  grey-959596" href="#home" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
-              <li role="presentation" class="active"><a class="text-montserrat-bold-16-cap  grey-959596" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Comments</a></li>
-              <li role="presentation"><a class="text-montserrat-bold-16-cap  grey-959596" href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Reviews</a></li>
+              <li role="presentation">               <a class="links  product__info-tab-title" href="#home"     aria-controls="home"     role="tab" data-toggle="tab">Description</a></li>
+              <li role="presentation" class="active"><a class="links  product__info-tab-title" href="#profile"  aria-controls="profile"  role="tab" data-toggle="tab">Comments</a></li>
+              <li role="presentation">               <a class="links  product__info-tab-title" href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Reviews</a></li>
 
             </ul>
 
             <!-- Tab panes -->
-            <div class="tab-content  product__tab-content  text-source-sans-pro-light-16 grey-696969">
-              <div role="tabpanel" class="tab-pane" id="home">
+            <div class="tab-content  product__tab-content  ">
+              <div role="tabpanel" class="tab-pane  product__info-tab-desc" id="home">
                 <p>
                   Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.
                 </p>
@@ -180,7 +187,7 @@
                   H 830 x L 585 x P 540 mm.
                 </p>
               </div>
-              <div role="tabpanel" class="tab-pane  active" id="profile">
+              <div role="tabpanel" class="tab-pane  product__info-tab-desc  active" id="profile">
                 <p>
                   Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.
                 </p>
@@ -212,7 +219,7 @@
                   H 830 x L 585 x P 540 mm.
                 </p>
               </div>
-              <div role="tabpanel" class="tab-pane" id="messages">
+              <div role="tabpanel" class="tab-pane  product__info-tab-desc" id="messages">
                 <p>
                   Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair.
                 </p>
