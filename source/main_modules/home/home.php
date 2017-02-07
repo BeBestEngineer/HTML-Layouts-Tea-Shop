@@ -1,45 +1,45 @@
     <main class="main-modules  home">
 
-      <section class="slider-1__wrapper">
+      <section class="section  slider-1__wrapper">
 
           <div id="slider-1" class="owl-carousel  owl-theme  slider-1">
 
-            <div class="item">
-              <img src="images/other_modules/custom_modules/slider_1/slider-1-1.jpg" alt="The Last of us">
+            <div class="slider-1__item">
+              <img class="slider-1__image" src="images/other_modules/custom_modules/slider_1/slider-1-1.jpg" alt="The Last of us">
               <div class="slider-1__desc">
                 <div class="container">
                   <h2  class="slider-1__title  ">Just for resigter membar</h2>
                   <span class="slider-1__subtitle">One by one free</span>
-                  <p class="slider-1__desc">
+                  <p class="slider-1__text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, assumenda consequuntur cum eligendi esse et, id laudantium minus nam officia quam quas repellat repudiandae sint sit sunt, temporibus vitae voluptatum?
                   </p>
-                  <a class="links" href="#">Shop now</a>
+                  <a class="links  btn  btn-default  theme-buttons__links--default" href="#">Shop now</a>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <img src="images/other_modules/custom_modules/slider_1/slider-1-2.jpg" alt="GTA V">
+            <div class="slider-1__item">
+              <img class="slider-1__image" src="images/other_modules/custom_modules/slider_1/slider-1-2.jpg" alt="GTA V">
               <div class="slider-1__desc">
                 <div class="container">
                   <h2  class="slider-1__title  ">Just for resigter membar</h2>
                   <span class="slider-1__subtitle">One by one free</span>
-                  <p class="slider-1__desc">
+                  <p class="slider-1__text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, assumenda consequuntur cum eligendi esse et, id laudantium minus nam officia quam quas repellat repudiandae sint sit sunt, temporibus vitae voluptatum?
                   </p>
-                  <a class="links" href="#">Shop now</a>
+                  <a class="links  btn  btn-default  theme-buttons__links--default" href="#">Shop now</a>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <img src="images/other_modules/custom_modules/slider_1/slider-1-3.jpg" alt="Mirror Edge">
+            <div class="slider-1__item">
+              <img class="slider-1__image" src="images/other_modules/custom_modules/slider_1/slider-1-3.jpg" alt="Mirror Edge">
               <div class="slider-1__desc">
                 <div class="container">
                   <h2  class="slider-1__title  ">Just for resigter membar</h2>
                   <span class="slider-1__subtitle">One by one free</span>
-                  <p class="slider-1__desc">
+                  <p class="slider-1__text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, assumenda consequuntur cum eligendi esse et, id laudantium minus nam officia quam quas repellat repudiandae sint sit sunt, temporibus vitae voluptatum?
                   </p>
-                  <a class="links" href="#">Shop now</a>
+                  <a class="links  btn  btn-default  theme-buttons__links--default" href="#">Shop now</a>
                 </div>
               </div>
             </div>
@@ -47,18 +47,22 @@
           </div>
 
         <div class="slider-1__icons" style="display: none">
-            <svg class="slider-1__icon-prev" width="20" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
-                <g><path d="M793.8,10v980L206.2,500L793.8,10z"/></g>
+            <button class="button  slider-1__button  slider-1__icon-prev">
+              <svg class="" width="20" height="20" viewBox="0 0 1000 1000">
+                <path class="icons__svg-color" d="M793.8,10v980L206.2,500L793.8,10z"/>
               </svg>
-            <svg class="slider-1__icon-next" width="20" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
-                <g><path d="M206.2,990V10l587.7,490L206.2,990z"/></g>
+            </button>
+            <button class="button  slider-1__button  slider-1__icon-next">
+              <svg class="" width="20" height="20" viewBox="0 0 1000 1000">
+                <path class="icons__svg-color" d="M206.2,990V10l587.7,490L206.2,990z"/>
               </svg>
+            </button>
         </div>
 
       </section>
 
 
-      <section class="masonry-grid-1">
+      <section class="section  masonry-grid-1">
         <div class="container">
           <div class="row">
 
@@ -67,12 +71,12 @@
                 <div class="image-wrapper  masonry-grid-1__image-left-wrapper">
                   <img class="image" src="images/other_modules/custom_modules/masonry_4_grid/masonry_4_grid-1.jpg" alt="...">
                 </div>
-                <a class="links  masonry-grid-1__desc  color-7" href="#">
-                  <b class="open-sans-regular-35-cap  color-1">Special coffee</b>
-                  <p class="open-sans-regular-28-low-ls-4">
+                <a class="links  masonry-grid-1__desc" href="#">
+                  <b class="masonry-grid-1__title  ">Special coffee</b>
+                  <p class="masonry-grid-1__subtitle">
                     Only for you
                   </p>
-                  <div class="masonry-grid-1__price  open-sans-extra-bold-48">
+                  <div class="masonry-grid-1__price ">
                     5$
                   </div>
                 </a>
@@ -89,13 +93,13 @@
                     <div class="image-wrapper  masonry-grid-1__image-right-top-5-wrapper">
                       <img class="image" src="images/other_modules/custom_modules/masonry_4_grid/masonry_4_grid-2.jpg" alt="...">
                     </div>
-                    <a class="links  masonry-grid-1__desc  color-3" href="#">
-                      <b class="open-sans-regular-35-cap">Sell up to</b>
-                      <p class="open-sans-regular-28-low-ls-4  color-8">
+                    <a class="links  masonry-grid-1__desc  " href="#">
+                      <b class="masonry-grid-1__title">Sell up to</b>
+                      <p class="masonry-grid-1__subtitle">
                         33% Off <br>
                         Coffee and Tea!
                       </p>
-                      <div class="masonry-grid-1__price  open-sans-extra-bold-48">
+                      <div class="masonry-grid-1__price ">
                         5$
                       </div>
                     </a>
@@ -107,16 +111,16 @@
                     <div class="image-wrapper masonry-grid-1__image-right-top-7-wrapper">
                       <img class="image" src="images/other_modules/custom_modules/masonry_4_grid/masonry_4_grid-3.jpg" alt="...">
                     </div>
-                    <div class="masonry-grid-1__desc  color-5">
-                      <b class="open-sans-regular-35-cap">Cupof</b>
-                      <p class="open-sans-regular-28-low-ls-4">
+                    <div class="masonry-grid-1__desc  ">
+                      <b class="masonry-grid-1__title">Cupof</b>
+                      <p class="masonry-grid-1__subtitle">
                         Green Tea <br>
                         Only
                       </p>
-                      <div class="masonry-grid-1__price  open-sans-extra-bold-48">
+                      <div class="masonry-grid-1__price  ">
                         5$
                       </div>
-                      <a class="links" href="#">By in shop</a>
+                      <a class="links  btn  btn-default  theme-buttons__links--default" href="#">By in shop</a>
                     </div>
                   </div>
                 </div>
@@ -130,13 +134,13 @@
                     <div class="image-wrapper masonry-grid-1__image-right-bottom-wrapper">
                       <img class="image" src="images/other_modules/custom_modules/masonry_4_grid/masonry_4_grid-4.jpg" alt="...">
                     </div>
-                    <a class="links  masonry-grid-1__desc  color-7" href="#">
-                      <b class="open-sans-regular-35-cap">We are try to make</b>
-                      <p class="open-sans-regular-28-low-ls-4  color-1">
+                    <a class="links  masonry-grid-1__desc  " href="#">
+                      <b class="masonry-grid-1__title">We are try to make</b>
+                      <p class="masonry-grid-1__subtitle">
                         To make <br>
                         a cup of tea
                       </p>
-                      <div class="masonry-grid-1__price  open-sans-extra-bold-48">
+                      <div class="masonry-grid-1__price ">
                         5$
                       </div>
                     </a>
@@ -152,251 +156,241 @@
       </section>
 
 
-      <?php require $carousel_1_data -> Get_data( 'home', 'position-1' )['path']; ?>
+      <section class="section  carousel-1">
+        <div class="container">
+          <div class="row">
+            <?php require $carousel_1_data -> Get_data( 'home', 'position-1' )['path']; ?>
+          </div>
+        </div>
+      </section>
 
 
-      <?php require $masonry_4_grid_1_data -> Get_data( 'home', 'position-1' )['path']; ?>
+      <section class="section  masonry-4-grid-1">
+        <div class="container">
+          <div class="row text-center">
+            <?php require $masonry_4_grid_1_data -> Get_data( 'home', 'position-1' )['path']; ?>
+          </div>
+        </div>
+      </section>
 
 
-      <?php require $carousel_1_data -> Get_data( 'home', 'position-2' )['path']; ?>
+      <section class="section  carousel-1">
+        <div class="container">
+          <div class="row">
+            <?php require $carousel_1_data -> Get_data( 'home', 'position-2' )['path']; ?>
+          </div>
+        </div>
+      </section>
 
 
-      <section class="carousel-3">
+      <section class="section  carousel  carousel-3">
         <div class="container" style="padding: 0;">
           <h2 class="section-title  text-center">Best Sail</h2>
           <p class="section-desc  text-center">Suspendisse neque urna, accumsan fermentum sem quis.</p>
 
+          <div class="carousel-wrapper">
+            <ul class="carousel-3__container" id="carousel-3-home-pos-1">
 
-          <ul class="carousel-3__container" id="carousel-3-home-pos-1">
+              <?php for ($ic3 = 1; $ic3 <= 16; $ic3 = $ic3 + 2 ): ?>
+                <li class="carousel-3__items-group">
+                  <div class="carousel-3__item  row">
+                    <div class="col-xs-4">
+                      <a class="links  image-wrapper  carousel-3__image-wrapper" href="#">
+                        <img class="image" src="images/other_modules/custom_modules/carousel_3/carousel-3-<?php echo $ic3; ?>.jpg" alt="">
+                      </a>
 
-            <?php for ($ic3 = 1; $ic3 <= 16; $ic3 = $ic3 + 2 ): ?>
-              <li class="carousel-3__item">
-                <div class="row">
-                  <div class="col-xs-4">
-                    <a class="links  image-wrapper  carousel-3__image-wrapper" href="#">
-                      <img class="image" src="images/other_modules/custom_modules/carousel_3/carousel-3-<?php echo $ic3; ?>.jpg" alt="">
-                    </a>
-  <!--                  <span style="background-color: #333333;">--><?php //echo $ic3; ?><!--</span>-->
-                  </div>
-                  <div class="col-xs-8">
-                    <div class="carousel-3___desc-wrapper">
-                      <h3 class="">
-                        <a class="links  carousel-3__product-title" href="#">Nullam bibendu</a>
-                      </h3>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="carousel-3___desc-wrapper">
+                        <h3 class="product__name">
+                          <a class="links  " href="?page=product">Nullam bibendu</a>
+                        </h3>
 
-                      <div class="rating rating-5-stars">
-                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
-                        </svg>
+                        <div class="rating rating-5-stars">
+                          <?php require 'other_modules/custom_modules/rating/rating.php'?>
+                        </div>
+
+                        <span class="product-prices">
+                            <s class="product-price__without-discont  theme-margin__right-small">
+                              <span class="">$</span>
+                              <span class="">150,00</span>
+                            </s>
+                            <span class="product-price__with-discont">
+                              <span class="">$</span>
+                              <span class="">100,00</span>
+                            </span>
+                        </span>
                       </div>
-
-                      <span class="product-prices">
-                          <s class="product-price__without-discont">
-                            <span class="">$</span>
-                            <span class="">150,00</span>
-                          </s>
-                          <span class="product-price__with-discont">
-                            <span class="">$</span>
-                            <span class="">100,00</span>
-                          </span>
-                      </span>
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-4">
-                    <a class="links  image-wrapper  carousel-3__image-wrapper" href="#">
-                      <img class="image" src="images/other_modules/custom_modules/carousel_3/carousel-3-<?php echo $ic3+1; ?>.jpg" alt="">
-                    </a>
-  <!--                  <span style="background-color: #333333;">--><?php //echo $ic3; ?><!--</span>-->
-                  </div>
-                  <div class="col-xs-8">
-                    <div class="carousel-3___desc-wrapper">
-                      <h3 class="">
-                        <a class="links  carousel-3__product-title" href="#">Nullam bibendu</a>
-                      </h3>
+                  <div class="carousel-3__item  row">
+                    <div class="col-xs-4">
+                      <a class="links  image-wrapper  carousel-3__image-wrapper" href="#">
+                        <img class="image" src="images/other_modules/custom_modules/carousel_3/carousel-3-<?php echo $ic3+1; ?>.jpg" alt="">
+                      </a>
 
-                      <div class="rating rating-5-stars">
-                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
-                        </svg>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="carousel-3___desc-wrapper">
+                        <h3 class="product__name">
+                          <a class="links  " href="?page=product">Nullam bibendu</a>
+                        </h3>
+
+                        <div class="rating rating-5-stars">
+                          <?php require 'other_modules/custom_modules/rating/rating.php'?>
+                        </div>
+
+                        <span class="product-prices">
+                            <s class="product-price__without-discont  theme-margin__right-small">
+                              <span class="">$</span>
+                              <span class="">150,00</span>
+                            </s>
+                            <span class="product-price__with-discont">
+                              <span class="">$</span>
+                              <span class="">100,00</span>
+                            </span>
+                        </span>
                       </div>
-
-                      <span class="product-prices">
-                          <s class="product-price__without-discont">
-                            <span class="">$</span>
-                            <span class="">150,00</span>
-                          </s>
-                          <span class="product-price__with-discont">
-                            <span class="">$</span>
-                            <span class="">100,00</span>
-                          </span>
-                      </span>
                     </div>
                   </div>
-                </div>
-              </li>
-            <? endfor; ?>
+                </li>
+              <? endfor; ?>
 
-          </ul>
+            </ul>
 
-          <div class="carousel-3__navigation  hidden-sm  hidden-xs">
-            <a class="links  " id="carousel-3__navigation-prev-home-pos-1" role="button">
-              <svg width="20" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
-                <g><path d="M793.8,10v980L206.2,500L793.8,10z"/></g>
-              </svg>
-            </a>
-            <a class="links  " id="carousel-3__navigation-next-home-pos-1" role="button">
-              <svg width="20" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
-                <g><path d="M206.2,990V10l587.7,490L206.2,990z"/></g>
-              </svg>
-            </a>
+            <div class="carousel-3__navigation  hidden-sm  hidden-xs">
+              <a class="links  btn  carousel-navigation__prev" id="carousel-3__navigation-prev-home-pos-1" role="button">
+                <svg class="carousel-navigation__icon" width="20" height="20" viewBox="0 0 1000 1000">
+                  <path class="icons__svg-color" d="M793.8,10v980L206.2,500L793.8,10z"/>
+                </svg>
+              </a>
+              <a class="links  btn  carousel-navigation__next" id="carousel-3__navigation-next-home-pos-1" role="button">
+                <svg class="carousel-navigation__icon" width="20" height="20" viewBox="0 0 1000 1000">
+                  <path class="icons__svg-color" d="M206.2,990V10l587.7,490L206.2,990z"/>
+                </svg>
+              </a>
+            </div>
           </div>
+
+
         </div>
       </section>
 
 
-      <section class="carousel-4">
+      <section class="section  carousel  carousel-4">
         <div class="container" style="padding: 0;">
           <h2 class="section-title  text-center">Deal of the day</h2>
           <p class="section-desc  text-center">Suspendisse neque urna, accumsan fermentum sem quis.</p>
 
+          <div class="carousel-wrapper">
+            <ul class="carousel-4__container" id="carousel-4-home-pos-1">
 
-          <ul class="carousel-4__container" id="carousel-4-home-pos-1">
+              <?php for ( $ic4 = 1; $ic4 <= 8; $ic4 = $ic4 + 1 ): ?>
+                <li class="item carousel-4__item">
 
-            <?php for ( $ic4 = 1; $ic4 <= 8; $ic4 = $ic4 + 1 ): ?>
-              <li class="item carousel-4__item">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <a class="links  image-wrapper  carousel-4__image-wrapper" href="#">
+                        <img class="image" src="images/other_modules/custom_modules/carousel_4/carousel-4-<?php echo $ic4; ?>.jpg" alt="">
+                      </a>
 
-                <div class="row">
-                  <div class="col-sm-6">
-                    <a class="links  image-wrapper  carousel-4__image-wrapper" href="#">
-                      <img class="image" src="images/other_modules/custom_modules/carousel_4/carousel-4-<?php echo $ic4; ?>.jpg" alt="">
-                    </a>
-<!--                  <span style="background-color: #333333;">--><?php //echo $ic4; ?><!--</span>-->
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="carousel-4___desc-wrapper">
-                      <h3 class="">
-                        <a class="links  carousel-4__product-title" href="#">Nullam bibendu</a>
-                      </h3>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="carousel-4___desc-wrapper">
+                        <h3 class="product__name">
+                          <a class="links  " href="#">Nullam bibendu</a>
+                        </h3>
 
-                      <div class="rating rating-5-stars">
-                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
-                        </svg>
-                        <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
-                        </svg>
+                        <div class="rating rating-5-stars">
+                          <?php require 'other_modules/custom_modules/rating/rating.php'?>
+                        </div>
+
+                        <span class="product-prices">
+                            <s class="product-price__without-discont  theme-margin__right-small">
+                              <span class="">$</span>
+                              <span class="">150,00</span>
+                            </s>
+                            <span class="product-price__with-discont">
+                              <span class="">$</span>
+                              <span class="">100,00</span>
+                            </span>
+                        </span>
+                        <p class="product__desc">
+                          Aliquam tincidunt pellentesque rutrum. Mauris luctus magna turpis, aliquam eu rutrum ligula facilisis eu. Phasellus tortr enim, euismod nec ante id.
+                        </p>
+                        <table class="table  carousel-4__table  text-center">
+                          <tbody>
+                            <tr>   <td>116</td>   <td>13</td>     <td>59</td>  <td>15</td>  </tr>
+                            <tr>   <td>days</td>  <td>hours</td>  <td>min</td>  <td>sec</td>  </tr>
+                          </tbody>
+                        </table>
                       </div>
-
-                      <span class="product-prices">
-                          <s class="product-price__without-discont">
-                            <span class="">$</span>
-                            <span class="">150,00</span>
-                          </s>
-                          <span class="product-price__with-discont">
-                            <span class="">$</span>
-                            <span class="">100,00</span>
-                          </span>
-                      </span>
-                      <p class="carousel-4__item-desc">
-                        Aliquam tincidunt pellentesque rutrum. Mauris luctus magna turpis, aliquam eu rutrum ligula facilisis eu. Phasellus tortr enim, euismod nec ante id.
-                      </p>
-                      <table class="table  carousel-4__table  text-center">
-                        <tbody>
-                          <tr>   <td>116</td>   <td>13</td>     <td>59</td>  <td>15</td>  </tr>
-                          <tr>   <td>days</td>  <td>hours</td>  <td>min</td>  <td>sec</td>  </tr>
-                        </tbody>
-                      </table>
                     </div>
                   </div>
-                </div>
 
-              </li>
-            <? endfor; ?>
+                </li>
+              <? endfor; ?>
 
-          </ul>
+            </ul>
 
-          <div class="carousel-4__navigation  hidden-sm  hidden-xs">
-            <a class="links  " id="carousel-4__navigation-prev-home-pos-1" role="button">
-              <svg width="20" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
-                <g><path d="M793.8,10v980L206.2,500L793.8,10z"/></g>
-              </svg>
-            </a>
-            <a class="links  " id="carousel-4__navigation-next-home-pos-1" role="button">
-              <svg width="20" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
-                <g><path d="M206.2,990V10l587.7,490L206.2,990z"/></g>
-              </svg>
-            </a>
+            <div class="carousel-4__navigation  hidden-sm  hidden-xs">
+              <a class="links  btn  carousel-navigation__prev" id="carousel-4__navigation-prev-home-pos-1" role="button">
+                <svg class="carousel-navigation__icon" width="20" height="20" viewBox="0 0 1000 1000">
+                  <path class="icons__svg-color" d="M793.8,10v980L206.2,500L793.8,10z"/>
+                </svg>
+              </a>
+              <a class="links  btn  carousel-navigation__next" id="carousel-4__navigation-next-home-pos-1" role="button">
+                <svg class="carousel-navigation__icon" width="20" height="20" viewBox="0 0 1000 1000">
+                  <path class="icons__svg-color" d="M206.2,990V10l587.7,490L206.2,990z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+      <section class="section  carousel-2">
+        <div class="row">
+          <div class="container" style="padding: 0;">
+            <?php require $carousel_2_data -> Get_data( 'all', 'position-1' )['path']; ?>
           </div>
         </div>
       </section>
 
 
-      <?php require $carousel_2_data -> Get_data( 'all', 'position-1' )['path']; ?>
-
-
-      <section class="carousel-5">
+      <section class="section  carousel  carousel-5">
         <div class="container" style="padding: 0;">
           <h2 class="section-title  text-center">Our blog</h2>
           <p class="section-desc  text-center">Suspendisse neque urna, accumsan fermentum sem quis.</p>
 
+          <div class="carousel-wrapper">
+            <ul class="carousel-5__container" id="carousel-5-home-pos-1">
 
-          <ul class="carousel-5__container" id="carousel-5-home-pos-1">
+              <?php for ( $ba = 1; $ba <= 8; $ba = ++$ba ): ?>
+                <li class="item carousel-5__item">
+                <?php require $blog_post_data->Get_data('carousel-5', 'recent-posts')['path']; ?>
+                </li>
+              <? endfor; ?>
 
-            <?php for ( $ba = 1; $ba <= 8; $ba = ++$ba ): ?>
-              <li class="item carousel-5__item">
-              <?php require $blog_post_data->Get_data('carousel-5', 'recent-posts')['path']; ?>
-              </li>
-            <? endfor; ?>
+            </ul>
 
-          </ul>
-
-          <div class="carousel-5__navigation  hidden-sm  hidden-xs">
-            <a class="links  " id="carousel-5__navigation-prev-home-pos-1" role="button">
-              <svg width="20" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
-              <g><path d="M793.8,10v980L206.2,500L793.8,10z"/></g>
-            </svg>
-            </a>
-            <a class="links  " id="carousel-5__navigation-next-home-pos-1" role="button">
-              <svg width="20" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
-                <g><path d="M206.2,990V10l587.7,490L206.2,990z"/></g>
+            <div class="carousel-5__navigation  hidden-sm  hidden-xs">
+              <a class="links  btn  carousel-navigation__prev" id="carousel-5__navigation-prev-home-pos-1" role="button">
+                <svg class="carousel-navigation__icon" width="20" height="20" viewBox="0 0 1000 1000">
+                <path class="icons__svg-color" d="M793.8,10v980L206.2,500L793.8,10z"/>
               </svg>
-            </a>
+              </a>
+              <a class="links  btn  carousel-navigation__next" id="carousel-5__navigation-next-home-pos-1" role="button">
+                <svg class="carousel-navigation__icon" width="20" height="20" viewBox="0 0 1000 1000">
+                  <path class="icons__svg-color" d="M206.2,990V10l587.7,490L206.2,990z"/>
+                </svg>
+              </a>
+            </div>
           </div>
+
         </div>
       </section>
 

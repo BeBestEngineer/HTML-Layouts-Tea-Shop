@@ -1,50 +1,31 @@
-/*Sticky footer ( begin )*/
-html {
-  position: relative;
-  min-height: 100%;
-}
 
-.page-wrapper {
-  //if js failed
-  //margin-bottom: @footer-height;
-}
-/*Sticky footer ( end )*/
 
+
+
+/*footer-1 position ( begin )*/
 .footer-1 {
   /*Sticky footer position( end )*/
   & {
+    //if js don't work
     position: absolute;
     bottom: 0px;
     width: 100%;
 
-    //if js failed
+    //if js don't work
     //height: @footer-height;
   }
   /*Sticky footer position ( end )*/
 
-  a {
-    color: @color-4-layout;
-    background-color: transparent;
-  }
-
-  path {
-    fill: @color-4-layout;
-  }
-
-  & .social-icons:after {
-    content: "";
-    display: inline-block;
-    height: 0px;
-    width: 100%;
+  .logo-link {
+    position: relative;
+    display: block;
+    height: 72px;
+    margin-bottom: 30px;
   }
 
   &__titles {
     display: block;
     margin-bottom: 30px;
-  }
-
-  &__phone-lg {
-    font-size: 36px;
   }
 
   &__middle {
@@ -54,6 +35,20 @@ html {
   &__bottom {
     padding-bottom: 20px;
   }
+
+  .social-posts-list {
+    & {
+      margin-bottom: 30px;
+    }
+    &__title {
+      display: block;
+      margin-bottom: 10px;
+    }
+    &__desc {
+      margin-bottom: 15px;
+    }
+  }
+
 
   @media ( max-width: 767px ) {
     & .circle-icons__icon-wrapper {
@@ -90,6 +85,7 @@ html {
     }
   }
 
+
   @media ( max-width: 480px ) {
     & .social-icons {
       text-align: justify;
@@ -101,83 +97,68 @@ html {
       }
     }
   }
+
+
 }
+/*footer-1 position ( end )*/
 
 
+/*footer-1 fonts ( begin )*/
 .footer-1 {
-  .mixin_light-text-over-dark-background( @color-4-layout );
-
-  a {
-    color: @color-4-layout;
-  }
-
-  .circle-icons {
-    path {
-      fill: @color-1-layout;
-    }
-
-    &__icon-wrapper {
-      background-color: @color-4-layout;
-    }
-
-    &__icon {
-      fill: @color-1-layout;
-    }
-
-    &, & a {
-      color: @color-3-layout;
-    }
-
-    &__text {
-      color: @color-4-layout;
-    }
-  }
-
-  .logo-link {
-    position: relative;
-    display: block;
-    height: 72px;
-    margin-bottom: 30px;
-  }
-
-  .teashop-button {
-    color: @color-4-layout;
-  }
-
   &__titles, .list-with-title-1__title {
     .mixin_custom-font(@font-family-3-bold-typeface; 18);
   }
 
-
-
-  input, textarea {
-    color: @color-4-layout;
-    background-color: transparent;
+  .social-posts-list {
+    &__title {
+      .mixin_custom-font(@font-family-3-regular-typeface; 15);
+    }
   }
 
-  .form-control::-moz-placeholder {
-    color: @color-1-layout;
+  .support {
+    &__phone {
+      .mixin_custom-font(@font-family-3-bold-typeface; 60);
+    }
   }
 }
+/*footer-1 fonts ( begin )*/
 
 
-.social-posts-list {
-  path {
-    fill: @color-1-layout;
+/*footer-1 colors ( begin )*/
+.footer-1 {
+  .mixin_text-fields-colors( transparent; @color-1-layout; @color-4-layout );
+
+  .mixin_contrast-colors( @color-1-contrast-header-1; @color-2-contrast-header-1; );
+
+  .circle-icons {
+    .icons__svg-color {
+      fill: @color-1-layout;
+    }
+    &__icon-wrapper {
+      background-color: @color-4-layout;
+    }
+    &__text {
+      color: @color-4-layout;
+    }
+    &__desc {
+      color: @color-3-layout;
+    }
   }
 
-  & {
-    margin-bottom: 30px;
+  .social-posts-list {
+    &__title, &__icons-wrapper {
+      .mixin_contrast-colors( @color-theme-layout; transparent; );
+    }
   }
-  &__title {
-    display: block;
-    margin-bottom: 10px;
-    .mixin_custom-font(@font-family-3-regular-typeface; 15);
-    .mixin_color( 1 );
-  }
-  &__date-wrapper {
-    .mixin_svg-text-color( @color-3-layout );
+
+  .support {
+    &__color {
+      .mixin_contrast-colors( @color-theme-layout; transparent; );
+    }
   }
 
 }
+/*footer-1 colors ( begin )*/
+
+
 

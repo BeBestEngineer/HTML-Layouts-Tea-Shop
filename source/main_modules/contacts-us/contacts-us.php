@@ -1,15 +1,23 @@
-<main class="main-modules  contact-us">
-  <?php require $breadcrumbs_1_data -> Get_data( 'contact-us', 'position-1' )['path']; ?>
-  
+<section class="breadcrumbs">
   <div class="container">
-    <div class="row  text-center">
+    <div class="row">
+      <?php require $breadcrumbs_1_data -> Get_data( 'about-us', 'position-1' )['path']; ?>
+    </div>
+  </div>
+</section>
+
+
+<main class="main-modules  contact-us">
+  <div class="container">
+    <section class="section">
+      <div class="row  text-center">
       <div class="col-sm-4">
         <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
           <path d="M976 1408q0-33-23.5-56.5t-56.5-23.5-56.5 23.5-23.5 56.5 23.5 56.5 56.5 23.5 56.5-23.5 23.5-56.5zm208-160v-704q0-13-9.5-22.5t-22.5-9.5h-512q-13 0-22.5 9.5t-9.5 22.5v704q0 13 9.5 22.5t22.5 9.5h512q13 0 22.5-9.5t9.5-22.5zm-192-848q0-16-16-16h-160q-16 0-16 16t16 16h160q16 0 16-16zm288-16v1024q0 52-38 90t-90 38h-512q-52 0-90-38t-38-90v-1024q0-52 38-90t90-38h512q52 0 90 38t38 90z"/>
         </svg>
         <br>
         <b class="contact-us__head-column">Telephone</b>
-        <p>
+        <p class="contact-us__desc-column">
           Fax:   <a class="links" href="fax:+1-100-488-04-09">+1-100-488-04-09</a> <br>
           Phone: <a class="links" href="tel:+1-200-488-04-09">+1-200-488-04-09</a>
         </p> 
@@ -20,7 +28,7 @@
         </svg>
         <br>
         <b class="contact-us__head-column">E-mail</b>
-        <p>
+        <p class="contact-us__desc-column">
           <a class="links" href="mailto:support@tea-shop.ru">support@tea-shop.ru</a> <br>
           <a class="links" href="mailto:make-order@tea-shop.ru">make-order@tea-shop.ru</a>
         </p>
@@ -31,14 +39,21 @@
         </svg>
         <br>
         <b class="contact-us__head-column">Address</b>
-        <p>
+        <p class="contact-us__desc-column">
           Latham, Howard A 1201 <br>
           Longton, Moline AX 132283
         </p>
       </div>
+    </div>
+    </section>
+
+
+    <section class="section">
       <div class="row">
         <div class="col-sm-6  col-sm-offset-3">
-          <b class="forms-title">Send a message</b>
+          <div class="text-center">
+            <b class="forms-title">Send a message</b>
+          </div>
           <form action="" class="contact-form" role="form">
             <div class="row">
               <div class="col-sm-6">
@@ -61,17 +76,20 @@
             </div>
             <div class="row">
               <div class="col-md-12  text-right">
-                <button class="teashop-button">Submit</button>
+                <button class="btn  btn-default  theme-buttons__buttons--default">Submit</button>
               </div>
             </div>
           </form>
         </div>
       </div>
-    </div>
+    </section>
   </div>
-  <div class="container">
+
+
+  <div class="container  section">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2288.841012218504!2d73.35915671620965!3d54.99342145776721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43aafe1f7c6b3211%3A0xd59ee555f5ff81f1!2z0YPQuy4g0JrRgNCw0YHQvdGL0Lkg0J_Rg9GC0YwsIDEyLCDQntC80YHQuiwg0J7QvNGB0LrQsNGPINC-0LHQuy4sIDY0NDA0Mw!5e0!3m2!1sru!2sru!4v1483622251032" style="border:0; width: 100%; height: 580px;" allowfullscreen="" height="580" frameborder="0" width="1920">
     </iframe>
   </div>
+
   
 </main>

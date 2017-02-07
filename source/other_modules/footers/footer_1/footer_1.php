@@ -11,7 +11,7 @@
             </span>
             <b class="allign-middle  circle-icons__text">Our address</b>
           </div>
-          <p class="">Vivamus faucibus Morokko, 23</p>
+          <p class="circle-icons__desc">Vivamus faucibus Morokko, 23</p>
         </div>
         <div class="col-sm-3 col-xs-12">
           <div class="circle-icons__item-wrapper">
@@ -22,7 +22,7 @@
             </span>
             <b class="allign-middle  circle-icons__text">Phone support</b>
           </div> 
-          <p class="">Phone: <a class="links" href="tel:+1-200-488-04-09">+1-200-488-04-09</a></p>
+          <p class="circle-icons__desc">Phone: <a class="links" href="tel:+1-200-488-04-09">+1-200-488-04-09</a></p>
         </div>
         <div class="col-sm-3 col-xs-12">
           <div class="circle-icons__item-wrapper">
@@ -33,7 +33,7 @@
             </span>
             <b class="allign-middle  circle-icons__text">Email support</b>
           </div>
-          <p class=""><a class="links" href="mailte:support@tea-shop.ru">support@tea-shop.ru</a></p>
+          <p class="circle-icons__desc"><a class="links" href="mailte:support@tea-shop.ru">support@tea-shop.ru</a></p>
         </div>
         <div class="col-sm-3 col-xs-12">
           <div class="circle-icons__item-wrapper">
@@ -78,42 +78,46 @@
 
 
               <div class="media  social-posts-list">
-                <div class="media-left">
-                  <svg class="social-group__item-icon" width="20" height="20" viewBox="0 0 1792 1792" >
+                <div class="media-left  social-posts-list__icons-wrapper">
+                  <svg width="20" height="20" viewBox="0 0 1792 1792" >
                     <path class="icons__svg-color" d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path>
                   </svg>
                 </div>
                 <div class="media-body">
                   <b class="social-posts-list__title">@24WebGroup</b>
-                  <p>
+                  <p class="social-posts-list__desc">
                     Questions about our social network? Need access to tea, herb and industry experts?
                   </p>
                   <div class="social-posts-list__date-wrapper">
-                    <svg class="allign-middle" width="10" height="10" viewBox="0 0 1792 1792">
-                      <path class="icons__svg-color" d="M192 1664h288v-288h-288v288zm352 0h320v-288h-320v288zm-352-352h288v-320h-288v320zm352 0h320v-320h-320v320zm-352-384h288v-288h-288v288zm736 736h320v-288h-320v288zm-384-736h320v-288h-320v288zm768 736h288v-288h-288v288zm-384-352h320v-320h-320v320zm-352-864v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm736 864h288v-320h-288v320zm-384-384h320v-288h-320v288zm384 0h288v-288h-288v288zm32-480v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm384-64v1280q0 52-38 90t-90 38h-1408q-52 0-90-38t-38-90v-1280q0-52 38-90t90-38h128v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h384v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h128q52 0 90 38t38 90z"                      fill="#fff"/>
-                    </svg>
-                    <a class="links  allign-middle" href="#">June/10/2016</a>
+                    <a class="links  allign-middle" href="#">
+                      <svg class="icons__svg--text  allign-middle" width="20" height="20" viewBox="0 0 1792 1792">
+                        <path class="icons__svg-color" d="M192 1664h288v-288h-288v288zm352 0h320v-288h-320v288zm-352-352h288v-320h-288v320zm352 0h320v-320h-320v320zm-352-384h288v-288h-288v288zm736 736h320v-288h-320v288zm-384-736h320v-288h-320v288zm768 736h288v-288h-288v288zm-384-352h320v-320h-320v320zm-352-864v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm736 864h288v-320h-288v320zm-384-384h320v-288h-320v288zm384 0h288v-288h-288v288zm32-480v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm384-64v1280q0 52-38 90t-90 38h-1408q-52 0-90-38t-38-90v-1280q0-52 38-90t90-38h128v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h384v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h128q52 0 90 38t38 90z"                      fill="#fff"/>
+                      </svg>
+                      June/10/2016
+                    </a>
                   </div>
                 </div>
               </div>
 
 
               <div class="media  social-posts-list">
-                <div class="media-left">
-                  <svg class="social-group__item-icon" width="20" height="20" viewBox="0 0 1792 1792">
+                <div class="media-left  social-posts-list__icons-wrapper">
+                  <svg width="20" height="20" viewBox="0 0 1792 1792">
                     <path class="icons__svg-color" d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path>
                   </svg>
                 </div>
                 <div class="media-body">
                   <b class="social-posts-list__title">@24WebGroup</b>
-                  <p>
+                  <p class="social-posts-list__desc">
                     The Republic of Tea’s Commitment to Good Will and Social Responsibility – Impacting social change on a global scale.
                   </p>
                   <div class="social-posts-list__date-wrapper">
-                    <svg class="allign-middle" width="10" height="10" viewBox="0 0 1792 1792">
-                      <path class="icons__svg-color" d="M192 1664h288v-288h-288v288zm352 0h320v-288h-320v288zm-352-352h288v-320h-288v320zm352 0h320v-320h-320v320zm-352-384h288v-288h-288v288zm736 736h320v-288h-320v288zm-384-736h320v-288h-320v288zm768 736h288v-288h-288v288zm-384-352h320v-320h-320v320zm-352-864v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm736 864h288v-320h-288v320zm-384-384h320v-288h-320v288zm384 0h288v-288h-288v288zm32-480v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm384-64v1280q0 52-38 90t-90 38h-1408q-52 0-90-38t-38-90v-1280q0-52 38-90t90-38h128v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h384v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h128q52 0 90 38t38 90z"                      fill="#fff"/>
-                    </svg>
-                    <a class="links  allign-middle" href="#">June/10/2016</a>
+                    <a class="links  allign-middle" href="#">
+                      <svg class="icons__svg--text  allign-middle" width="20" height="20" viewBox="0 0 1792 1792">
+                        <path class="icons__svg-color" d="M192 1664h288v-288h-288v288zm352 0h320v-288h-320v288zm-352-352h288v-320h-288v320zm352 0h320v-320h-320v320zm-352-384h288v-288h-288v288zm736 736h320v-288h-320v288zm-384-736h320v-288h-320v288zm768 736h288v-288h-288v288zm-384-352h320v-320h-320v320zm-352-864v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm736 864h288v-320h-288v320zm-384-384h320v-288h-320v288zm384 0h288v-288h-288v288zm32-480v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm384-64v1280q0 52-38 90t-90 38h-1408q-52 0-90-38t-38-90v-1280q0-52 38-90t90-38h128v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h384v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h128q52 0 90 38t38 90z"                      fill="#fff"/>
+                      </svg>
+                      June/10/2016
+                    </a>
                   </div>
                 </div>
               </div>
@@ -123,10 +127,12 @@
 
           </div>
 
-          <div class="row  text-center">
-            <a class="links  open-sans-bold-35" href="tel:+1-200-488-04-09">+1-200-488-04-09</a>
-            <p class="color-3  open-sans-bold-15"><span class="color-1">Support</span> 9:00 Am - 11:00 Pm</p>
-          </div>
+          <section class="support">
+            <div class="row  text-center">
+              <a class="links  support__phone" href="tel:+1-200-488-04-09">+1-200-488-04-09</a>
+              <p class=""><span class="support__color">Support</span> 9:00 Am - 11:00 Pm</p>
+            </div>
+          </section>
         </div>
 
 
@@ -176,7 +182,7 @@
             </div>
             <div class="row">
               <div class="col-md-12  contact-form__button-wrapper">
-                <button class="btn  btn-default  teashop-button">Submit</button>
+                <button class="btn  btn-default  theme-buttons__buttons--default">Submit</button>
               </div>
             </div>
           </form>
@@ -195,7 +201,7 @@
 
               <div class="col-sm-3  text-right">
                 <div class="form-group">
-                <button type="submit" class="btn  btn-default  teashop-button">Submit</button>
+                <button type="submit" class="btn  btn-default  theme-buttons__buttons--default">Submit</button>
                 </div>
               </div>
 
@@ -218,8 +224,11 @@
               </svg>
             </a>
             <a class="links  social-icons__link" href="#">
-              <svg width="40px" height="30px" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"  fill="#ffffff" style="margin-top: -17px; margin-left: -20px;">
-                <g><path class="icons__svg-color" d="M19.6671,25.7867c-0.0075,1.7935,0,3.5869,0.0076,5.3803c3.0067,0.098,6.0208,0.0527,9.0275,0.098   c-1.3262,6.6689-10.3989,8.8315-15.199,4.4761C8.5674,31.9206,8.801,23.5412,13.9327,19.992   c3.5869-2.8635,8.6884-2.1552,12.2752,0.324c1.4092-1.3036,2.7278-2.6977,4.0013-4.1445   c-2.984-2.3812-6.6462-4.0767-10.5421-3.8958c-8.1307-0.2713-15.6059,6.8497-15.7415,14.9805   c-0.52,6.6462,3.8506,13.1644,10.0222,15.5155c6.1489,2.3661,14.031,0.7535,17.957-4.77c2.5922-3.4889,3.1498-7.98,2.8484-12.1999   C29.7194,25.7641,24.6933,25.7716,19.6671,25.7867z"/><path d="M49.0704,25.7641c-0.0151-1.4996-0.0226-3.0067-0.0301-4.5062c-1.4996,0-2.9916,0-4.4836,0   c-0.0151,1.4996-0.0301,2.9991-0.0377,4.5062c-1.5071,0.0075-3.0067,0.0151-4.5062,0.0302c0,1.4995,0,2.9915,0,4.4836   c1.4995,0.0151,3.0066,0.0302,4.5062,0.0452c0.0151,1.4996,0.0151,2.9991,0.0302,4.4987c1.4996,0,2.9916,0,4.4911,0   c0.0075-1.4996,0.015-2.9991,0.0301-4.5062c1.5071-0.0151,3.0067-0.0226,4.5062-0.0377c0-1.4921,0-2.9916,0-4.4836   C52.0771,25.7792,50.57,25.7792,49.0704,25.7641z"/></g>
+              <svg width="40px" height="30px" viewBox="0 0 50 50"  style="margin-top: -17px; margin-left: -20px;">
+                <g class="icons__svg-color">
+                  <path d="M19.6671,25.7867c-0.0075,1.7935,0,3.5869,0.0076,5.3803c3.0067,0.098,6.0208,0.0527,9.0275,0.098   c-1.3262,6.6689-10.3989,8.8315-15.199,4.4761C8.5674,31.9206,8.801,23.5412,13.9327,19.992   c3.5869-2.8635,8.6884-2.1552,12.2752,0.324c1.4092-1.3036,2.7278-2.6977,4.0013-4.1445   c-2.984-2.3812-6.6462-4.0767-10.5421-3.8958c-8.1307-0.2713-15.6059,6.8497-15.7415,14.9805   c-0.52,6.6462,3.8506,13.1644,10.0222,15.5155c6.1489,2.3661,14.031,0.7535,17.957-4.77c2.5922-3.4889,3.1498-7.98,2.8484-12.1999   C29.7194,25.7641,24.6933,25.7716,19.6671,25.7867z"/>
+                  <path d="M49.0704,25.7641c-0.0151-1.4996-0.0226-3.0067-0.0301-4.5062c-1.4996,0-2.9916,0-4.4836,0   c-0.0151,1.4996-0.0301,2.9991-0.0377,4.5062c-1.5071,0.0075-3.0067,0.0151-4.5062,0.0302c0,1.4995,0,2.9915,0,4.4836   c1.4995,0.0151,3.0066,0.0302,4.5062,0.0452c0.0151,1.4996,0.0151,2.9991,0.0302,4.4987c1.4996,0,2.9916,0,4.4911,0   c0.0075-1.4996,0.015-2.9991,0.0301-4.5062c1.5071-0.0151,3.0067-0.0226,4.5062-0.0377c0-1.4921,0-2.9916,0-4.4836   C52.0771,25.7792,50.57,25.7792,49.0704,25.7641z"/>
+                </g>
               </svg>
             </a>
             <a class="links  social-icons__link" href="#">

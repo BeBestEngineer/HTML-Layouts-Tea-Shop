@@ -1,23 +1,32 @@
 .single-post {
-  .teashop-button {
-    .mixin_bg_color( 4 );
-    border-color: @color-2-layout;
-
-    &:hover, &:focus {
-      .mixin_color( 4 );
-      .mixin_bg_color( 1 );
-      border-color: @color-4-layout;
-    }
-  }
-
+  /*Position ( begin )*/
   &__image-wrapper {
     height: 430px;
   }
-
   &__image-wrapper img {
     max-height: inherit;
+    margin-bottom: 45px;
   }
-
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__title-2 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  &__text {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: justify;
+  }
+  &__label {
+    padding: 5px 10px;
+  }
+  .tags {
+    padding-top: 20px;
+  }
+  /*Position ( end )*/
+  /*Fonts ( begin )*/
   &__title {
     .mixin_custom-font( @font-family-3-bold-typeface; 24; );
   }
@@ -25,36 +34,20 @@
     .mixin_custom-font( @font-family-3-bold-typeface; 20; );
   }
   &__text {
-    .mixin_custom-font( @line-height: 25; );
-  }
-  &__date {
-    .mixin_color( 1 );
-  }
+    .mixin_custom-font( @line-height: 25; );  }
+
   &__label {
     .mixin_custom-font( @font-family-3-semi-bold-typeface; 13; );
-    padding: 5px 10px;
-    .mixin_bg_color( 1 );
   }
+  /*Fonts ( end )*/
+  /*Colors ( begin )*/
+  .btn {
+    .mixin_contrast-colors-buttons( @color-7-layout; transparent; @color-4-layout; @color-theme-layout; );
+  }
+  &__label {
+    .mixin_contrast-colors( @color-4-layout; @color-theme-layout; );
+  }
+  /*Colors ( end )*/
 }
 
 
-.comments {
-  &__section-title {
-    .mixin_custom-font( @font-family-3-bold-typeface; 18; );
-  }
-  &__image-wrapper {
-    width: 100px;
-    height: 100px;
-  }
-  &__autor-name {
-    .mixin_custom-font( @font-family-3-semi-bold-typeface; 15; );
-  }
-  &__date {
-    .mixin_color( 1 );
-  }
-  &__text {
-    .mixin_custom-font( @line-height: 25; );
-  }
-
-
-}

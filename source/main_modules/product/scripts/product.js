@@ -24,9 +24,9 @@ $("#product__carousel-navigation-next-product").click(function(){
 
 
 /*Product page scripts (b)*/
-	var product_quantity_button_more = document.querySelector(".product__quantity-more");
-	var product_quantity_button_less = document.querySelector(".product__quantity-less");
-	var product_quantity_input  		 = document.querySelector(".product__quantity-value");
+	var product_quantity_button_more = document.querySelector("#product__quantity-more");
+	var product_quantity_button_less = document.querySelector("#product__quantity-less");
+	var product_quantity_input  		 = document.querySelector("#product__quantity-value");
 
 if ( product_quantity_input && product_quantity_button_more && product_quantity_button_less ) {
 	var product_quantity_value;

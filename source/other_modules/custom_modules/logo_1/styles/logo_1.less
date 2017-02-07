@@ -1,31 +1,44 @@
 
 
 .logo-link {
+  /*Position ( begin )*/
   position: absolute;
 
   &__title-fitst-letter {
     position: absolute;
     top: -40px;
-
-    .mixin_custom-font( @font-family-3-extra-bold-typeface; 100 );
   }
-
   &__title-last-letters {
     position: absolute;
     left: 44px;
     width: 160px;
-
-    .mixin_custom-font( @font-family-3-extra-bold-typeface; 40 );
   }
-
   &__sub-title {
     position: absolute;
     left:  46px;
     top:   53px;
     width: 160px;
-
+  }
+  /*Position ( end )*/
+  /*Fonts ( begin )*/
+  &__title-fitst-letter {
+    .mixin_custom-font( @font-family-3-extra-bold-typeface; 100 );
+  }
+  &__title-last-letters {
+    .mixin_custom-font( @font-family-3-extra-bold-typeface; 40 );
+  }
+  &__sub-title {
     .mixin_custom-font( @font-family-3-extra-bold-typeface; 15 );
   }
-
+  /*Fonts ( end )*/
+  /*Colors ( begin )*/
+  &__title-fitst-letter {
+    color: @color-theme-layout;
+  }
+  &__title-last-letters {
+    .logo-link__color-letters {
+      color: @color-theme-layout;
+    }
+  }
+  /*Colors ( end )*/
 }
-

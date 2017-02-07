@@ -1,0 +1,32 @@
+.banner-2 {
+/*Position ( begin )*/
+  padding: 30px;
+  &__image-wrapper {
+    height: 120px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  &__image-wrapper .image {
+    max-width: inherit;
+  }
+  &__image-wrapper {
+    margin-top: 30px;
+  }
+  &__quote {
+    position: relative;
+    top: 4px;
+  }
+/*Position ( end )*/
+/*Fonts ( begin )*/
+  &__autor {
+    .mixin_custom-font( @font-family-3-semi-bold-typeface; 15; uppercase; );
+  }
+  &__desc {
+    .mixin_custom-font( @line-height: 25; );
+  }
+/*Fonts ( end )*/
+/*Colors ( begin )*/
+  .mixin_contrast-colors( @color-4-layout; @color-banner-2; );
+/*Colors ( end )*/
+
+}

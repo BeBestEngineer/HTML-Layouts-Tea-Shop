@@ -1,56 +1,53 @@
-.pagination li:nth-child(1) {
-  visibility: hidden;
-}
-.products-list__options {
-  padding-top: 20px;
-}
-.products-list__image-wrapper {
-  height: 270px;
-}
-.products-list__image-wrapper img{
-  max-width: inherit;
-}
 
-.banner-1 {
-  padding: 50px 30px;
-}
-
-.testimonial-banner-1,
-.banner-2 {
-  .mixin_bg_color( 3 );
-  .mixin_color( 4 );
-}
-.testimonial-banner-1__image-wrapper {
-  width: 94px;;
-  height: 94px;
-  margin: auto;
-}
-.testimonial-banner-1__image-wrapper img {
-  max-width: inherit;
+.products-list {
+  /*Colors ( begin )*/
+  .btn {
+    .mixin_contrast-colors-buttons( @color-7-layout; transparent; @color-4-layout; @color-theme-layout; );
+  }
+  /*Colors ( end )*/
 }
 
 
 .products-list {
-
-  .teashop-button {
-    .mixin_bg_color( 4 );
-    border-color: @color-2-layout;
-
-    &:hover, &:focus {
-      .mixin_color( 4 );
-      .mixin_bg_color( 1 );
-      border-color: @color-4-layout;
-    }
+  /*Position ( begin )*/
+  .pagination li:nth-child(1) {
+    visibility: hidden;
   }
-
+  &__image-wrapper {
+    height: 270px;
+  }
+  &__image-wrapper .image {
+    max-width: inherit;
+  }
+  &__title {
+    margin-bottom: 15px;
+  }
+  .pagination {
+    margin: 0px;
+  }
+  &__options .col-table,
+  &__pagination-bottom .col-table,
+  &__pagination-top .col-table {
+    height: 90px;
+  }
+  &__item {
+    margin-bottom: 30px;
+  }
+  .product__desc {
+    padding-top: 0;
+  }
+  /*Position ( end )*/
+  /*Fonts ( begin )*/
   &__title {
     .mixin_custom-font( @font-family-3-semi-bold-typeface; 18; );
   }
+  /*Fonts ( end )*/
+  /*Colors ( begin )*/
 
-  &__desc {
-    .mixin_custom-font( @line-height: 25; );
-  }
+  /*Colors ( end )*/
 }
+
+
 
 
 

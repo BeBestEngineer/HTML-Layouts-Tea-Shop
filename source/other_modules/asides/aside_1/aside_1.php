@@ -1,8 +1,9 @@
 <aside class="aside-1">
 
-  <form class="" action="" id="">
+  <section class="aside-1__section">
+    <form class="form-accordion" action="" id="">
 
-    <fieldset class="">
+      <fieldset class="form-accordion__fieldset">
       <legend class="aside-1__filter-title">Sort of tea</legend>
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default  aside-1__ac-panel">
@@ -20,10 +21,10 @@
                 <li class="aside-1__item-of-sort">
                 <div class="row">
                   <div class="col-xs-9">
-                    <label class="schon-label clearfix">
-                      <input class="schon-input" type="checkbox">
+                    <label class="custom-checkbox__label clearfix">
+                      <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                       Anise (Star Anise)
                     </label>
@@ -36,10 +37,10 @@
                 <li class="aside-1__item-of-sort">
                   <div class="row">
                     <div class="col-xs-9">
-                      <label class="schon-label clearfix">
-                        <input class="schon-input" type="checkbox">
+                      <label class="custom-checkbox__label clearfix">
+                        <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                         Anise (Star Anise)
                       </label>
@@ -52,10 +53,10 @@
                 <li class="aside-1__item-of-sort">
                   <div class="row">
                     <div class="col-xs-9">
-                      <label class="schon-label clearfix">
-                        <input class="schon-input" type="checkbox">
+                      <label class="custom-checkbox__label clearfix">
+                        <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                         Boneset
                       </label>
@@ -68,10 +69,10 @@
                 <li class="aside-1__item-of-sort">
                   <div class="row">
                     <div class="col-xs-9">
-                      <label class="schon-label clearfix">
-                        <input class="schon-input" type="checkbox">
+                      <label class="custom-checkbox__label clearfix">
+                        <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                         Calendula
                       </label>
@@ -84,10 +85,10 @@
                 <li class="aside-1__item-of-sort">
                   <div class="row">
                     <div class="col-xs-9">
-                      <label class="schon-label clearfix">
-                        <input class="schon-input" type="checkbox">
+                      <label class="custom-checkbox__label clearfix">
+                        <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                         Cascara Sagrada
                       </label>
@@ -117,10 +118,10 @@
                 <li class="aside-1__item-of-sort">
                   <div class="row">
                     <div class="col-xs-9">
-                      <label class="schon-label clearfix">
-                        <input class="schon-input" type="checkbox">
+                      <label class="custom-checkbox__label clearfix">
+                        <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                         Sencha
                       </label>
@@ -133,10 +134,10 @@
                 <li class="aside-1__item-of-sort">
                   <div class="row">
                     <div class="col-xs-9">
-                      <label class="schon-label clearfix">
-                        <input class="schon-input" type="checkbox">
+                      <label class="custom-checkbox__label clearfix">
+                        <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                         Fukamushi Sencha
                       </label>
@@ -149,10 +150,10 @@
                 <li class="aside-1__item-of-sort">
                   <div class="row">
                     <div class="col-xs-9">
-                      <label class="schon-label clearfix">
-                        <input class="schon-input" type="checkbox">
+                      <label class="custom-checkbox__label clearfix">
+                        <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                         Gyokuro
                       </label>
@@ -165,10 +166,10 @@
                 <li class="aside-1__item-of-sort">
                   <div class="row">
                     <div class="col-xs-9">
-                      <label class="schon-label clearfix">
-                        <input class="schon-input" type="checkbox">
+                      <label class="custom-checkbox__label clearfix">
+                        <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                         Hojicha
                       </label>
@@ -181,10 +182,10 @@
                 <li class="aside-1__item-of-sort">
                   <div class="row">
                     <div class="col-xs-9">
-                      <label class="schon-label clearfix">
-                        <input class="schon-input" type="checkbox">
+                      <label class="custom-checkbox__label clearfix">
+                        <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                         Genmaicha
                       </label>
@@ -213,10 +214,10 @@
               <li class="aside-1__item-of-sort">
                 <div class="row">
                   <div class="col-xs-9">
-                    <label class="schon-label clearfix">
-                      <input class="schon-input" type="checkbox">
+                    <label class="custom-checkbox__label clearfix">
+                      <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                       Silver Needle
                     </label>
@@ -229,10 +230,10 @@
               <li class="aside-1__item-of-sort">
                 <div class="row">
                   <div class="col-xs-9">
-                    <label class="schon-label clearfix">
-                      <input class="schon-input" type="checkbox">
+                    <label class="custom-checkbox__label clearfix">
+                      <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                       White Peony
                     </label>
@@ -245,10 +246,10 @@
               <li class="aside-1__item-of-sort">
                 <div class="row">
                   <div class="col-xs-9">
-                    <label class="schon-label clearfix">
-                      <input class="schon-input" type="checkbox">
+                    <label class="custom-checkbox__label clearfix">
+                      <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                       Tribute Eyebrow
                     </label>
@@ -261,10 +262,10 @@
               <li class="aside-1__item-of-sort">
                 <div class="row">
                   <div class="col-xs-9">
-                    <label class="schon-label clearfix">
-                      <input class="schon-input" type="checkbox">
+                    <label class="custom-checkbox__label clearfix">
+                      <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                       Long Life Eyebrow
                     </label>
@@ -277,10 +278,10 @@
               <li class="aside-1__item-of-sort">
                 <div class="row">
                   <div class="col-xs-9">
-                    <label class="schon-label clearfix">
-                      <input class="schon-input" type="checkbox">
+                    <label class="custom-checkbox__label clearfix">
+                      <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                       Short Life Eyebrow
                     </label>
@@ -309,10 +310,10 @@
                 <li class="aside-1__item-of-sort">
                   <div class="row">
                     <div class="col-xs-9">
-                      <label class="schon-label clearfix">
-                        <input class="schon-input" type="checkbox">
+                      <label class="custom-checkbox__label clearfix">
+                        <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                         Keemun Black Tea
                       </label>
@@ -325,10 +326,10 @@
                 <li class="aside-1__item-of-sort">
                   <div class="row">
                     <div class="col-xs-9">
-                      <label class="schon-label clearfix">
-                        <input class="schon-input" type="checkbox">
+                      <label class="custom-checkbox__label clearfix">
+                        <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                         Assam Black Tea
                       </label>
@@ -341,10 +342,10 @@
                 <li class="aside-1__item-of-sort">
                   <div class="row">
                     <div class="col-xs-9">
-                      <label class="schon-label clearfix">
-                        <input class="schon-input" type="checkbox">
+                      <label class="custom-checkbox__label clearfix">
+                        <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                         Yunnan Black Tea
                       </label>
@@ -357,10 +358,10 @@
                 <li class="aside-1__item-of-sort">
                   <div class="row">
                     <div class="col-xs-9">
-                      <label class="schon-label clearfix">
-                        <input class="schon-input" type="checkbox">
+                      <label class="custom-checkbox__label clearfix">
+                        <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                         Ceylon Black Tea
                       </label>
@@ -373,10 +374,10 @@
                 <li class="aside-1__item-of-sort">
                   <div class="row">
                     <div class="col-xs-9">
-                      <label class="schon-label clearfix">
-                        <input class="schon-input" type="checkbox">
+                      <label class="custom-checkbox__label clearfix">
+                        <input class="custom-checkbox__input" type="checkbox">
                         <span class="cr">
-                          <i class="cr-icon glyphicon-ok"></i>
+                          <i class="cr-icon custom-checkbox__icon"></i>
                         </span>
                         Earl Grey Black Tea
                       </label>
@@ -394,38 +395,40 @@
       </div>
     </fieldset>
 
-    <fieldset class="">
-      <div id="keypress"></div>
+      <fieldset class="form-accordion__fieldset">
       <legend class="aside-1__filter-title">Price</legend>
-      <input id="input-with-keypress-0" type="text">
-      <input id="input-with-keypress-1" type="text">
-
-      <button class="teashop-button" type="submit">Filter</button>
+      <div class="aside-1__price-regulator  price-regulator">
+      <div id="keypress"></div>
+      <div class="row">
+        <div class="col-xs-7  col-table">
+          <div class="col-table__cell--allign-middle">
+            <input class="price-regulator__input  allign-middle" id="input-with-keypress-0" type="text">
+              <span class="price-regulator__inputs-separator">-</span>
+            <input class="price-regulator__input  allign-middle" id="input-with-keypress-1" type="text">
+          </div>    
+        </div>
+        <div class="col-xs-5  ">
+          <div class="col-table  pull-right">
+            <div class="col-table__cell--allign-middle">
+              <button class="btn  btn-default  theme-buttons__buttons--default allign-middle" type="submit">Filter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </fieldset>
-
-  </form>
-
-
-  <section class="testimonial-banner-1  text-center">
-    <p class="  open-sans-regular-15-lh-25  text-justify">
-      There are many variations of ags of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected huour, or randomised words which don't look even slightly believable.
-    </p>
-    <div class="image-wrapper  testimonial-banner-1__image-wrapper">
-      <img class="image" src="images/testimonials/testimonial-1.png" alt="" >
-    </div>
-    <span class="open-sans-bold-15-up">
-      Monti Ipsum
-    </span>
+    </form>
   </section>
 
-  <section class="banner-2  text-center">
-    <b class="open-sans-regular-35-cap">Special offer</b> <br>
-    <p class="open-sans-regular-28-low-ls-4">
-      <span class="open-sans-extra-bold-48  color-1">30% off</span> <br>
-      only for registered member !
-    </p>
-    <a class="links" href="#">Shop now</a>
 
+  <section class="aside-1__section  banner-2  text-center">
+    <?php require 'other_modules/custom_modules/banners/banner_2/banner_2.php'; ?>
   </section>
+
+
+  <section class="aside-1__section  banner-3  text-center">
+    <?php require 'other_modules/custom_modules/banners/banner_3/banner_3.php'; ?>
+  </section>
+
 
 </aside>

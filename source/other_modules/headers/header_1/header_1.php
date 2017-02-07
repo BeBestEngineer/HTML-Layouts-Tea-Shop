@@ -70,7 +70,7 @@
         <ul class="nav navbar-nav navbar-right">
 
           <li id="fat-menu" class="dropdown">
-            <a href="#" class="links  top-nav__button  dropdown-toggle" id="drop3" data-toggle="dropdown" role="button" aria-haspopup="true"
+            <a href="#" class="links  top-nav__button  dropdown-toggle  theme-buttons__links--dropdown" id="drop3" data-toggle="dropdown" role="button" aria-haspopup="true"
                aria-expanded="false">
               <svg class="allign-middle" width="20" height="10" viewBox="0 0 60 30">
                 <g class="icons__svg-color">
@@ -119,7 +119,7 @@
           </li>
 
           <li id="fat-menu" class="dropdown">
-            <a href="#" class="links  top-nav__button  dropdown-toggle" id="drop3" data-toggle="dropdown" role="button" aria-haspopup="true"
+            <a href="#" class="links  top-nav__button  dropdown-toggle  theme-buttons__links--dropdown" id="drop3" data-toggle="dropdown" role="button" aria-haspopup="true"
                aria-expanded="false">
               <span class="allign-middle">&dollar; USD</span>
               <svg  class="allign-middle" width="20" height="20" viewBox="0 0 1792 1792">
@@ -157,7 +157,7 @@
                   </span>
               <b class="allign-middle  circle-icons__text">Free home Delivery</b>
             </div>
-            <p class="open-sans-regular-15-lh-25  color-3  text-justify">
+            <p class="header-1__desc  text-justify">
               TeaShop is the best way to find Tea restaurants that deliver to you. Whether looking for breakfast, lunch, dinner or late night snack, Yelp TeaShop has it all. Read restaurants reviews, browse restaurants menus and easily order online from any restaurant with no extra charge!!!
             </p>
           </div>
@@ -166,7 +166,7 @@
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search for...">
               <span class="input-group-btn">
-                <button class="btn  btn-default  teashop-button" type="submit">
+                <button class="btn  btn-default  theme-buttons__buttons--input-group" type="submit">
                   <svg width="15" height="15" viewBox="0 0 1792 1792">
                     <path class="icons__svg-color" d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"></path>
                   </svg>
@@ -187,7 +187,7 @@
 
             <li><a class="links" href="?page=home">Home</a></li>
             <li class="dropdown">
-              <a href="#" class="links  dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <a href="#" class="links  dropdown-toggle  theme-buttons__links--dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 <span class="allign-middle">Products lists</span>
                 <svg  class="allign-middle" width="20" height="20" viewBox="0 0 1792 1792" >
                   <path class="icons__svg-color" d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"></path>
@@ -216,7 +216,7 @@
           <ul class="nav  navbar-nav  navbar-right">
             <!--Shopping basket-->
             <li class="dropdown">
-              <a href="#" class="links  shopping-basket__button  dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              <a href="#" class="links  shopping-basket__button  dropdown-toggle  theme-buttons__links--dropdown" data-toggle="dropdown" role="button" aria-haspopup="true"
                  aria-expanded="false">
                 <svg width="20" height="20" viewBox="0 0 1792 1792" >
                   <path class="icons__svg-color" d="M1792 768q53 0 90.5 37.5t37.5 90.5-37.5 90.5-90.5 37.5h-15l-115 662q-8 46-44 76t-82 30h-1280q-46 0-82-30t-44-76l-115-662h-15q-53 0-90.5-37.5t-37.5-90.5 37.5-90.5 90.5-37.5h1792zm-1435 800q26-2 43.5-22.5t15.5-46.5l-32-416q-2-26-22.5-43.5t-46.5-15.5-43.5 22.5-15.5 46.5l32 416q2 25 20.5 42t43.5 17h5zm411-64v-416q0-26-19-45t-45-19-45 19-19 45v416q0 26 19 45t45 19 45-19 19-45zm384 0v-416q0-26-19-45t-45-19-45 19-19 45v416q0 26 19 45t45 19 45-19 19-45zm352 5l32-416q2-26-15.5-46.5t-43.5-22.5-46.5 15.5-22.5 43.5l-32 416q-2 26 15.5 46.5t43.5 22.5h5q25 0 43.5-17t20.5-42zm-1156-1217l-93 412h-132l101-441q19-88 89-143.5t160-55.5h167q0-26 19-45t45-19h384q26 0 45 19t19 45h167q90 0 160 55.5t89 143.5l101 441h-132l-93-412q-11-44-45.5-72t-79.5-28h-167q0 26-19 45t-45 19h-384q-26 0-45-19t-19-45h-167q-45 0-79.5 28t-45.5 72z" fill="#fff"/>
@@ -316,10 +316,10 @@
 
                   <div class="row">
                     <div class="col-xs-6  ">
-                      <a class="links  teashop-button " href="?page=shopping-cart">View cart</a>
+                      <a class="links  btn  btn-default  theme-buttons__buttons--default" href="?page=shopping-cart">View cart</a>
                     </div>
                     <div class="col-xs-6  text-right  ">
-                      <a class="links  teashop-button " href="#">Checkout</a>
+                      <a class="links  btn  btn-default  theme-buttons__buttons--default" href="#">Checkout</a>
                     </div>
                   </div>
 

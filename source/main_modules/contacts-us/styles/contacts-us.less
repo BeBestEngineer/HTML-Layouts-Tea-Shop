@@ -1,19 +1,24 @@
 .contact-us {
+  /*Position ( begin )*/
+  &__head-column {
+    display: block;
+    padding: 15px 0px;
+  }
+  /*Position ( end )*/
+  /*Fonts ( begin )*/
   &__head-column {
     .mixin_custom-font( @font-family-3-semi-bold-typeface; 15; );
   }
   &__form-title {
     .mixin_custom-font( @font-family-3-bold-typeface; 18; );
   }
-
-  .teashop-button {
-    .mixin_bg_color( 4 );
-    border-color: @color-2-layout;
-
-    &:hover, &:focus {
-      .mixin_color( 4 );
-      .mixin_bg_color( 1 );
-      border-color: @color-4-layout;
-    }
+  &__desc-column {
+    .mixin_custom-font( @line-height: 25; );
   }
+  /*Fonts ( end )*/
+  /*Colors ( begin )*/
+  .btn {
+    .mixin_contrast-colors-buttons( @color-7-layout; transparent; @color-4-layout; @color-theme-layout; );
+  }
+  /*Colors ( end )*/
 }

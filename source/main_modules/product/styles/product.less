@@ -1,132 +1,128 @@
-.product__table > tbody > tr > td {
-  border-top: none;
-}
-
-.product__image-wrapper {
-  height: 365px;
-}
-
-.product__modal-content {
-  background-color: transparent;
-  box-shadow: none;
-  border: none;
-}
-.product__modal-dialog {
-  height: 80vh;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-.product__image-wrapper img {
-  max-height: inherit;
-  width: 100%;
-}
-.product__carousel-image-wrapper img {
-  max-height: inherit;
-}
-
-.product__carousel-image-wrapper {
-  height: 90px;
-}
-
-.product__caroisel-item {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.product__carousel {
-  padding: 0px 15px;
-}
-
-.product__zoom-button {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  z-index: 10;
-
-  display: block;
-  width: 40px;
-  height: 40px;
-  border: none;
-
-  transform: rotate(45deg);
-  .mixin_bg_color( 1 );
-
-  transition: transform @transition-duration-link;
-}
-.product__zoom-button:hover {
-  transform: rotate(45deg) scale( 1.2, 1.2 );
-  cursor: pointer;
-}
-
-.product__zoom-icon {
-  transform: rotate(-45deg);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-
 .product {
-  &__detail-title {
+  /*Position ( begin )*/
+  &__wrapper {
+    margin-bottom: 30px;
+  }
+  &__image-wrapper {
+    height: 365px;
+    margin-bottom: 30px;
+  }
+  &__modal-content {
+    box-shadow: none;
+    border: none;
+  }
+  &__modal-dialog {
+    height: 80vh;
+
+    .mixin_absolute_alignment ();
+  }
+  &__image-wrapper img {
+    max-height: inherit;
+    width: 100%;
+  }
+  &__carousel-image-wrapper .image {
+    max-height: inherit;
+  }
+  &__carousel-image-wrapper {
+    height: @product-carousel-height;
+  }
+  &__carousel-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &__carousel {
+    padding: 0px @product-carousel-button-width;
+  }
+  &__product-title {
+    margin-bottom: 30px;
+  }
+  &__short-desc-title {
+    margin-bottom: 15px;
+  }
+  &__reviews {
+    padding-top: 0;
+  }
+  &__properties {
+    margin-bottom: 15px;
+  }
+  .widget-quantity-goods {
+    margin-bottom: 15px;
+  }
+  .widget-quantity-goods__input {
+    width: 60px;
+  }
+  /*Carousel navigation ( begin )*/
+  &__carousel--prev,
+  &__carousel--next {
+    position: absolute;
+
+    .mixin_product-carousel-button-position();
+
+    width:  @product-carousel-button-width;
+    height: @product-carousel-button-height;
+  }
+  &__carousel--prev {
+    left: 0;
+  }
+  &__carousel--next {
+    right: 0;
+  }
+  /*Carousel navigation ( end )*/
+  &__zoom-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  &__tab-content {
+    min-height: 500px;
+    padding: 15px 0px;
+    text-align: justify;
+  }
+  /*Position ( end )*/
+  /*Fonts ( begin )*/
+  &__product-title {
     .mixin_custom-font( @font-family-3-bold-typeface; 18; );
   }
-
-  .product-price__with-discont,
-  .product-price__ex-tax {
-    .mixin_color( 1 );
-  }
-
-  .product-price__ex-tax {
+  &-price__ex-tax {
     .mixin_custom-font( @font-family-3-semi-bold-typeface; 15; );
   }
-
-  &__reviews-links a,
-  &__reviews-links {
+  .links {
     .mixin_custom-font( @font-family-3-bold-typeface; );
-    .mixin_color( 3 );
   }
-
-  &__short-desc {
-    .mixin_custom-font( @line-height: 25; );
-  }
-
   &__short-desc-title {
     .mixin_custom-font( @font-family-3-bold-typeface; 15; );
   }
-
-  .teashop-button {
-    .mixin_bg_color( 4 );
-    border-color: @color-2-layout;
-
-    &:hover, &:focus {
-      .mixin_color( 4 );
-      .mixin_bg_color( 1 );
-      border-color: @color-4-layout;
-    }
-  }
-
   &__info-tab-title {
     .mixin_custom-font( @font-family-3-bold-typeface; 15; );
-    .mixin_color( 7 );
   }
-
-  .active &__info-tab-title {
-    .mixin_color( 1 );
-  }
-
   &__info-tab-desc {
     .mixin_custom-font( @line-height: 25; );
   }
 
-  &__tab-content {
-    min-height: 500px;
+  /*Fonts ( end )*/
+  /*Colors ( begin )*/
+  .btn {
+    .mixin_contrast-colors-buttons( @color-7-layout; transparent; @color-4-layout; @color-theme-layout; );
   }
+  &__modal-content {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+  }
+  .active .links&__info-tab-title,
+  .active .links&__info-tab-title:hover,
+  .active .links&__info-tab-title:focus {
+    .mixin_contrast-colors( @color-theme-layout; transparent; );
+  }
+  /*Colors ( end )*/
 }
+
+.product__carousel  .carousel-navigation__icon {
+  margin-left: -5px;
+  margin-top:  -5px;
+}
+
