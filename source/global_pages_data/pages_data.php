@@ -1,5 +1,7 @@
 <?php
 
+require_once 'global_pages_data/page_data/page_data.php';
+
 require_once 'global_pages_data/blog_post_data/blog_post_data.php';
 
 require_once 'global_pages_data/carousel_1_data/carousel_1_data.php';
@@ -13,5 +15,7 @@ require_once 'global_pages_data/banner_1_data/banner_1_data.php';
 require_once 'global_pages_data/breadcrumbs_1_data/breadcrumbs_1_data.php';
 
 require_once 'global_pages_data/carousel_6_data/carousel_6_data.php';
+
+require_once 'global_pages_data/list_with_title_1_data/list_with_title_1_data.php';
 
 ?>

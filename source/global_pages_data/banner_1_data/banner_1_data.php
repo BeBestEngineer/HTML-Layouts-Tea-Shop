@@ -2,7 +2,7 @@
 
 class Banner_1_data {
     public $banner_1_data;
-    public $path = 'other_modules/custom_modules/banner_1/banner_1.php';
+    public $path = 'other_modules/custom_modules/banners/banner_1/banner_1.php';
 
     public function Get_data( $page, $position ) {
         switch ( $page ) {

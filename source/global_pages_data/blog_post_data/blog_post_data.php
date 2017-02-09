@@ -36,7 +36,7 @@ class Blog_post_data {
                     case 'recent-posts':
                         $this -> blog_post_data = array (
                             'path' => $this -> path,
-                            'class__image-wrapper' => 'blog__post-image-wrapper',
+                            'class__image-wrapper' => 'post__image-wrapper',
                             'img-src' => $this -> img_src,
                             'title-of-block' => $this -> title_of_block,
                             'desc' => array(
