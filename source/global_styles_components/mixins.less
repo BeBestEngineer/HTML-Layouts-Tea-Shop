@@ -2,29 +2,29 @@
 
 /*Colors and backgrounds for them (b)*/
 /*Dark background */
-.mixin_light-text-over-dark-background( @color ) {
-  & when ( lightness( @color ) >= 50%  ) {
-    background-color: @color-2-layout;
-  }
-  & when ( lightness( @color ) < 50%  ) {
-    background-color: @color-4-layout;
-  }
+.mixin_contrast-colors( @text-color: @color-7-layout; @background-color: @color-4-layout; ) {
   & {
-    color: @color;
+    color: @text-color;
+    background-color: @background-color;
+  }
+  & .icons__svg-color {
+    fill: @text-color;
   }
 }
 
-/*Buttons background*/
-.mixin_button-background ( @color ) {
-  & when ( lightness( @color ) >= 50%  ) {
-    background-color: @color-2-layout;
-  }
-  & when ( lightness( @color ) < 50%  ) {
-    background-color: @color-4-layout;
-  }
-  & {
-    & svg {
-      fill: @color;
+
+.mixin_contrast-colors-buttons( @text-color: @color-7-layout; @background-color: @color-4-layout; @color-hover-focus: @color-4-layout; @background-color-hover-focus: @color-theme-layout; ) {
+  border-color:     @text-color;
+  color:            @text-color;
+  background-color: @background-color;
+
+  &:hover, &:focus {
+    border-color:     @color-hover-focus;
+    color:            @color-hover-focus;
+    background-color: @background-color-hover-focus;
+
+    & .icons__svg-color {
+      fill: @color-hover-focus;
     }
   }
 }
@@ -45,6 +45,20 @@
   .mixin_absolute_stretching ();
 
   margin: auto;
+}
+
+.mixin_image-responsive( @vector:height; ) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @{vector}: 100%;
+
+  & when ( @vector = width ) {
+    height: auto;
+  }
+  & when ( @vector = height ) {
+    width: auto;
+  }
 }
 
 
@@ -94,10 +108,10 @@
 
 .mixin_svg-text-color( @color ) {
   color: @color;
-  & path {
+  & .icons__svg-color {
     fill: @color;
   }
-  & a {
+  & .links {
     color: @color;
   }
 }
@@ -117,8 +131,37 @@
 }
 
 
-.mixin_form-height( @font-height; @padding-top-bottom; ) {
+.mixin_input-group-height( @font-height; @padding-top-bottom; ) {
   @height:     @font-height + @padding-top-bottom * 2;
   height:      unit( @height, @measures-of-font );
-  line-height: unit( @height, @measures-of-font );
+}
+
+
+.mixin_text-fields-colors( @background-color: transparent; @placeholder-color: @color-1-layout; @text-color: @color-4-layout; ) {
+  input, textarea {
+    background-color: @background-color;
+    color: @text-color;
+  }
+  .form-control::-moz-placeholder {
+    color: @placeholder-color;
+  }
+}
+
+.mixin_theme-border( @color ) {
+  border: 1px solid @color;
+}
+
+.mixin_carousel-button-position() {
+  margin-top: -@carousel-button-height / 2;
+  top:        -@section-desc-margin-bottom / 2;
+}
+
+.mixin_product-carousel-button-position() {
+  margin-top: -@product-carousel-button-height / 2;
+  top:         @product-carousel-height / 2;
+}
+
+
+.mixin_price-regulator-input-width () {
+
 }

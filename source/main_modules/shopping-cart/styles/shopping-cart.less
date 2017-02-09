@@ -4,31 +4,34 @@
     margin: 15px 0px;
     padding: 15px 0px;
   }
+  &__head-col--total-price,
+  &__head-col--action,
+  &__col--total-price,
+  &__col--action {
+    text-align: right;
+  }
   &__item {
     margin-bottom: 15px;
     padding-bottom: 15px;
   }
   &__image-wrapper {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    width: 120px;
-  }
-  &__col-product-photo {
-    position: relative;
     height: 120px;
+    width: 100%;
   }
-  .product__quantity-value {
-    width: 60px;
+  &__image {
+    max-width: inherit;
+    right: auto;
   }
   .widget-quantity-goods__input {
-    width: 100%;
     height: 30px;
+    min-width: 60px;
+    width: 100%;
+    text-align: left;
   }
   /*Position ( end )*/
   /*Fonts ( begin )*/
-  &__head {
+  &__head,
+  &__head--mobile {
     .mixin_custom-font( @text-transform: uppercase; );
   }
   .forms-title {
@@ -55,5 +58,34 @@
     border-bottom: 1px solid @color-5-layout;
   }
   /*Decoration ( end ) */
+
+  @media ( min-width: 768px ) and ( max-width: 991px ) {
+    &__form-wrapper {
+      margin-bottom: 30px;
+    }
+    .widget-quantity-goods__input {
+      text-align: left;
+    }
+  }
+
+  @media ( max-width: 768px ) {
+    &__head-col--total-price,
+    &__head-col--action {
+      text-align: left;
+    }
+    &__head--mobile {
+      margin-bottom: 5px;
+    }
+    &__col {
+      margin-bottom: 15px;
+    }
+    &__col--total-price,
+    &__col--action {
+      text-align: left;
+    }
+    &__form-wrapper {
+      margin-bottom: 30px;
+    }
+  }
 }
 

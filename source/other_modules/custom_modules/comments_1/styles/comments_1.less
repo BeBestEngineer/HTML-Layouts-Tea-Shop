@@ -19,8 +19,11 @@
   &__comment {
     margin-bottom: 30px;
   }
-  &__image-wrapper {
-    padding-right: 30px;
+  &__left {
+    padding-right: 15px;
+  }
+  &__body {
+    width: 100%;
   }
   /*Position ( end )*/
   /*Fonts ( begin )*/
@@ -39,5 +42,22 @@
     .mixin_contrast-colors( @color-theme-layout; transparent; );
   }
   /*Colors ( end )*/
+
+  @media ( max-width: 767px ) {
+    text-align: center;
+
+    &__left,
+    &__body {
+      display: table-row;
+    }
+    &__left {
+      padding-right: 0px;
+
+    }
+    &__image-wrapper {
+      margin: auto;
+      margin-bottom: 15px;
+    }
+  }
 
 }

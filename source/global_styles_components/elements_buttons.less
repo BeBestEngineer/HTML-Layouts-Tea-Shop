@@ -1,70 +1,46 @@
-/*Buttons (b)*/
-.teashop-button {
-  display: inline-block;
-  padding: 6px 12px;
-  border: 1px solid @color-4-layout;
-  border-radius: 4px;
-  background-color: transparent;
-  transition: background-color @transition-duration-link;
-
-  .mixin_custom-font(@font-family-3-bold-typeface; 15; uppercase );
-  .mixin_button-background( @color-4-layout );
-
-  &:hover {
-    background-color: @color-1-layout;
-    cursor: pointer;
-  }
 
 
-  &__add-to-cart {
-
-  }
-
-  &__shop-now {
-
-  }
-
-  &__more-less {
-
-  }
-
-  &__dropdown {
-    position: relative;
-
-    &-micro-img {
-      .mixin_max-stretching();
-      .mixin_absolute_alignment ();
-    }
-  }
-}
 
 
 .theme-buttons {
   &__buttons {
     &--default {
-
-    }
-    &--add-to-cart {
+    /* theme-buttons__buttons--default */
+      .mixin_custom-font(@font-family-3-bold-typeface; 13; uppercase; );
 
     }
     &--more-less {
+    /* theme-buttons__buttons--more-less */
     /*Модификаторы не используются без тех классов которые модифицируют*/
       /*Добавляемм или меняем отдельные свойства кнопки, цвета задаём через каскад .home .theme-buttons__buttons--more-less*/
+
+    }
+    &--input-group {
+    /* theme-buttons__buttons--input-group */
+      .mixin_input-group-height( @body--font-size; 10; );
     }
     &--dropdown {
+      /* theme-buttons__button--dropdown */
 
     }
   }
 
   &__links {
     &--default {
+    /* theme-buttons__links--default */
+      .mixin_custom-font(@font-family-3-bold-typeface; 13; uppercase; );
+    }
+    &--dropdown {
+      /* theme-buttons__links--dropdown */
 
     }
-    &--shop-now {
-
+    &--read-more {
+      padding: 10px;
     }
   }
 }
+
+
 
 /*
 Именование файлов, с использованием приставок и суффиксов

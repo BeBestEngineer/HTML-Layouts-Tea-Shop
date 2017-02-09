@@ -8,18 +8,18 @@
 
 
 <div class="container">
-  <section class="section">
+  <div class="section">
     <div class="row">
-      <div class="col-md-3  col-sm-6">
+      <div class="col-lg-3  col-md-5  col-sm-6">
         <?php require_once 'other_modules/asides/aside_blog/aside_blog.php'; ?>
       </div>
 
 
-      <div class="col-md-9  col-sm-6">
+      <div class="col-lg-9  col-md-7  col-sm-6">
         <main class="main-modules  single-post">
           <section class="section  single-post__desc">
             <div class="image-wrapper  single-post__image-wrapper" href="#">
-              <img class="image" src="images/blog/single-post/post-1.jpg" alt="">
+              <img class="image  single-post__image" src="images/blog/single-post/post-1.jpg" alt="">
             </div>
 
             <h1 class="single-post__title">Celebrate National Hot Tea Month This January</h1>
@@ -134,7 +134,7 @@
         </main>
       </div>
     </div>
-  </section>
+  </div>
 
 
   <section class="section  carousel  carousel-2">

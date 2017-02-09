@@ -49,6 +49,17 @@
     }
   }
 
+  @media ( min-width: 768px ) and ( max-width: 992px ) {
+    &__lists-wrapper {
+      text-align: center;
+    }
+  }
+
+  @media ( max-width: 992px ) {
+    .support {
+      margin-bottom: 30px;
+    }
+  }
 
   @media ( max-width: 767px ) {
     & .circle-icons__icon-wrapper {
@@ -83,6 +94,8 @@
     & .contact-form__button-wrapper {
       text-align: right;
     }
+
+
   }
 
 
@@ -118,6 +131,12 @@
   .support {
     &__phone {
       .mixin_custom-font(@font-family-3-bold-typeface; 60);
+    }
+  }
+
+  @media ( max-width: 992px ) {
+    .support__phone {
+      .mixin_custom-font(@font-family-3-bold-typeface; 30);
     }
   }
 }

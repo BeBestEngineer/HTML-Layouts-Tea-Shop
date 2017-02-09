@@ -1,0 +1,181 @@
+
+
+
+
+/*Links colors (begin)*/
+.links {
+  color: inherit;
+
+  &:hover, &:focus {
+    text-decoration: none;
+    color: @color-1-layout;
+    background-color: transparent;
+
+    .icons__svg-color {
+      fill: @color-1-layout;
+    }
+  }
+}
+/*Links colors (end)*/
+
+
+/*Icon colors (begin)*/
+.icons {
+  &__svg {
+
+  }
+  &__svg-color {
+    fill: @color-7-layout;
+  }
+  &__img {
+
+  }
+}
+/*Icon colors (end)*/
+
+
+/*Buttons colors( begin )*/
+.btn {
+  color: inherit;
+  background-color: transparent;
+
+  &:hover, &:focus {
+    color: inherit;
+    background-color: @color-1-layout;
+  }
+}
+
+.button {
+  color: inherit;
+  background-color: transparent;
+
+  &:hover, &:focus {
+    cursor: pointer;
+
+    .icons__svg-color {
+      fill: @color-theme-layout;
+    }
+  }
+}
+/*Buttons colors( end )*/
+
+
+.form-control {
+  background-color: transparent;
+}
+
+
+/*Bootstrap list-group colors (begin)*/
+.list-group-item.active {
+  .mixin_bg_color( 1 );
+  border-color: @color-1-layout;
+
+  &.active:hover, &.active:focus {
+    .mixin_bg_color( 4 );
+    border-color: @color-1-layout;
+  }
+}
+
+.list-group-item.active > .badge,
+.nav-pills > .active > .links > .badge {
+  .mixin_color( 1 );
+}
+/*Bootstrap list-group colors (end)*/
+
+
+/*Pagination ( begin )*/
+.pagination > li > a {
+  color: inherit;
+}
+/*Pagination ( end ) */
+
+
+/*Product blocks*/
+/*
+  - reviews links
+  - product prices
+*/
+.product {
+  &__reviews-links {
+    color: @color-3-layout;
+  }
+  &-price {
+    &__without-discont {
+      color: @color-5-layout;
+    }
+  }
+}
+
+
+/*Rating colors (begin)*/
+.rating {
+  &-3-stars .icons__svg:nth-child(-n+3) .icons__svg-color,
+  &-4-stars .icons__svg:nth-child(-n+4) .icons__svg-color,
+  &-5-stars .icons__svg:nth-child(-n+5) .icons__svg-color {
+    fill: @color-rating-value;
+  }
+}
+/*Rating colors (end)*/
+
+
+/*Markers colors (begin)*/
+.marker {
+  &-sale,
+  &-discont   {
+    .mixin_bg_color( 1 );
+    .mixin_color( 4 );
+  }
+}
+/*Markers colors (end)*/
+
+
+/*Social icons colors (begin)*/
+.social-icons {
+  &__link:nth-child(1) {
+    background-color: #45619d;
+  }
+  &__link:nth-child(2) {
+    background-color: #e56a6a;
+  }
+  &__link:nth-child(3) {
+    background-color: #42c0fb;
+  }
+  &__link:nth-child(4) {
+    background-color: #009ee5;
+  }
+  &__link:nth-child(5) {
+    background-color: #fd9f13;
+  }
+
+  &:hover, &:focus {
+    .icons__svg-color {
+      fill: @color-4-layout;
+    }
+  }
+}
+/*Social icons colors (end)*/
+
+
+/*Custom checkbox styles ( begin ) */
+.custom-checkbox {
+  &__label .cr {
+    border: 1px solid #a9a9a9;
+  }
+}
+/*Custom checkbox styles ( end ) */
+
+
+
+.product {
+  &__name {
+
+  }
+  &__reviews {
+    .mixin_contrast-colors( @color-5-layout; transparent );
+  }
+  &__desc {
+
+  }
+}
+
+

@@ -3,20 +3,23 @@
   <div class="col-table  page-404__table">
   <div class="col-table__cell--allign-middle  text-center">
 
-
-    <h1 class="page-404__title">404</h1>
-
-    <strong class="page-404__subtitle-1">Page not found!</strong><br>
-    <span class="page-404__subtitle-2">We're sorry, but something went wrong.</span>
-
+    
+    <div class="page-404__text-wrapper">
+      <h1 class="page-404__title">404</h1>
+  
+      <strong class="page-404__subtitle-1">Page not found!</strong><br>
+      <span class="page-404__subtitle-2">We're sorry, but something went wrong.</span>
+    </div>
+    
+    
     <div class="container">
         <div class="row">
 
-          <div class="col-sm-2  col-sm-offset-3  text-left">
+          <div class="col-md-2  col-md-offset-3  col-sm-3  col-sm-offset-2">
             <a class="links  btn  btn-default  theme-buttons__links--default" href="?page=home">Back to home</a>
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-md-4                   col-sm-5">
             <form action="">
               <div class="input-group">
                 <input class="form-control" placeholder="Search for..." type="text">

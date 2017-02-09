@@ -8,7 +8,7 @@
           <li class="item carousel-1__container-item">
   
             <a class="links  image-wrapper  carousel-1__image-wrapper" href="#">
-              <img class="image" src="<?php echo ( $carousel_1_data -> carousel_1['img-src'] ) .'tea-welding-'. $it1 .'.jpg'; ?>" alt="carousel-1-image">
+              <img class="image  carousel-1__image" src="<?php echo ( $carousel_1_data -> carousel_1['img-src'] ) .'tea-welding-'. $it1 .'.jpg'; ?>" alt="carousel-1-image">
             </a>
             <h3 class="product__name">
               <a class="links" href="#"><?php echo $carousel_1_data -> carousel_1['title']; ?></a>

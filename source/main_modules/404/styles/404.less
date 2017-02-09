@@ -14,6 +14,10 @@
     margin: 30px 0px;
   }
 
+  &__text-wrapper {
+    padding: 0px 15px;
+  }
+
   /*Position ( end )*/
   /*Fonts ( begin )*/
   &__title {
@@ -29,5 +33,11 @@
   /*Colors ( begin )*/
   .mixin_contrast-colors( @color-4-layout; transparent; );
   /*Colors ( end )*/
+
+  @media ( max-width: 767px ) {
+    .btn {
+      margin-bottom: 15px;
+    }
+  }
 }
 

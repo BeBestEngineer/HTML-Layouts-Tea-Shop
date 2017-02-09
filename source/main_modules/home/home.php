@@ -5,7 +5,7 @@
           <div id="slider-1" class="owl-carousel  owl-theme  slider-1">
 
             <div class="slider-1__item">
-              <img class="slider-1__image" src="images/other_modules/custom_modules/slider_1/slider-1-1.jpg" alt="The Last of us">
+              <img class="image--responsive" src="images/other_modules/custom_modules/slider_1/slider-1-1.jpg" alt="The Last of us">
               <div class="slider-1__desc">
                 <div class="container">
                   <h2  class="slider-1__title  ">Just for resigter membar</h2>
@@ -18,7 +18,7 @@
               </div>
             </div>
             <div class="slider-1__item">
-              <img class="slider-1__image" src="images/other_modules/custom_modules/slider_1/slider-1-2.jpg" alt="GTA V">
+              <img class="image--responsive" src="images/other_modules/custom_modules/slider_1/slider-1-2.jpg" alt="GTA V">
               <div class="slider-1__desc">
                 <div class="container">
                   <h2  class="slider-1__title  ">Just for resigter membar</h2>
@@ -31,7 +31,7 @@
               </div>
             </div>
             <div class="slider-1__item">
-              <img class="slider-1__image" src="images/other_modules/custom_modules/slider_1/slider-1-3.jpg" alt="Mirror Edge">
+              <img class="image--responsive" src="images/other_modules/custom_modules/slider_1/slider-1-3.jpg" alt="Mirror Edge">
               <div class="slider-1__desc">
                 <div class="container">
                   <h2  class="slider-1__title  ">Just for resigter membar</h2>
@@ -66,10 +66,10 @@
         <div class="container">
           <div class="row">
 
-            <div class="col-md-4">
+            <div class="col-md-4  col-sm-6">
               <div class="masonry-grid-1__item">
                 <div class="image-wrapper  masonry-grid-1__image-left-wrapper">
-                  <img class="image" src="images/other_modules/custom_modules/masonry_4_grid/masonry_4_grid-1.jpg" alt="...">
+                  <img class="image  masonry-grid-1__image" src="images/other_modules/custom_modules/masonry_4_grid/masonry_4_grid-1.jpg" alt="...">
                 </div>
                 <a class="links  masonry-grid-1__desc" href="#">
                   <b class="masonry-grid-1__title  ">Special coffee</b>
@@ -84,14 +84,10 @@
             </div>
 
 
-            <div class="col-md-8">
-
-              <div class="row">
-
-                <div class="col-md-6  col-sm-6">
+                <div class="col-md-4  col-sm-6">
                   <div class="masonry-grid-1__item">
                     <div class="image-wrapper  masonry-grid-1__image-right-top-5-wrapper">
-                      <img class="image" src="images/other_modules/custom_modules/masonry_4_grid/masonry_4_grid-2.jpg" alt="...">
+                      <img class="image  masonry-grid-1__image" src="images/other_modules/custom_modules/masonry_4_grid/masonry_4_grid-2.jpg" alt="...">
                     </div>
                     <a class="links  masonry-grid-1__desc  " href="#">
                       <b class="masonry-grid-1__title">Sell up to</b>
@@ -106,10 +102,11 @@
                   </div>
                 </div>
 
-                <div class="col-md-6  col-sm-6">
+
+                <div class="col-md-4  col-sm-6">
                   <div class="masonry-grid-1__item">
                     <div class="image-wrapper masonry-grid-1__image-right-top-7-wrapper">
-                      <img class="image" src="images/other_modules/custom_modules/masonry_4_grid/masonry_4_grid-3.jpg" alt="...">
+                      <img class="image  masonry-grid-1__image" src="images/other_modules/custom_modules/masonry_4_grid/masonry_4_grid-3.jpg" alt="...">
                     </div>
                     <div class="masonry-grid-1__desc  ">
                       <b class="masonry-grid-1__title">Cupof</b>
@@ -125,14 +122,11 @@
                   </div>
                 </div>
 
-              </div>
 
-
-              <div class="row">
-                <div class="col-xs-12">
+                <div class="col-md-8  col-sm-12">
                   <div class="masonry-grid-1__item">
                     <div class="image-wrapper masonry-grid-1__image-right-bottom-wrapper">
-                      <img class="image" src="images/other_modules/custom_modules/masonry_4_grid/masonry_4_grid-4.jpg" alt="...">
+                      <img class="image  masonry-grid-1__image" src="images/other_modules/custom_modules/masonry_4_grid/masonry_4_grid-4.jpg" alt="...">
                     </div>
                     <a class="links  masonry-grid-1__desc  " href="#">
                       <b class="masonry-grid-1__title">We are try to make</b>
@@ -146,9 +140,7 @@
                     </a>
                   </div>
                 </div>
-              </div>
 
-            </div>
 
           </div><!--row-->
 
@@ -278,10 +270,11 @@
 
 
       <section class="section  carousel  carousel-4">
-        <div class="container" style="padding: 0;">
+        <div class="container">
           <h2 class="section-title  text-center">Deal of the day</h2>
           <p class="section-desc  text-center">Suspendisse neque urna, accumsan fermentum sem quis.</p>
 
+          <div class="row">
           <div class="carousel-wrapper">
             <ul class="carousel-4__container" id="carousel-4-home-pos-1">
 
@@ -289,13 +282,13 @@
                 <li class="item carousel-4__item">
 
                   <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-md-6">
                       <a class="links  image-wrapper  carousel-4__image-wrapper" href="#">
                         <img class="image" src="images/other_modules/custom_modules/carousel_4/carousel-4-<?php echo $ic4; ?>.jpg" alt="">
                       </a>
 
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-md-6">
                       <div class="carousel-4___desc-wrapper">
                         <h3 class="product__name">
                           <a class="links  " href="#">Nullam bibendu</a>
@@ -328,7 +321,7 @@
                     </div>
                   </div>
 
-                </li>
+                </li> 
               <? endfor; ?>
 
             </ul>
@@ -346,6 +339,7 @@
               </a>
             </div>
           </div>
+          </div>
 
 
         </div>
@@ -353,8 +347,8 @@
 
 
       <section class="section  carousel-2">
-        <div class="row">
-          <div class="container" style="padding: 0;">
+        <div class="container">
+          <div class="row">
             <?php require $carousel_2_data -> Get_data( 'all', 'position-1' )['path']; ?>
           </div>
         </div>
@@ -362,32 +356,34 @@
 
 
       <section class="section  carousel  carousel-5">
-        <div class="container" style="padding: 0;">
+        <div class="container" >
           <h2 class="section-title  text-center">Our blog</h2>
           <p class="section-desc  text-center">Suspendisse neque urna, accumsan fermentum sem quis.</p>
 
-          <div class="carousel-wrapper">
-            <ul class="carousel-5__container" id="carousel-5-home-pos-1">
+          <div class="row">
+            <div class="carousel-wrapper">
+              <ul class="carousel-5__container" id="carousel-5-home-pos-1">
 
-              <?php for ( $ba = 1; $ba <= 8; $ba = ++$ba ): ?>
-                <li class="item carousel-5__item">
-                <?php require $blog_post_data->Get_data('carousel-5', 'recent-posts')['path']; ?>
-                </li>
-              <? endfor; ?>
+                <?php for ( $ba = 1; $ba <= 8; $ba = ++$ba ): ?>
+                  <li class="item carousel-5__item">
+                  <?php require $blog_post_data->Get_data('carousel-5', 'recent-posts')['path']; ?>
+                  </li>
+                <? endfor; ?>
 
-            </ul>
+              </ul>
 
-            <div class="carousel-5__navigation  hidden-sm  hidden-xs">
-              <a class="links  btn  carousel-navigation__prev" id="carousel-5__navigation-prev-home-pos-1" role="button">
-                <svg class="carousel-navigation__icon" width="20" height="20" viewBox="0 0 1000 1000">
-                <path class="icons__svg-color" d="M793.8,10v980L206.2,500L793.8,10z"/>
-              </svg>
-              </a>
-              <a class="links  btn  carousel-navigation__next" id="carousel-5__navigation-next-home-pos-1" role="button">
-                <svg class="carousel-navigation__icon" width="20" height="20" viewBox="0 0 1000 1000">
-                  <path class="icons__svg-color" d="M206.2,990V10l587.7,490L206.2,990z"/>
+              <div class="carousel-5__navigation  hidden-sm  hidden-xs">
+                <a class="links  btn  carousel-navigation__prev" id="carousel-5__navigation-prev-home-pos-1" role="button">
+                  <svg class="carousel-navigation__icon" width="20" height="20" viewBox="0 0 1000 1000">
+                  <path class="icons__svg-color" d="M793.8,10v980L206.2,500L793.8,10z"/>
                 </svg>
-              </a>
+                </a>
+                <a class="links  btn  carousel-navigation__next" id="carousel-5__navigation-next-home-pos-1" role="button">
+                  <svg class="carousel-navigation__icon" width="20" height="20" viewBox="0 0 1000 1000">
+                    <path class="icons__svg-color" d="M206.2,990V10l587.7,490L206.2,990z"/>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
 

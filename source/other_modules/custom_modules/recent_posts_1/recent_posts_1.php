@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-xs-4">
           <a class="links  image-wrapper  recent-posts__image-wrapper" href="#">
-            <img class="image--responsive" src="images/blog/recent-posts/recent-post-<?php echo $bp; ?>.jpg" alt="">
+            <img class="image--responsive  recent-posts__image" src="images/blog/recent-posts/recent-post-<?php echo $bp; ?>.jpg" alt="">
           </a>
         </div>
         <div class="col-xs-8">

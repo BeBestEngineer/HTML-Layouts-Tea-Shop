@@ -169,9 +169,10 @@
     </div>
 
 
+  <section class="section">
   <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
+<!--      <div class="row">-->
+<!--        <div class="col-lg-12">-->
           <div class="product__info-tabs">
             <!-- Nav tabs -->
             <ul class="nav  nav-tabs  nav-justified  product__info-tabs-titles" role="tablist">
@@ -251,9 +252,10 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+<!--        </div>-->
+<!--      </div>-->
     </div>
+  </section>
 
 
   <section class="section  carousel-1">
@@ -266,8 +268,8 @@
   
 
   <section class="section  carousel  carousel-2">
-    <div class="row">
-      <div class="container" style="padding: 0;">
+    <div class="container">
+      <div class="row" style="padding: 0;">
         <?php require $carousel_2_data -> Get_data( 'all', 'position-1' )['path']; ?>
       </div>
     </div>

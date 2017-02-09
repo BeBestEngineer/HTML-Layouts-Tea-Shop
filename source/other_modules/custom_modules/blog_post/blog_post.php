@@ -1,11 +1,11 @@
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-md-6">
       <a class="links  image-wrapper  <?php echo $blog_post_data -> blog_post_data['class__image-wrapper']; ?>" href="#">
-        <img class="image" src="<?php echo $blog_post_data -> blog_post_data['img-src'] .'post-'.$ba; ?>.jpg" alt="">
+        <img class="image  post__image" src="<?php echo $blog_post_data -> blog_post_data['img-src'] .'post-'.$ba; ?>.jpg" alt="">
       </a>
     </div>
 
-    <div class="col-sm-6">
+    <div class="col-md-6">
       <div class="post">
         <h3 class="post__title">
           <a class="links" href="#"><?php echo $blog_post_data -> blog_post_data['title-of-block']; ?></a>
@@ -24,7 +24,7 @@
           <span class="allign-middle"><?php echo $blog_post_data -> blog_post_data['desc']['1']['autor']; ?></span>
         </a>
         <p class="post__desc" >
-          <?php echo $blog_post_data -> blog_post_data['desc']['1']['text']; ?>
+          <?php echo $blog_post_data -> blog_post_data['desc']['1']['text']; ?> 
         </p>
 
         <div class="">

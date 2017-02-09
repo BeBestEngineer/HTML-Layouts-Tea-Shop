@@ -21,6 +21,12 @@
     }
   }
   /*Colors ( end )*/
+
+  @media ( max-width: 991px ) {
+    .section-desc {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 
@@ -29,15 +35,8 @@
   &__item{
     position: relative;
     display: block;
-    height: 470px;
+    min-height: 470px;
     overflow: hidden;
-  }
-  &__image {
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
   }
   &__wrapper {
     margin-bottom: 30px;
@@ -68,6 +67,23 @@
     .mixin_contrast-colors( @color-theme-layout; transparent; );
   }
 
+  @media ( max-width: 767px ) {
+    .image--responsive {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: auto;
+      max-height: 100%;
+    }
+  }
+
+  @media ( min-width: 768px ) and ( max-width: 992px ) {
+    .image--responsive {
+      height: 100%;
+      width: auto;
+    }
+  }
 }
 
 
@@ -92,29 +108,28 @@
   /*Position ( begin )*/
   &__item {
     position: relative;
+    margin-bottom: @masonry-grid-1-item-margin-bottom;
   }
   &__desc {
     .mixin_absolute_stretching ();
   }
   &__image-left-wrapper {
-    height: 570px;
+    height: @masonry-grid-1-image-left-wrapper-height;
   }
   &__image-right-top-5-wrapper {
-    height: 265px;
+    height: @masonry-grid-1-image-right-top-height;
   }
   &__image-right-top-7-wrapper {
-    height: 265px;
+    height: @masonry-grid-1-image-right-top-height;
   }
   &__image-right-bottom-wrapper {
-    height: 275px;
-    margin-top: 30px;
+    height: @masonry-grid-1-image-right-bottom-wrapper-height;
   }
-  & .image {
-    max-height: inherit;
-  }
-  &__image-left-wrapper .image {
-    max-height: 100%;
+  &__image {
     max-width: inherit;
+    max-height: inherit;
+    right: inherit;
+    bottom: inherit;
   }
   &__desc {
     text-align: right;
@@ -140,6 +155,17 @@
     .mixin_contrast-colors( @color-8-layout; transparent; );
   }
   /*Colors ( end )*/
+
+  @media ( max-width: 767px ) {
+    &__image {
+      width: 100%;
+    }
+  }
+  @media ( max-width: 400px ) {
+    &__image {
+      width: auto;
+    }
+  }
 }
 
 
@@ -194,6 +220,12 @@
     .mixin_contrast-colors( @color-4-layout; @color-theme-layout; );
   }
   /*Colors ( end )*/
+
+  @media ( max-width: 991px ) {
+    &__image-wrapper {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 
@@ -218,6 +250,12 @@
     .mixin_contrast-colors-buttons( @color-7-layout; transparent; @color-4-layout; @color-theme-layout; );
   }
   /*Colors ( end )*/
+
+  @media ( max-width: 991px ) {
+    &__image-wrapper {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 

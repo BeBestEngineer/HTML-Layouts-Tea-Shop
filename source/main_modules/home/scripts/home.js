@@ -25,6 +25,9 @@ var owl_4_home_pos_1 = $("#carousel-4-home-pos-1");
 owl_4_home_pos_1.owlCarousel({
 	// autoPlay: 10000,
 	items : 2, //10 items above 1000px browser width
+	itemsDesktop : [993,2],
+	itemsDesktopSmall : [769,2],
+	itemsTablet: [600,1],
 	pagination : false
 });
 
@@ -44,6 +47,9 @@ var owl_5_home_pos_1 = $("#carousel-5-home-pos-1");
 owl_5_home_pos_1.owlCarousel({
 	autoPlay: 10000,
 	items : 2, //10 items above 1000px browser width
+	itemsDesktop : [993,2],
+	itemsDesktopSmall : [769,2],
+	itemsTablet: [600,1],
 	pagination : false
 });
 

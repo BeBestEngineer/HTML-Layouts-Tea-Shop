@@ -18,15 +18,12 @@ textarea {
 
 .form-control {
   font-size: @body--font-size;
-  .mixin_form-height( @body--font-size; 10; );
+  .mixin_input-group-height( @body--font-size; 10; );
 }
 
-.btn {
-  line-height: @body--font-size;
-  .mixin_form-height( @body--font-size; 10; );
+.table {
+  margin-bottom: 0px;
 }
-
-
 
 body {
   font-size:   @body--font-size;
@@ -42,14 +39,59 @@ body {
   margin-bottom: 0;
 }
 
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: transparent;
+}
+
+.navbar-nav > li > a {
+  &:hover, &:focus {
+    background-color: transparent;
+  }
+}
+
+.btn {
+
+}
+
 .btn {
   font-size: @body--font-size;
 }
 
-.pagination > li > a {
-  color: inherit;
+button {
+  background-color: transparent;
+  border: none;
+}
+
+
+.pagination > .active > a,
+.pagination > .active > a:hover ,
+.pagination > .active > a:focus {
+  background-color: @color-theme-layout;
+  border-color: @color-theme-layout;
 }
 
 .pager li > a, .pager li > span {
   border-radius: 4px;
+}
+
+
+.badge {
+  color: inherit;
+  background-color: inherit;
+}
+
+.dropdown-menu {
+  font-size: @body--font-size;
+}
+
+
+.panel-group {
+  margin-bottom: 0px;
+}
+legend {
+  margin-bottom: 0px;
+}
+
+.dropdown-menu > li > a {
+  color: inherit;
 }

@@ -16,10 +16,10 @@ owl_3_home_pos_1.owlCarousel({
 });
 
 // Custom Navigation Events
-$(".carousel-3__navigation-next-home-pos-1").click(function(){
+$("#carousel-3__navigation-next-home-pos-1").click(function(){
 	owl_3_home_pos_1.trigger('owl.next');
 });
-$(".carousel-3__navigation-prev-home-pos-1").click(function(){
+$("#carousel-3__navigation-prev-home-pos-1").click(function(){
 	owl_3_home_pos_1.trigger('owl.prev');
 });
 /*Carousel-3 (home, position-1) scripts (e)*/
@@ -31,14 +31,17 @@ var owl_4_home_pos_1 = $("#carousel-4-home-pos-1");
 owl_4_home_pos_1.owlCarousel({
 	// autoPlay: 10000,
 	items : 2, //10 items above 1000px browser width
+	itemsDesktop : [993,2],
+	itemsDesktopSmall : [769,2],
+	itemsTablet: [600,1],
 	pagination : false
 });
 
 // Custom Navigation Events
-$(".carousel-4__navigation-next-home-pos-1").click(function(){
+$("#carousel-4__navigation-next-home-pos-1").click(function(){
 	owl_4_home_pos_1.trigger('owl.next');
 });
-$(".carousel-4__navigation-prev-home-pos-1").click(function(){
+$("#carousel-4__navigation-prev-home-pos-1").click(function(){
 	owl_4_home_pos_1.trigger('owl.prev');
 });
 /*Carousel-4 (home, position-1) scripts (e)*/
@@ -50,14 +53,17 @@ var owl_5_home_pos_1 = $("#carousel-5-home-pos-1");
 owl_5_home_pos_1.owlCarousel({
 	autoPlay: 10000,
 	items : 2, //10 items above 1000px browser width
+	itemsDesktop : [993,2],
+	itemsDesktopSmall : [769,2],
+	itemsTablet: [600,1],
 	pagination : false
 });
 
 // Custom Navigation Events
-$(".carousel-5__navigation-next-home-pos-1").click(function(){
+$("#carousel-5__navigation-next-home-pos-1").click(function(){
 	owl_5_home_pos_1.trigger('owl.next');
 });
-$(".carousel-5__navigation-prev-home-pos-1").click(function(){
+$("#carousel-5__navigation-prev-home-pos-1").click(function(){
 	owl_5_home_pos_1.trigger('owl.prev');
 });
 /*Carousel-5 (home, position-1) scripts (e)*/
@@ -92,10 +98,10 @@ owl_product__carousel.owlCarousel({
 });
 
 // Custom Navigation Events
-$(".product__carousel-navigation-prev-product").click(function(){
+$("#product__carousel-navigation-prev-product").click(function(){
 	owl_product__carousel.trigger('owl.next');
 })
-$(".product__carousel-navigation-next-product").click(function(){
+$("#product__carousel-navigation-next-product").click(function(){
 	owl_product__carousel.trigger('owl.prev');
 });
 /*Carousel-product (home, position-1) scripts (e)*/
@@ -104,9 +110,9 @@ $(".product__carousel-navigation-next-product").click(function(){
 
 
 /*Product page scripts (b)*/
-	var product_quantity_button_more = document.querySelector(".product__quantity-more");
-	var product_quantity_button_less = document.querySelector(".product__quantity-less");
-	var product_quantity_input  		 = document.querySelector(".product__quantity-value");
+	var product_quantity_button_more = document.querySelector("#product__quantity-more");
+	var product_quantity_button_less = document.querySelector("#product__quantity-less");
+	var product_quantity_input  		 = document.querySelector("#product__quantity-value");
 
 if ( product_quantity_input && product_quantity_button_more && product_quantity_button_less ) {
 	var product_quantity_value;
@@ -244,10 +250,10 @@ if ( keypressSlider && input0 && input1 ) {
 	});
 
 	// Custom Navigation Events
-	$(".carousel-1__navigation-next-home-pos-1").click(function(){
+	$("#carousel-1__navigation-next-home-pos-1").click(function(){
 		owl_home_pos_1.trigger('owl.next');
 	})
-	$(".carousel-1__navigation-prev-home-pos-1").click(function(){
+	$("#carousel-1__navigation-prev-home-pos-1").click(function(){
 		owl_home_pos_1.trigger('owl.prev');
 	});
 	/*Carousel-1 (home, position-1) scripts (e)*/
@@ -265,10 +271,10 @@ if ( keypressSlider && input0 && input1 ) {
 	});
 
 	// Custom Navigation Events
-	$(".carousel-1__navigation-next-home-pos-2").click(function(){
+	$("#carousel-1__navigation-next-home-pos-2").click(function(){
 		owl_home_pos_2.trigger('owl.next');
 	})
-	$(".carousel-1__navigation-prev-home-pos-2").click(function(){
+	$("#carousel-1__navigation-prev-home-pos-2").click(function(){
 		owl_home_pos_2.trigger('owl.prev');
 	});
 	/*Carousel-1 (home, position-2) scripts (e)*/
@@ -286,10 +292,10 @@ if ( keypressSlider && input0 && input1 ) {
 	});
 
 	// Custom Navigation Events
-	$(".carousel-1__navigation-next-product-pos-1").click(function(){
+	$("#carousel-1__navigation-next-product-pos-1").click(function(){
 		owl_product_pos_1.trigger('owl.next');
 	})
-	$(".carousel-1__navigation-prev-product-pos-1").click(function(){
+	$("#carousel-1__navigation-prev-product-pos-1").click(function(){
 		owl_product_pos_1.trigger('owl.prev');
 	});
 	/*Carousel-1 (product, position-2) scripts (e)*/
@@ -305,10 +311,10 @@ if ( keypressSlider && input0 && input1 ) {
 	});
 
 	// Custom Navigation Events
-	$(".carousel-2__navigation-next-all-pos-1").click(function(){
+	$("#carousel-2__navigation-next-all-pos-1").click(function(){
 		owl_2_home_pos_1.trigger('owl.next');
 	})
-	$(".carousel-2__navigation-prev-all-pos-1").click(function(){
+	$("#carousel-2__navigation-prev-all-pos-1").click(function(){
 		owl_2_home_pos_1.trigger('owl.prev');
 	});
 	/*Carousel-2 (home, position-1) scripts (e)*/
@@ -328,10 +334,10 @@ if ( keypressSlider && input0 && input1 ) {
 	});
 
 	// Custom Navigation Events
-	$(".carousel-6__navigation-next-our-team-pos-1").click(function(){
+	$("#carousel-6__navigation-next-our-team-pos-1").click(function(){
 		owl_6_about_us_1.trigger('owl.next');
 	})
-	$(".carousel-6__navigation-prev-our-team-pos-1").click(function(){
+	$("#carousel-6__navigation-prev-our-team-pos-1").click(function(){
 		owl_6_about_us_1.trigger('owl.prev');
 	});
 	/*Carousel-6 (about-us, position-1) scripts (e)*/
@@ -340,6 +346,47 @@ if ( keypressSlider && input0 && input1 ) {
 
 	
  /*SeparatoR*/ 
+
+ /*SeparatoR*/ 
+
+
+// Window load event used just in case window height is dependant upon images
+$(window).bind("load", function() {
+
+	var footerHeight = 0,
+			footerTop = 0,
+			$footer = $("#footer-1-id"),
+			$pageWrapper = $("#page-wrapper-id");
+
+	positionFooter();
+
+	function positionFooter() {
+
+		footerHeight = $footer.height();
+
+		footerTop = ($(window).scrollTop()+$(window).height()-footerHeight)+"px";
+
+		if ( ($(document.body).height()+footerHeight) < $(window).height()) {
+			$footer.css({
+				'position': "absolute",
+				'top'			: footerTop
+			});
+			$pageWrapper.css({
+				'margin-bottom': footerHeight,
+			});
+		} else {
+			$footer.css({
+				position: "static"
+			});
+		}
+
+	}
+
+	$(window)
+			.scroll(positionFooter)
+			.resize(positionFooter)
+
+});
 
  /*SeparatoR*/ 
 

@@ -148,7 +148,7 @@
 
       <div class="mobile-menu-row  search-and-delivery-row">
         <div class="row">
-          <div class="col-sm-3  col-sm-offset-4">
+          <div class="col-md-3  col-md-offset-4  col-sm-8  col-sm-offset-4  ">
             <div class="circle-icons__item-wrapper">
                   <span class="allign-middle  circle-icons__icon-wrapper">
                     <svg class="circle-icons__icon" width="20" height="20" viewBox="0 0 1792 1792">
@@ -161,7 +161,7 @@
               TeaShop is the best way to find Tea restaurants that deliver to you. Whether looking for breakfast, lunch, dinner or late night snack, Yelp TeaShop has it all. Read restaurants reviews, browse restaurants menus and easily order online from any restaurant with no extra charge!!!
             </p>
           </div>
-          <div class="col-md-4  col-md-offset-1  col-sm-5">
+          <div class="col-md-4  col-md-offset-1  col-sm-8  col-sm-offset-4">
             <form class="header-1__form-1" action="">
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search for...">
@@ -180,13 +180,13 @@
       </div>
 
 
-      <div class="collapse navbar-collapse" id="main-menu">
+      <div class="collapse  navbar-collapse  main-menu" id="main-menu">
 
-        <div class="mobile-menu-row">
-          <ul class="nav  navbar-nav  navbar-left   main-menu__list">
+<!--        <div class="">-->
+          <ul class="nav  navbar-nav  navbar-left   main-menu__list  mobile-menu-row">
 
-            <li><a class="links" href="?page=home">Home</a></li>
-            <li class="dropdown">
+            <li class="main-menu__item"><a class="links" href="?page=home">Home</a></li>
+            <li class="main-menu__item  dropdown">
               <a href="#" class="links  dropdown-toggle  theme-buttons__links--dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 <span class="allign-middle">Products lists</span>
                 <svg  class="allign-middle" width="20" height="20" viewBox="0 0 1792 1792" >
@@ -194,26 +194,27 @@
                 </svg>
               </a>
               <ul class="dropdown-menu">
+                <li role="separator" class="divider"></li>
                 <li><a class="links" href="?page=products-list">Tea list</a></li>
                 <li><a class="links" href="?page=products-list">Coffee list</a></li>
-                <li role="separator" class="divider"></li>
                 <li><a class="links" href="?page=products-list">Accessories list</a></li>
                 <li><a class="links" href="?page=products-list">Other list</a></li>
+                <li role="separator" class="divider"></li>
               </ul>
             </li>
-            <li><a class="links" href="?page=product">Some tea page</a></li>
-            <li><a class="links" href="?page=shopping-cart">Shopping cart</a></li>
-            <li><a class="links" href="?page=about-us">About us</a></li>
-            <li><a class="links" href="?page=contact-us">Contact us</a></li>
-            <li><a class="links" href="?page=blog">Blog</a></li>
-            <li><a class="links" href="?page=blog-single-post">Single post</a></li>
-            <li><a class="links" href="?page=404">404 page</a></li>
+            <li class="main-menu__item"><a class="links" href="?page=product">Some tea page</a></li>
+            <li class="main-menu__item"><a class="links" href="?page=shopping-cart">Shopping cart</a></li>
+            <li class="main-menu__item"><a class="links" href="?page=about-us">About us</a></li>
+            <li class="main-menu__item"><a class="links" href="?page=contact-us">Contact us</a></li>
+            <li class="main-menu__item"><a class="links" href="?page=blog">Blog</a></li>
+            <li class="main-menu__item"><a class="links" href="?page=blog-single-post">Single post</a></li>
+            <li class="main-menu__item"><a class="links" href="?page=404">404 page</a></li>
 
           </ul>
-        </div>
+<!--        </div>-->
 
-        <div class="mobile-menu-row">
-          <ul class="nav  navbar-nav  navbar-right">
+<!--        <div class="">-->
+          <ul class="nav  navbar-nav  navbar-right  mobile-menu-row">
             <!--Shopping basket-->
             <li class="dropdown">
               <a href="#" class="links  shopping-basket__button  dropdown-toggle  theme-buttons__links--dropdown" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -332,7 +333,7 @@
             </li>
 
           </ul>
-        </div>
+<!--        </div>-->
 
       </div><!-- /.navbar-collapse -->
 

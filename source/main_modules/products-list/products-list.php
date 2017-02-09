@@ -100,9 +100,9 @@
             <?php for ($pl = 1; $pl <= 5; ++$pl ): ?>
             <li class="products-list__item">
               <div class="row">
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <a class="links  image-wrapper  products-list__image-wrapper" href="?page=product">
-                      <img class="image" src="images/products-list/product-list-1-<?php echo $pl; ?>.jpg" alt="product-img">
+                      <img class="image  products-list__image" src="images/products-list/product-list-1-<?php echo $pl; ?>.jpg" alt="product-img">
                       <div class="marker-sale  ">Sale</div>
                       <div class="marker-discont  ">
                         <span class="">50</span>
@@ -111,7 +111,7 @@
                     </a>
                 </div>
 
-                <div class="col-lg-8">
+                <div class="col-md-8">
                   <h3 class="product__name">
                     <a class="links" href="?page=product">
                       Morbi mollis enim a faucibus

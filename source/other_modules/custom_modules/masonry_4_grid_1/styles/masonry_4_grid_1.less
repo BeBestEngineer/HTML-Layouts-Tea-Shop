@@ -3,6 +3,12 @@
   &__item {
     position: relative;
   }
+  &__image {
+    max-width: inherit;
+    max-height: inherit;
+    right: inherit;
+    bottom: inherit;
+  }
   &__desc {
     .mixin_absolute_stretching ();
     text-align: right;
@@ -14,14 +20,11 @@
   &__image-wrapper-2 {
     height: 270px;
   }
-  &__item-2 {
+  &__item {
     margin-bottom: 30px;
   }
-  &__image-wrapper-1 .image {
-    max-width: inherit;
-  }
-  &__image-wrapper-2 .image {
-    max-height:inherit;
+  &__col-3 {
+    float: right;
   }
   .btn {
     margin-top: 20px;
@@ -43,5 +46,21 @@
     .mixin_contrast-colors( @color-8-layout; transparent; );
   }
   /*Colors ( end )*/
+
+  @media ( max-width: 767px ) {
+    &__image {
+      width: 100%;
+    }
+    &__col-3 {
+      float: none;
+    }
+  }
+
+  @media ( max-width: 400px ) {
+    &__image {
+      width: auto;
+    }
+  }
+
 }
 

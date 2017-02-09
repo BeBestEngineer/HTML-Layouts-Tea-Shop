@@ -1,28 +1,32 @@
-/*Colors (b)*/
-  /*Colors storage*/
-  @color-white-ffffff:              #ffffff;
-  @color-grey-7a7a7a:               #7a7a7a;
-  @color-grey-f6f6f6                #f6f6f6;
-  @color-grey-999999:               #999999;
-  @color-black-333333:              #333333;
-  @color-black-171717:              #171717;
-  @color-red-e56a6a:                #BF4E2E;
-  @color-yellow-c8a760:             #c8a760;
-  @color-purple-9176cb:             #9176cb;
-
-
-
+/*Colors (begin)*/
   /*Layout colors*/
-  @color-1-layout:                  @color-red-e56a6a;
-  @color-2-layout:                  @color-black-171717;
-  @color-3-layout:                  @color-grey-7a7a7a;
-  @color-4-layout:                  @color-white-ffffff;
-  @color-5-layout:                  @color-grey-999999;
-  @color-6-layout:                  @color-yellow-c8a760;
-  @color-7-layout:                  @color-black-333333;
-  @color-8-layout:                  @color-purple-9176cb;
+  @color-theme-layout: #369f6a;
+  @color-1-layout:                  @color-theme-layout;
+  @color-2-layout:                  #171717;
+  @color-3-layout:                  #7a7a7a;
+  @color-4-layout:                  #ffffff;
+  @color-5-layout:                  #999999;
+  @color-6-layout:                  #c8a760;
+  @color-7-layout:                  #333333;
+  @color-8-layout:                  #9f7430;
+  @color-9-layout:                  #ссс;
 
   @color-tr-layout:                 transparent;
+
+
+  /*Banners*/
+  @color-banner-1:                  #34495E;
+  @color-banner-2:                  #34495E;
+  @color-banner-3:                  #34495E;
+
+
+  /*Contrast colors*/
+  /*Header*/
+  @color-1-contrast-header-1:            @color-4-layout;
+  @color-2-contrast-header-1:            @color-2-layout;
+  /*Footer*/
+  @color-1-contrast-footer-1:            @color-1-contrast-header-1;
+  @color-2-contrast-footer-1:            @color-2-contrast-header-1;
 
 
   /*Colors elements*/
@@ -34,13 +38,13 @@
   @color-shopping-cart-header-hover:@color-1-layout;
   @color-links-hover:               @color-1-layout;
   @color-svg-hover:                 @color-1-layout;
-/*Colors (e)*/
+/*Colors (end)*/
 
 
 /*Images*/
   @images-path:                      '../../images';
 
-/*Fonts (b)*/
+/*Fonts (begin)*/
   @fonts-path:                      '../../global_third_components/fonts';
 
   /*Font colors*/
@@ -75,35 +79,43 @@
   @font-family-3-extra-bold-typeface: 'Open-Sans-Extra-Bold';
 
 
-  //@font-family-1:              montserrat;
-  //@font-family-2:              roboto;
-
-  //@font-family-3-regular:            'Open-Sans-Regular';
-  //@font-family-3-light-bold:         'Open-Sans-Light';
-  //@font-family-3-bold:               'Open-Sans-Bold';
-  //@font-family-3-semi-bold:          'Open-Sans-SemiBold';
-
-  //@light-typeface:                light;
-  //@regular-typeface:              regular;
-  //@semibold-typeface:             semibold;
-  //@bold-typeface:                 bold;
-
   /*Font measures*/
   @measures-of-font:                px;
   @measures-of-font-letter-spacing: px;
   @measures-of-font-line-height:    px;
-/*Fonts (e)*/
+/*Fonts (end)*/
 
 
 /*Block model properties*/
-@margin-bottom-circle-icon__wrapper: 15px;
-@footer-height:                      1365px;
+
+  @margin-bottom-circle-icon__wrapper: 15px;
+
+  @section-desc-margin-bottom:         90px;
+
+  @carousel-button-height:             40px;
+  @carousel-button-width:              40px;
+
+  @product-carousel-button-width:      40px;
+  @product-carousel-button-height:     40px;
+  @product-carousel-height:            150px;
+
+  @footer-height:                      1365px;
+
+  @border-radius:                      4px;
+
+  @price-regulator-inputs-separator-width:  10px;
+
+
+  @masonry-grid-1-image-left-wrapper-height:         570px;
+  @masonry-grid-1-image-right-top-height:            275px;
+  @masonry-grid-1-item-margin-bottom:                30px;
+  @masonry-grid-1-image-right-bottom-wrapper-height: @masonry-grid-1-image-left-wrapper-height - @masonry-grid-1-image-right-top-height - @masonry-grid-1-item-margin-bottom;
 
 
 /*Animatу duration*/
-@transition-duration-button:      0.5s;
-@transition-duration-link:        0.7s;
-@transition-duration-svg:         0.5s;
+@transition-duration-links:        0.7s;
+@transition-duration-svgs:         0.5s;
+@transition-duration-buttons:      0.5s;
 
 /*Forms*/
 

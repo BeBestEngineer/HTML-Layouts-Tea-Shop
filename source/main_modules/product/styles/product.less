@@ -67,6 +67,10 @@
   &__carousel--next {
     right: 0;
   }
+  &__carousel  .carousel-navigation__icon {
+    margin-left: -5px;
+    margin-top:  -5px;
+  }
   /*Carousel navigation ( end )*/
   &__zoom-button {
     position: absolute;
@@ -81,6 +85,10 @@
     min-height: 500px;
     padding: 15px 0px;
     text-align: justify;
+  }
+  .carousel-1__image {
+    max-height: inherit;
+    width: 100%;
   }
   /*Position ( end )*/
   /*Fonts ( begin )*/
@@ -119,10 +127,13 @@
     .mixin_contrast-colors( @color-theme-layout; transparent; );
   }
   /*Colors ( end )*/
+
+  @media ( max-width: 991px ) {
+    &__carousel {
+      margin-bottom: 30px;
+    }
+  }
 }
 
-.product__carousel  .carousel-navigation__icon {
-  margin-left: -5px;
-  margin-top:  -5px;
-}
+
 

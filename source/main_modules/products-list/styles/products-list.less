@@ -16,7 +16,7 @@
   &__image-wrapper {
     height: 270px;
   }
-  &__image-wrapper .image {
+  &__image {
     max-width: inherit;
   }
   &__title {
@@ -45,6 +45,19 @@
   /*Colors ( begin )*/
 
   /*Colors ( end )*/
+
+  @media ( max-width: 991px ) {
+    &__image-wrapper {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media ( min-width: 380px ) and ( max-width: 767px ) {
+    &__image {
+      width: 100%;
+      max-height: inherit;
+    }
+  }
 }
 
 

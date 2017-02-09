@@ -61,10 +61,10 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="row text-justify">
 
-            <div class="col-sm-6">
+            <div class="col-md-6  col-sm-6">
               
               <?php require 'other_modules/custom_modules/logo_1/logo_1.php'; ?>
               
@@ -73,7 +73,8 @@
               </p>
             </div>
 
-            <div class="col-sm-6">
+
+            <div class="col-md-6  col-sm-6">
               <b class="footer-1__titles">Latest Twitter</b>
 
 
@@ -136,8 +137,8 @@
         </div>
 
 
-        <div class="col-sm-6">
-          <div class="row">
+        <div class="col-md-6">
+          <div class="row  footer-1__lists-wrapper">
             <div class="col-sm-6">
               <?php require $list_with_title_1_data -> Get_data( 'all', 'footer-position-1' )['path']; ?>
 
