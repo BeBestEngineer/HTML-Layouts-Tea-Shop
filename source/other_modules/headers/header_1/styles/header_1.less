@@ -5,26 +5,16 @@
 /*header-1 positions ( begin )*/
 .header-1 {
   .top-nav {
-    &__text {
-      margin-left: 5px;
-      margin-right: 20px;
-    }
-    & a {
-      padding: 15px 5px 15px 5px;
-      margin-right: 3px;
-    }
     &__link {
       display: inline-block;
+      padding: 15px 5px;
+      margin-right: 5px;
     }
-  }
-
-  .main-menu-button-mobile {
-    &__rectangle {
-      width:  50px;
-      height: 5px;
+    &__item:first-child {
+      padding-left: 0;
     }
-    &__rectangle:nth-child(n+3) {
-      margin-top: 6px;
+    &__item:first-child .top-nav__link {
+      padding-left: 2px;
     }
   }
 
@@ -36,29 +26,44 @@
     top: 50px;
   }
 
-  .main-menu__list {
+  .main-menu {
     position: relative;
-    left: -30px;
-  }
-  .main-menu__item  {
-    min-height: 52px;
-  }
+    width: 100%;
+    background-color: @color-2-contrast-header-1;
 
-  .navbar {
-    &-header {
+    &-button-mobile {
       position: relative;
+      top: 7px;
+
+      &__rectangle {
+        width:  50px;
+        height: 5px;
+      }
+      &__rectangle:nth-child(n+3) {
+        margin-top: 6px;
+      }
+
     }
-    &-toggle {
-      margin-bottom: 15px;
+    &__list {
+      position: relative;
+      left: -30px;
+    }
+    &__item  {
+      min-height: 52px;
     }
   }
-
 
   .shopping-basket {
     padding: 0;
     padding-top: 1px;
 
-    /*Hover shopping basket icon (b)*/
+    &__wrapper {
+      position: absolute;
+      right: 15px;
+      bottom: 0px;
+    }
+
+    /*shopping basket icon (b)*/
     &__badge {
       position: absolute;
       left: 25px;
@@ -67,6 +72,9 @@
     }
     & {
       min-width: 315px;
+    }
+    &__image {
+      right: auto;
     }
     &__title-product {
       margin-bottom: 10px;
@@ -91,65 +99,47 @@
     }
   }
 
-
   @media ( max-width: 767px ) {
     .navbar-header {
-      height: 100px;
+      height: 105px;
     }
 
     .logo-link {
-      width: 220px;
       left: 15px;
-      top: 7px;
+      top: 15px;
     }
 
+    .main-menu {
+      position: absolute;
+      z-index: 10;
+    }
+
+    .shopping-basket__wrapper {
+      position: relative;
+      right: 0px;
+      margin: 0px -30px;
+    }
     .main-menu__list {
-      left: 0px;
+      left: 0px; /*todo разобраться зачем переносил на 30px*/
+      margin: 0px -30px;
     }
 
     .mobile-menu-row {
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding: 15px;
     }
-
     .mobile-menu-row:last-child {
       padding-bottom: 7px;
     }
+
   }
 
   @media ( min-width: 992px ) and ( max-width: 1199px ) {
-    .main-menu {
-      height: 104px !important;
 
-      &__list {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 970px;
-      }
-    }
   }
 
   @media ( min-width: 768px ) and ( max-width: 991px ) {
-    .main-menu {
-      height: 104px !important;
-
-      &__list {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 750px;
-      }
-    }
-
     & .logo-link {
       top: 120px;
-    }
-
-    .search-and-delivery-row {
-      margin-bottom: 30px;
     }
   }
 }
@@ -205,12 +195,29 @@
     .mixin_contrast-colors( @color-3-layout; transparent );
   }
 
+  .main-menu__item-dropdown-menu {
+    .mixin_contrast-colors( @color-2-contrast-header-1; @color-1-contrast-header-1; );
+  }
+
   .main-menu-button-mobile__rectangle {
     .mixin_contrast-colors( @color-4-layout; @color-1-layout );
     border-color: @color-1-layout;
   }
   .main-menu-button-mobile {
     border-color: @color-1-layout;
+  }
+
+  @media ( max-width: 767px ) {
+    .shopping-basket {
+      .mixin_contrast-colors(@color-1-contrast-header-1; @color-2-contrast-header-1;);
+
+      .btn {
+        .mixin_contrast-colors-buttons( @color-4-layout; @color-theme-layout; @color-4-layout; transparent; );
+      }
+    }
+      .main-menu__item-dropdown-menu {
+      .mixin_contrast-colors( @color-1-contrast-header-1; @color-2-contrast-header-1; );
+    }
   }
 
 }
