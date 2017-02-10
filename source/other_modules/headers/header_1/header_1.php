@@ -10,7 +10,7 @@
         </button>
       </div>
 
-      <div class="collapse navbar-collapse" id="header-1__navbar-collapse-id">
+      <div class="collapse  navbar-collapse  header-1__navbar-collapse" id="header-1__navbar-collapse-id">
 
         <div class="row">
           <div class="row">
