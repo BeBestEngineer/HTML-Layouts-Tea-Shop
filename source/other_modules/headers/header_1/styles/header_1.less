@@ -4,12 +4,14 @@
   &__navbar {
     margin-bottom: 0px;
   }
-
+  &__navbar-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   &__navbar-collapse {
     position: relative;
     overflow: hidden;
   }
-
   &__row--top,
   &__row--bottom {
     margin-left: -15px;
@@ -21,23 +23,18 @@
   &__row--bottom {
 
   }
-
   &__currencys,
-  &__shopping-basket {
-    margin-right: 0px;
+  .shopping-basket {
+    margin: 0px;
   }
-}
 
-
-.shopping-basket {
-  &__list {
-    min-width: 320px;
+  .mobile-menu-button {
+    margin: 0;
+    padding: 0;
   }
-  &__image-wrapper {
-    height: 90px;
-  }
-  &__image {
-    right: auto;
+  .mobile-menu-button__icon-bar {
+    height: 5px;
+    width: 45px;
   }
 }
 
@@ -53,9 +50,19 @@
     }
 
     &__currencys,
-    &__shopping-basket {
+    .shopping-basket {
       margin-right: 0px;
       margin-left:  0px;
+    }
+
+    .shopping-basket__button {
+      position: absolute;
+      right: 0;
+      top: -35px;
+    }
+
+    .circle-icons__desc {
+      margin-bottom: 30px;
     }
   }
 }
@@ -64,16 +71,50 @@
 
 
 /*Fonts ( begin )*/
-
+.header-1 {
+  &__main-menu {
+    .mixin_custom-font( @font-family-3-bold-typeface; 18; uppercase; );
+  }
+}
 /*Fonts ( end )*/
 
 
 /*Colors ( begin )*/
-.mobile-menu-button__icon-bar {
-  background-color: @color-theme-layout;
-}
-.header-1__navbar {
-  background-color: whitesmoke;
+.header-1 {
+  .mixin_contrast-colors( @color-1-contrast-header-1; @color-2-contrast-header-1 );
+
+    .dropdown-menu {
+      .mixin_contrast-colors( @color-2-contrast-header-1; @color-1-contrast-header-1 );
+    }
+  @media (max-width: 767px) {
+    .navbar-nav .open .dropdown-menu {
+      .mixin_contrast-colors( @color-1-contrast-header-1; @color-2-contrast-header-1 );
+    }
+  }
+
+  .circle-icons__icon-wrapper {
+    .mixin_contrast-colors( @color-4-layout; @color-theme-layout; );
+  }
+
+  .shopping-basket {
+    .theme-buttons__buttons--default {
+      .mixin_contrast-colors-buttons();
+    }
+  }
+
+  .mobile-menu-button .mobile-menu-button__icon-bar {
+    .mixin_contrast-colors( @color-2-layout; @color-4-layout; );
+  }
+  .mobile-menu-button[aria-expanded="true"] .mobile-menu-button__icon-bar {
+    background-color: @color-theme-layout;
+  }
+
+  .shopping-basket__badge {
+    .mixin_contrast-colors( @color-4-layout; @color-theme-layout; );
+  }
+  .shopping-basket__button[aria-expanded="true"] .icons__svg-color {
+    fill: @color-theme-layout;
+  }
 }
 /*Colors ( end )*/
 
