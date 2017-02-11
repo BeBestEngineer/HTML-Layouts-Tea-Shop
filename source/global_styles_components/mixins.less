@@ -102,9 +102,11 @@
   & when not ( isnumber( @line-height ) ) {
     line-height: @line-height;
   }
-
 }
 
+.mixin_block-height( @height ) {
+  height: unit(@height, @measures-of-blocks);;
+}
 
 .mixin_svg-text-color( @color ) {
   color: @color;
@@ -159,9 +161,4 @@
 .mixin_product-carousel-button-position() {
   margin-top: -@product-carousel-button-height / 2;
   top:         @product-carousel-height / 2;
-}
-
-
-.mixin_price-regulator-input-width () {
-
 }
