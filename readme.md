@@ -7,6 +7,8 @@
 * Shopping cart
 * About us
 * Contact us
+* Blog
+* Single post
 * 404 page
 
 
@@ -26,3 +28,4 @@
 * ``jQuery``
 * ``Bootstrap 3.x``
 * ``OWL Carousel 1.x``
+* ``noUIslider``
