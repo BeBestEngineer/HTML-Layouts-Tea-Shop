@@ -10,6 +10,6 @@
     <link rel="stylesheet" href="global_third_components/libs/owl-carousel-1/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="global_third_components/libs/noUiSlider/distribute/nouislider.css">
     <!--layout's styles-->
-    <link rel="stylesheet" href="global_styles_components/collected_styles/layout.css">
+    <link rel="stylesheet" href="global_styles_components/collected_styles/css/layout.css">
   </head>
   <body>
