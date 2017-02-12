@@ -1,7 +1,3 @@
-/*Примешать к кнопке цвета текста и текстовые стили(семья, размер)*/
-
-/*Colors and backgrounds for them (b)*/
-/*Dark background */
 .mixin_contrast-colors( @text-color: @color-7-layout; @background-color: @color-4-layout; ) {
   & {
     color: @text-color;
@@ -40,12 +36,20 @@
 }
 
 
+/*Max stretching*/
+.mixin_max-stretching() {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
 /*Absolute alignment mixin*/
 .mixin_absolute_alignment () {
   .mixin_absolute_stretching ();
 
   margin: auto;
 }
+
 
 .mixin_image-responsive( @vector:height; ) {
   position: absolute;
@@ -62,12 +66,6 @@
 }
 
 
-/*Max stretching*/
-.mixin_max-stretching() {
-  max-width: 100%;
-  max-height: 100%;
-}
-
 /*LESS Hat Font Face mixin*/
 .font-face(@fontname, @fontfile, @fontweight:normal, @fontstyle:normal) {
   font-family: "@{fontname}";
@@ -82,8 +80,6 @@
 
 
 /*Custom font mixin*/
-// .custom-font( @font-family, @font-size, @text-transform, @letter-spacing ) {
-
 .mixin_custom-font( @font-family:@body--font-family; @font-size:@body--font-size; @text-transform:none; @letter-spacing:normal; @line-height:normal; ) {
   font-family:    @font-family;
   font-size:      unit(@font-size, @measures-of-font);
@@ -104,9 +100,11 @@
   }
 }
 
+
 .mixin_block-height( @height ) {
   height: unit(@height, @measures-of-blocks);;
 }
+
 
 .mixin_svg-text-color( @color ) {
   color: @color;
@@ -118,9 +116,11 @@
   }
 }
 
+
 .mixin_color ( @color ) {
     color: ~'@{color-@{color}-layout}';
 }
+
 
 .mixin_bg_color ( @color ) {
   background-color: ~'@{color-@{color}-layout}';
@@ -149,14 +149,17 @@
   }
 }
 
+
 .mixin_theme-border( @color ) {
   border: 1px solid @color;
 }
+
 
 .mixin_carousel-button-position() {
   margin-top: -@carousel-button-height / 2;
   top:        -@section-desc-margin-bottom / 2;
 }
+
 
 .mixin_product-carousel-button-position() {
   margin-top: -@product-carousel-button-height / 2;
