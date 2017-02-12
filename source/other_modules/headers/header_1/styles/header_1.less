@@ -1,6 +1,6 @@
-/*Position ( begin )*/
-/*header-1-row-mode ( begin ) */
 .header-1 {
+  /*Position ( begin )*/
+  /*header-1-row-mode ( begin ) */
   &__navbar {
     margin-bottom: 0px;
   }
@@ -36,11 +36,8 @@
     height: 5px;
     width: 45px;
   }
-}
 
-
-@media (max-width: 767px) {
-  .header-1 {
+  @media (max-width: 767px) {
     &__row--top,
     &__row--bottom {
       margin: 0;
@@ -65,27 +62,19 @@
       margin-bottom: 30px;
     }
   }
-}
-/*header-1-row-mode ( end ) */
-/*Position ( end )*/
-
-
-/*Fonts ( begin )*/
-.header-1 {
+  /*header-1-row-mode ( end ) */
+  /*Position ( end )*/
+  /*Fonts ( begin )*/
   &__main-menu {
     .mixin_custom-font( @font-family-3-bold-typeface; 18; uppercase; );
   }
-}
-/*Fonts ( end )*/
-
-
-/*Colors ( begin )*/
-.header-1 {
+  /*Fonts ( end )*/
+  /*Colors ( begin )*/
   .mixin_contrast-colors( @color-1-contrast-header-1; @color-2-contrast-header-1 );
 
-    .dropdown-menu {
-      .mixin_contrast-colors( @color-2-contrast-header-1; @color-1-contrast-header-1 );
-    }
+  .dropdown-menu {
+    .mixin_contrast-colors( @color-2-contrast-header-1; @color-1-contrast-header-1 );
+  }
   @media (max-width: 767px) {
     .navbar-nav .open .dropdown-menu {
       .mixin_contrast-colors( @color-1-contrast-header-1; @color-2-contrast-header-1 );
@@ -118,9 +107,5 @@
   .shopping-basket__button[aria-expanded="true"] .icons__svg-color {
     fill: @color-theme-layout;
   }
+  /*Colors ( end )*/
 }
-/*Colors ( end )*/
-
-
-
-
