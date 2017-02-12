@@ -12,9 +12,19 @@ p {
   margin: 0;
 }
 
+legend {
+  margin-bottom: 0px;
+}
+
 textarea {
   resize: none;
 }
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
 
 .form-control {
   font-size: @body--font-size;
@@ -25,21 +35,13 @@ textarea {
   margin-bottom: 0px;
 }
 
-body {
-  font-size:   @body--font-size;
-  font-family: @body--font-family;
-}
-
 .media {
   margin-top: 0px;
 }
 
-
-
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: transparent;
 }
-
 .navbar-nav > li > a {
   &:hover, &:focus {
     background-color: transparent;
@@ -47,18 +49,8 @@ body {
 }
 
 .btn {
-
-}
-
-.btn {
   font-size: @body--font-size;
 }
-
-button {
-  background-color: transparent;
-  border: none;
-}
-
 
 .pagination > .active > a,
 .pagination > .active > a:hover ,
@@ -71,7 +63,6 @@ button {
   border-radius: 4px;
 }
 
-
 .badge {
   color: inherit;
   background-color: inherit;
@@ -81,14 +72,10 @@ button {
   font-size: @body--font-size;
 }
 
+.dropdown-menu > li > a {
+  color: inherit;
+}
 
 .panel-group {
   margin-bottom: 0px;
-}
-legend {
-  margin-bottom: 0px;
-}
-
-.dropdown-menu > li > a {
-  color: inherit;
 }
