@@ -1,9 +1,6 @@
 
-
-
-
-/*footer-1 position ( begin )*/
 .footer-1 {
+  /*Position ( begin )*/
   /*Sticky footer position( end )*/
   & {
     //if js don't work
@@ -93,10 +90,7 @@
     & .contact-form__button-wrapper {
       text-align: right;
     }
-
-
   }
-
 
   @media ( max-width: 480px ) {
     & .social-icons {
@@ -109,14 +103,8 @@
       }
     }
   }
-
-
-}
-/*footer-1 position ( end )*/
-
-
-/*footer-1 fonts ( begin )*/
-.footer-1 {
+  /*Position ( end )*/
+  /*Fonts ( begin )*/
   &__titles, .list-with-title-1__title {
     .mixin_custom-font(@font-family-3-bold-typeface; 18);
   }
@@ -138,12 +126,8 @@
       .mixin_custom-font(@font-family-3-bold-typeface; 30);
     }
   }
-}
-/*footer-1 fonts ( begin )*/
-
-
-/*footer-1 colors ( begin )*/
-.footer-1 {
+  /*Fonts ( begin )*/
+  /*Colors ( begin )*/
   .mixin_text-fields-colors( transparent; @color-1-layout; @color-4-layout );
 
   .mixin_contrast-colors( @color-1-contrast-header-1; @color-2-contrast-header-1; );
@@ -174,9 +158,5 @@
       .mixin_contrast-colors( @color-theme-layout; transparent; );
     }
   }
-
+  /*Colors ( begin )*/
 }
-/*footer-1 colors ( begin )*/
-
-
-
