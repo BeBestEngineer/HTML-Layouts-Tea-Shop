@@ -1,13 +1,3 @@
-
-.products-list {
-  /*Colors ( begin )*/
-  .btn {
-    .mixin_contrast-colors-buttons( @color-7-layout; transparent; @color-4-layout; @color-theme-layout; );
-  }
-  /*Colors ( end )*/
-}
-
-
 .products-list {
   /*Position ( begin )*/
   .pagination li:nth-child(1) {
@@ -43,7 +33,9 @@
   }
   /*Fonts ( end )*/
   /*Colors ( begin )*/
-
+  .btn {
+    .mixin_contrast-colors-buttons( @color-7-layout; transparent; @color-4-layout; @color-theme-layout; );
+  }
   /*Colors ( end )*/
 
   @media ( max-width: 991px ) {
