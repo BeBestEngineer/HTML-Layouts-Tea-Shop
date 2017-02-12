@@ -1,9 +1,7 @@
-
-
-
-
-
-
+body {
+  font-size:   @body--font-size;
+  font-family: @body--font-family;
+}
 
 .forms-title {
   .mixin_custom-font( @font-family-3-bold-typeface; 18; );
@@ -51,6 +49,9 @@
 .circle-icons__text {
   .mixin_custom-font( @font-family-3-bold-typeface; 15 );
 }
+.circle-icons__desc {
+  .mixin_custom-font( @line-height: 25; );
+}
 
 
 .carousel-title {
@@ -69,7 +70,3 @@
     .mixin_custom-font( @line-height: 25; );
   }
 }
-
-
-
-
