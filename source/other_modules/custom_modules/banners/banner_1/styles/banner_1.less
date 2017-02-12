@@ -1,15 +1,3 @@
-
-
-
-
-.banner-1 {
-  /*Colors ( begin )*/
-  .btn {
-    .mixin_contrast-colors-buttons( @color-4-layout; transparent; @color-4-layout; @color-theme-layout; );
-  }
-  /*Colors ( end )*/
-}
-
 .banner-1 {
   /*Position ( begin )*/
   position: relative;
@@ -36,6 +24,10 @@
   }
   /*Fonts ( end )*/
   /*Colors ( begin )*/
+  .btn {
+    .mixin_contrast-colors-buttons( @color-4-layout; transparent; @color-4-layout; @color-theme-layout; );
+  }
+
   &__desc {
     .mixin_contrast-colors( @color-4-layout; transparent; );
   }

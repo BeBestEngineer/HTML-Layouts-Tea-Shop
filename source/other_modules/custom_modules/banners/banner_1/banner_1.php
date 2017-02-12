@@ -9,6 +9,6 @@
           </p>
           <a class="links  btn  btn-default  theme-buttons__links--default" href="#">Shop now</a>
         </div>
-        <img class="image--responsive" src="images/banner-1/banner-1.jpg" alt="banner-1-img" >
+        <img class="image--responsive" src="images/banners/banner_1/banner-1.jpg" alt="banner-1-img" >
       </div>
 
