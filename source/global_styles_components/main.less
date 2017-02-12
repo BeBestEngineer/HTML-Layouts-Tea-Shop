@@ -1,28 +1,3 @@
-/*
-БЭМ
-блок        - независимый элемент страницы с собственным смыслом
-элемент     блок__элемент
-модификатор блок__элемент--модификатор - модификация внешнего вида или поведения блока
-
-модификаторы - даёт возмодность выглядеть по разному на разных страницах или в разных частях страницы
-
-разбивай блок на подблоки, не примязывай всё к одному родителю, т.к. то что ты привязываешь может быть подблоком а не элементом родителя
-
-
-*/
-
-/*Position ( begin )*/
-
-/*Position ( end )*/
-/*Fonts ( begin )*/
-
-/*Fonts ( end )*/
-/*Colors ( begin )*/
-
-/*Colors ( end )*/
-
-
-
 .links {
   text-decoration: none;
 }
@@ -44,8 +19,6 @@
 }
 
 
-
-
 .main-modules {
 
 }
@@ -60,7 +33,8 @@
 }
 /*Sections ( end )*/
 
-  /*Sticky footer ( begin )*/
+
+/*Sticky footer ( begin )*/
 html {
   position: relative;
   min-height: 100%;
@@ -158,7 +132,7 @@ html {
     display: inline-block;
     width: 14px;
     height: 14px;
-    background: url("../../icons/check.svg") no-repeat;
+    background: url("@{icons-path}/check.svg") no-repeat;
   }
 }
 /*Custom checkbox styles ( end ) */
@@ -335,7 +309,7 @@ html {
 /*Price regulator ( begin ) */
 .price-regulator {
   &__input {
-    width: 44%;
+    width: 60px;
     border: none;
     text-align: left;
   }
@@ -381,7 +355,6 @@ html {
   }
 }
 /*Theme margins ( begin )*/
-
 
 
 .product {
