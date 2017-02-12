@@ -1,7 +1,7 @@
 <section class="breadcrumbs">
   <div class="container">
     <div class="row">
-      <?php require $breadcrumbs_1_data -> Get_data( 'about-us', 'position-1' )['path']; ?>
+      <?php require $breadcrumbs_1_data -> Get_data( 'contact-us', 'position-1' )['path']; ?>
     </div>
   </div>
 </section>
