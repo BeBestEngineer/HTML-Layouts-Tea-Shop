@@ -257,6 +257,42 @@ module.exports = function(grunt) {
           }
         ]
       },
+      path_background_image_icons: {
+        options: {
+          patterns: [
+            {
+              match: /\/tea-shop\/source\/icons/g,
+              replacement: '../icons'
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            src: [
+              'build/css/layout.css',
+            ]
+          }
+        ]
+      },
+      path_background_image_image: {
+        options: {
+          patterns: [
+            {
+              match: /\/tea-shop\/source\/images/g,
+              replacement: '../images'
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            src: [
+              'build/css/layout.css',
+            ]
+          }
+        ]
+      },
       fonts: {
         options: {
           patterns: [
