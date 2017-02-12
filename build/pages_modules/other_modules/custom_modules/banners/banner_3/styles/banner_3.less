@@ -1,0 +1,27 @@
+.banner-3 {
+/*Position ( begin )*/
+  padding: 30px;
+    
+ .btn {
+    margin-top: 25px;
+  }
+/*Position ( end )*/
+/*Fonts ( begin )*/
+  &__title {
+    .mixin_custom-font( @font-family-3-extra-bold-typeface; 26; );
+  }
+  &__discont  {
+    .mixin_custom-font( @font-family-3-bold-typeface; 60; );
+  }
+/*Fonts ( end )*/
+/*Colors ( begin )*/
+  .mixin_contrast-colors( @color-4-layout; @color-banner-2; );
+
+  .btn {
+    .mixin_contrast-colors-buttons( @color-4-layout; transparent; @color-4-layout; @color-theme-layout; );
+  }
+  &__discont {
+    .mixin_contrast-colors( @color-8-layout; transparent; )
+  }
+/*Colors ( end )*/    
+}

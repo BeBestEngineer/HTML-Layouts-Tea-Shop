@@ -1,0 +1,34 @@
+.post {
+  /*Position ( begin )*/
+  &__image-wrapper {
+    height: 210px;
+  }
+  &__image {
+    max-height: inherit;
+  }
+  &__title {
+    margin-bottom: 25px;
+  }
+  &__desc {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  &__date {
+    margin-bottom: 15px;
+  }
+  /*Position ( end )*/
+  /*Fonts ( begin )*/
+  &__title {
+    .mixin_custom-font( @font-family-3-semi-bold-typeface; 16; );
+  }
+  &__desc {
+    .mixin_custom-font( @line-height: 25; );
+    text-align: justify;
+  }
+  /*Fonts ( end )*/
+  /*Colors ( begin )*/
+  &__date {
+    .mixin_contrast-colors( @color-theme-layout; transparent; )
+  }
+  /*Colors ( end )*/
+}

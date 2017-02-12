@@ -1,0 +1,48 @@
+.logo-link {
+  /*Position ( begin )*/
+  display: inline-block;
+  position: relative;
+  width: 210px;
+  height: @logo-link-height;
+
+  &__title-fitst-letter {
+    position: absolute;
+    top: 0px;
+    .mixin_block-height( @logo-link-title-first-letter )
+
+  }
+  &__title-last-letters {
+    position: absolute;
+    left: 37px;
+    bottom: 20px;
+    width: 160px;
+  }
+  &__sub-title {
+    position: absolute;
+    left:  37px;
+    bottom: 0;
+    width: 160px;
+  }
+  /*Position ( end )*/
+  /*Fonts ( begin )*/
+  &__title-fitst-letter {
+    .mixin_custom-font( @font-family-3-extra-bold-typeface; 84; @line-height: 52; );
+  }
+  &__title-last-letters {
+    .mixin_custom-font( @font-family-3-extra-bold-typeface; @logo-link-title-last-letters; @line-height: @logo-link-title-last-letters; );
+  }
+  &__sub-title {
+    .mixin_custom-font( @font-family-3-extra-bold-typeface; @logo-link-sub-title; @line-height: @logo-link-sub-title; );
+  }
+  /*Fonts ( end )*/
+  /*Colors ( begin )*/
+  &__title-fitst-letter {
+    color: @color-theme-layout;
+  }
+  &__title-last-letters {
+    .logo-link__color-letters {
+      color: @color-theme-layout;
+    }
+  }
+  /*Colors ( end )*/
+}

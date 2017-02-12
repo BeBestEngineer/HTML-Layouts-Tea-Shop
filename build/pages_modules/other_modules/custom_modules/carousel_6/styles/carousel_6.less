@@ -1,0 +1,33 @@
+.carousel-6 {
+  /*Position ( begin )*/
+  &__image-wrapper {
+    height: 300px;
+    margin-bottom: 15px;
+  }
+  &__desc {
+    padding: 15px 0px;
+  }
+  .image--responsive {
+    .mixin_image-responsive( height; );
+  }
+  &__container-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /*Position ( end )*/
+  /*Fonts ( begin )*/
+  &__item-title {
+    .mixin_custom-font( @font-family-3-bold-typeface; 15; );
+  }
+  &__item-subtitle {
+    .mixin_custom-font( @font-family-3-bold-typeface; );
+  }
+  /*Fonts ( end )*/
+  /*Colors ( begin )*/
+  &__item-subtitle {
+    .mixin_contrast-colors( @color-5-layout; transparent; );
+  }
+  /*Colors ( end )*/
+}
+
+

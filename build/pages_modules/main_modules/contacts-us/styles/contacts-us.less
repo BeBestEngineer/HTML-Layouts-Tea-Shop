@@ -1,0 +1,30 @@
+.contact-us {
+  /*Position ( begin )*/
+  &__head-column {
+    display: block;
+    padding: 15px 0px;
+  }
+  /*Position ( end )*/
+  /*Fonts ( begin )*/
+  &__head-column {
+    .mixin_custom-font( @font-family-3-semi-bold-typeface; 15; );
+  }
+  &__form-title {
+    .mixin_custom-font( @font-family-3-bold-typeface; 18; );
+  }
+  &__desc-column {
+    .mixin_custom-font( @line-height: 25; );
+  }
+
+  @media ( max-width: 767px ) {
+    &__col {
+      margin-bottom: 30px;
+    }
+  }
+  /*Fonts ( end )*/
+  /*Colors ( begin )*/
+  .btn {
+    .mixin_contrast-colors-buttons( @color-7-layout; transparent; @color-4-layout; @color-theme-layout; );
+  }
+  /*Colors ( end )*/
+}
