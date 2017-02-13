@@ -123,6 +123,14 @@ module.exports = function(grunt) {
             expand: true,
             cwd: "source",
             src: [
+              "icons/**"
+            ],
+            dest: "build"
+          },
+          {
+            expand: true,
+            cwd: "source",
+            src: [
               "images/**"
             ],
             dest: "build"
