@@ -729,7 +729,7 @@ html {
 	display: inline-block;
 	width: 14px;
 	height: 14px;
-	background: url("/tea-shop/source/icons/check.svg") no-repeat;
+	background: url("../icons/check.svg") no-repeat;
 }
 
 /*Custom checkbox styles ( end ) */
@@ -777,7 +777,7 @@ html {
 	display: inline-block;
 	width: 45px;
 	height: 29px;
-	background: #ffffff url('/tea-shop/source/images/footer-1/payment-methods.png') no-repeat;
+	background: #ffffff url('../images/footer-1/payment-methods.png') no-repeat;
 }
 
 .payments-system__item:nth-child(1) {
@@ -1107,7 +1107,7 @@ html {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: #0d3349 url("/tea-shop/source/images/404/Cup-Splash-Warm-Coffee.jpg") no-repeat center; /*Position ( end )*/ /*Fonts ( begin )*/ /*Fonts ( end )*/ /*Colors ( begin )*/
+	background: #0d3349 url("../images/404/Cup-Splash-Warm-Coffee.jpg") no-repeat center; /*Position ( end )*/ /*Fonts ( begin )*/ /*Fonts ( end )*/ /*Colors ( begin )*/
 	color: #ffffff;
 	background-color: transparent; /*Colors ( end )*/
 }
