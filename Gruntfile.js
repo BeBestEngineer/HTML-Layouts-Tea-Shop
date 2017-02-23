@@ -4,9 +4,17 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     clean: {
-      build:       ['build'],
-      source_less: ['source/global_styles_components/collected_styles/**/*.*'],
-      source_js:   ['source/global_js_components/collected_scripts/**/*.*']
+      build:         ['build'],
+
+      sourceLayoutStyles:  ['source/global_styles_components/collected_styles/css/layout.css', 'source/global_styles_components/collected_styles/less/layout.less'],
+      sourceVendorStyles:  ['source/global_styles_components/collected-styles/css/vendor.css'],
+      sourceLayoutScripts: ['source/global_js_components/collected_scripts/js/layout.js'],
+      sourceVendorScripts: ['source/global_js_components/collected_scripts/js/vendor.js'],
+
+      buildLayoutStyles:   ['build/css/layout.css', 'build/css/layout.min.css'],
+      buildVendorStyles:   ['build/css/vendor.css', 'build/css/vendor.min.css'],
+      buildLayoutScripts:  ['build/js/layout.js', 'build/js/layout.min.js'],
+      buildVendorScripts:  ['build/js/vendor.js', 'build/js/vendor.min.js']
     },
 
     concat: {
@@ -15,7 +23,7 @@ module.exports = function(grunt) {
       },
       layout_styles: {
         src: [
-          'source/global_styles_components/**/*.less',
+          'source/global_styles_components/*.less',
           'source/main_modules/**/*.less',
           'source/other_modules/**/*.less'
         ],
@@ -46,7 +54,7 @@ module.exports = function(grunt) {
     },
 
     less: {
-      development: {
+      source: {
         options: {
           paths: ['source']
         },
@@ -99,7 +107,7 @@ module.exports = function(grunt) {
     },
 
     copy: {
-      build: {
+      buildFonts: {
         files: [
           {
             expand: true,
@@ -108,7 +116,11 @@ module.exports = function(grunt) {
               "fonts/**"
             ],
             dest: "build"
-          },
+          }
+        ]
+      },
+      buildIcons: {
+        files: [
           {
             expand: true,
             cwd: "source",
@@ -116,7 +128,11 @@ module.exports = function(grunt) {
               "icons/**"
             ],
             dest: "build"
-          },
+          }
+        ]
+      },
+      buildImages: {
+        files: [
           {
             expand: true,
             cwd: "source",
@@ -124,7 +140,11 @@ module.exports = function(grunt) {
               "images/**"
             ],
             dest: "build"
-          },
+          }
+        ]
+      },
+      buildStyles: {
+        files: [
           {
             expand: true,
             cwd: "source/global_styles_components/collected_styles/css",
@@ -132,7 +152,11 @@ module.exports = function(grunt) {
               "**/*.css"
             ],
             dest: "build/css"
-          },
+          }
+        ]
+      },
+      buildScripts: {
+        files: [
           {
             expand: true,
             cwd: "source/global_js_components/collected_scripts/js",
@@ -449,7 +473,7 @@ module.exports = function(grunt) {
         shorthandCompacting: false,
         roundingPrecision: -1
       },
-      build: {
+      buildStyles: {
         files: {
           'build/css/vendor.min.css': ['build/css/vendor.css'],
           'build/css/layout.min.css': ['build/css/layout.css']
@@ -458,7 +482,7 @@ module.exports = function(grunt) {
     },
 
     uglify: {
-      build: {
+      buildScripts: {
         files: {
           'build/js/vendor.min.js': ['build/js/vendor.js'],
           'build/js/layout.min.js': ['build/js/layout.js']
@@ -505,9 +529,28 @@ module.exports = function(grunt) {
       options: {
         livereload: true
       },
-      source_files: {
-        files: ['source/**/*.php', 'source/**/*.less'],
-        tasks: ['clean', 'concat:layout_styles', 'concat:layout_scripts', 'less:development']
+      styles: {
+        files: ['source/**/*.less'],
+        tasks: [
+          'clean:sourceLayoutStyles', 'clean:buildLayoutStyles',
+          'concat:layout_styles',
+          'less:source',
+          'postcss:main_styles',
+          'cmq',
+          'csscomb',
+          'copy:buildStyles',
+          'replace:path_background_image_icons', 'replace:path_background_image_image', 'replace:fonts',
+          'cssmin:buildStyles'
+        ]
+      },
+      scripts: {
+        files: ['source/**/*.js'],
+        tasks: [
+          'clean:sourceLayoutScripts', 'clean:buildLayoutScripts',
+          'concat:layout_scripts',
+          'copy:buildScripts',
+          'uglify:buildScripts'
+        ]
       }
     }
   });
