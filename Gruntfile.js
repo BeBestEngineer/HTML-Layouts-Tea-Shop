@@ -103,14 +103,6 @@ module.exports = function(grunt) {
         files: [
           {
             expand: true,
-            cwd: "source/global_pages_data",
-            src: [
-              "**"
-            ],
-            dest: "build/pages_data"
-          },
-          {
-            expand: true,
             cwd: "source/global_third_components",
             src: [
               "fonts/**"
@@ -135,38 +127,6 @@ module.exports = function(grunt) {
           },
           {
             expand: true,
-            cwd: "source",
-            src: [
-              "main_modules/**"
-            ],
-            dest: "build/pages_modules/"
-          },
-          {
-            expand: true,
-            cwd: "source",
-            src: [
-              "other_modules/**"
-            ],
-            dest: "build/pages_modules/"
-          },
-          {
-            expand: true,
-            cwd: "source/page_builders",
-            src: [
-              "**"
-            ],
-            dest: "build/pages"
-          },
-          {
-            expand: true,
-            cwd: "source",
-            src: [
-              "index.php"
-            ],
-            dest: "build"
-          },
-          {
-            expand: true,
             cwd: "source/global_styles_components/collected_styles/css",
             src: [
               "**/*.css"
@@ -186,83 +146,6 @@ module.exports = function(grunt) {
     },
 
     replace: {
-      path_pages_data: {
-        options: {
-          patterns: [
-            {
-              match: /global_pages_data/g,
-              replacement: 'pages_data'
-            }
-          ]
-        },
-        files: [
-          {
-            expand: true,
-            src: [
-             'build/index.php',
-             'build/pages_data/**'
-            ]
-          }
-        ]
-      },
-      path_data_builders: {
-        options: {
-          patterns: [
-            {
-              match: /page_builders/g,
-              replacement: 'pages'
-            }
-          ]
-        },
-        files: [
-          {
-            expand: true,
-            src: [
-              'build/index.php',
-              'build/pages/**'
-            ]
-          }
-        ]
-      },
-      path_pages_other_modules: {
-        options: {
-          patterns: [
-            {
-              match: /'other_modules/g,
-              replacement: '\'pages_modules/other_modules'
-            }
-          ]
-        },
-        files: [
-          {
-            expand: true,
-            src: [
-              'build/pages_data/**',
-              'build/index.php',
-              'build/pages/**',
-              'build/pages_modules/**'
-            ]
-          }
-        ]
-      },
-      path_pages_main_modules: {
-        options: {
-          patterns: [
-            {
-              match: /main_modules/g,
-              replacement: 'pages_modules/main_modules'
-            }
-          ]
-        },
-        files: [
-          {
-            expand: true,
-            src: [
-              'build/pages/**',
-            ]
-          }
-        ]
-      },
       path_background_image_icons: {
         options: {
           patterns: [
@@ -334,7 +217,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             src: [
-              'build/pages_modules/other_modules/_head_html/_head_html.php'
+              'build/*.html'
             ]
           }
         ]
@@ -356,7 +239,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             src: [
-              'build/pages_modules/other_modules/_end_html/_end_html.php'
+              'build/*.html'
             ]
           }
         ]
@@ -374,8 +257,187 @@ module.exports = function(grunt) {
           {
             expand: true,
             src: [
-              'build/pages_modules/other_modules/_head_html/_head_html.php',
-              'build/pages_modules/other_modules/_end_html/_end_html.php'
+              'build/*.html'
+            ]
+          }
+        ]
+      },
+      htmlLinks_toHome: {
+        options: {
+          patterns: [
+            {
+              match: /\?page=home/g,
+              replacement: 'home.html'
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            src: [
+              'build/*.html'
+            ]
+          }
+        ]
+      },
+      htmlLinks_toProductsList: {
+        options: {
+          patterns: [
+            {
+              match: /\?page=products-list/g,
+              replacement: 'products-list.html'
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            src: [
+              'build/*.html'
+            ]
+          }
+        ]
+      },
+      htmlLinks_toProduct: {
+        options: {
+          patterns: [
+            {
+              match: /\?page=product/g,
+              replacement: 'product.html'
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            src: [
+              'build/*.html'
+            ]
+          }
+        ]
+      },
+      htmlLinks_toShoppingCart: {
+        options: {
+          patterns: [
+            {
+              match: /\?page=shopping-cart/g,
+              replacement: 'shopping-cart.html'
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            src: [
+              'build/*.html'
+            ]
+          }
+        ]
+      },
+      htmlLinks_toAboutUs: {
+        options: {
+          patterns: [
+            {
+              match: /\?page=about-us/g,
+              replacement: 'about-us.html'
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            src: [
+              'build/*.html'
+            ]
+          }
+        ]
+      },
+      htmlLinks_toContactUs: {
+        options: {
+          patterns: [
+            {
+              match: /\?page=contact-us/g,
+              replacement: 'contact-us.html'
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            src: [
+              'build/*.html'
+            ]
+          }
+        ]
+      },
+      htmlLinks_toBlog: {
+        options: {
+          patterns: [
+            {
+              match: /\?page=blog"/g,
+              replacement: 'blog.html"'
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            src: [
+              'build/*.html'
+            ]
+          }
+        ]
+      },
+      htmlLinks_toSinglePost: {
+        options: {
+          patterns: [
+            {
+              match: /\?page=blog-single-post/g,
+              replacement: 'blog-single-post.html'
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            src: [
+              'build/*.html'
+            ]
+          }
+        ]
+      },
+      htmlLinks_to404: {
+        options: {
+          patterns: [
+            {
+              match: /\?page=404/g,
+              replacement: '404.html'
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            src: [
+              'build/*.html'
+            ]
+          }
+        ]
+      },
+      htmlLinks_toIndex: {
+        options: {
+          patterns: [
+            {
+              match: /home.html/g,
+              replacement: 'index.html'
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            src: [
+              'build/*.html'
             ]
           }
         ]
@@ -416,6 +478,29 @@ module.exports = function(grunt) {
       }
     },
 
+    shell: {
+      convertPagesToHTML: {
+        cwd: 'source',
+        command: [
+          'php html-converter.php -p404',
+          'php html-converter.php -pabout-us',
+          'php html-converter.php -pblog-single-post',
+          'php html-converter.php -pblog',
+          'php html-converter.php -pcontact-us',
+          'php html-converter.php -phome',
+          'php html-converter.php -pproduct',
+          'php html-converter.php -pproducts-list',
+          'php html-converter.php -pshopping-cart'
+        ].join('&')
+      },
+      renamePageToIndex: {
+        cwd: 'build',
+        command: [
+          'mv  home.html  index.html'
+        ].join('&')
+      }
+    },
+
     watch: {
       options: {
         livereload: true
@@ -439,11 +524,12 @@ module.exports = function(grunt) {
     'postcss:main_styles',
     'cmq',
     'csscomb',
-
     'copy',
+    'shell:convertPagesToHTML',
     'replace',
+    'shell:renamePageToIndex',
     'cssmin',
-    'uglify',    
+    'uglify',
     'imagemin'
   ]);
 
