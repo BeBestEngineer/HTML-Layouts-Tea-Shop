@@ -1,4 +1,4 @@
-# TeaShop - eCommerce PSD Template
+# TeaShop - eCommerce HTML Template
 Адаптивный HTML шаблон состоящий из страниц:
 
 * Home
