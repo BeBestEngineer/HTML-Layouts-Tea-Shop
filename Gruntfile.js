@@ -21,7 +21,7 @@ module.exports = function(grunt) {
       options: {
         separator: '\n /*SeparatoR*/ \n'
       },
-      layout_styles: {
+      sourceLayoutStyles: {
         src: [
           'source/global_styles_components/*.less',
           'source/main_modules/**/*.less',
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
         ],
         dest: 'source/global_styles_components/collected_styles/less/layout.less'
       },
-      vendor_styles: {
+      sourceVendorStyles: {
         src: [
           'source/global_third_components/libs/normalize-css/normalize.css',
           'source/global_third_components/frameworks/bootstrap/css/bootstrap.css',
@@ -38,11 +38,11 @@ module.exports = function(grunt) {
         ],
         dest: 'source/global_styles_components/collected_styles/css/vendor.css'
       },
-      layout_scripts: {
+      sourceLayoutScripts: {
         src: ['source/global_js_components/layout_inception.js', 'source/main_modules/**/*.js', 'source/other_modules/**/*.js', 'source/global_js_components/layout_completion.js'],
         dest: 'source/global_js_components/collected_scripts/js/layout.js'
       },
-      vendor_scripts: {
+      sourceVendorScripts: {
         src: [
           'source/global_third_components/libs/jquery/jquery.js',
           'source/global_third_components/frameworks/bootstrap/js/bootstrap.js',
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
     },
 
     less: {
-      source: {
+      sourceLayoutStyles: {
         options: {
           paths: ['source']
         },
@@ -86,13 +86,13 @@ module.exports = function(grunt) {
           })
         ]
       },
-      main_styles: {
+      sourceLayoutStylesPrefixes: {
         src: 'source/global_styles_components/collected_styles/css/layout.css'
       }
     },
 
     cmq: {
-      style: {
+      sourceLayoutStyles: {
         files: {
           'source/global_styles_components/collected_styles/css/layout.css': ['source/global_styles_components/collected_styles/css/layout.css']
         }
@@ -100,7 +100,7 @@ module.exports = function(grunt) {
     },
 
     csscomb: {
-      style: {
+      sourceLayoutStyles: {
         expand: true,
         src: ['source/global_styles_components/collected_styles/css/layout.css']
       }
@@ -170,7 +170,7 @@ module.exports = function(grunt) {
     },
 
     replace: {
-      path_background_image_icons: {
+      pathBackgroundIcons: {
         options: {
           patterns: [
             {
@@ -188,7 +188,7 @@ module.exports = function(grunt) {
           }
         ]
       },
-      path_background_image_image: {
+      pathBackgroundImages: {
         options: {
           patterns: [
             {
@@ -206,7 +206,7 @@ module.exports = function(grunt) {
           }
         ]
       },
-      fonts: {
+      pathFonts: {
         options: {
           patterns: [
             {
@@ -224,7 +224,7 @@ module.exports = function(grunt) {
           }
         ]
       },
-      link_tags: {
+      linkTags: {
         options: {
           patterns: [
             {
@@ -246,7 +246,7 @@ module.exports = function(grunt) {
           }
         ]
       },
-      script_tags: {
+      scriptTags: {
         options: {
           patterns: [
             {
@@ -473,19 +473,27 @@ module.exports = function(grunt) {
         shorthandCompacting: false,
         roundingPrecision: -1
       },
-      buildStyles: {
+      buildLayoutStyles: {
         files: {
-          'build/css/vendor.min.css': ['build/css/vendor.css'],
           'build/css/layout.min.css': ['build/css/layout.css']
+        }
+      },
+      buildVendorStyles: {
+        files: {
+          'build/css/vendor.min.css': ['build/css/vendor.css']
         }
       }
     },
 
     uglify: {
-      buildScripts: {
+      buildLayoutScripts: {
         files: {
-          'build/js/vendor.min.js': ['build/js/vendor.js'],
           'build/js/layout.min.js': ['build/js/layout.js']
+        }
+      },
+      buildVendorScripts: {
+        files: {
+          'build/js/vendor.min.js': ['build/js/vendor.js']
         }
       }
     },
@@ -533,23 +541,23 @@ module.exports = function(grunt) {
         files: ['source/**/*.less'],
         tasks: [
           'clean:sourceLayoutStyles', 'clean:buildLayoutStyles',
-          'concat:layout_styles',
-          'less:source',
-          'postcss:main_styles',
+          'concat:sourceLayoutStyles',
+          'less',
+          'postcss',
           'cmq',
           'csscomb',
           'copy:buildStyles',
-          'replace:path_background_image_icons', 'replace:path_background_image_image', 'replace:fonts',
-          'cssmin:buildStyles'
+          'replace:pathBackgroundIcons', 'replace:pathBackgroundImages', 'replace:pathFonts',
+          'cssmin:buildLayoutStyles'
         ]
       },
       scripts: {
         files: ['source/**/*.js'],
         tasks: [
           'clean:sourceLayoutScripts', 'clean:buildLayoutScripts',
-          'concat:layout_scripts',
+          'concat:sourceLayoutScripts',
           'copy:buildScripts',
-          'uglify:buildScripts'
+          'uglify:buildLayoutScripts'
         ]
       }
     }
@@ -564,7 +572,7 @@ module.exports = function(grunt) {
     'clean',
     'concat',
     'less',
-    'postcss:main_styles',
+    'postcss:sourceLayoutStylesPrefixes',
     'cmq',
     'csscomb',
     'copy',
