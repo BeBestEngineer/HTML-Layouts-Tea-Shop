@@ -87,13 +87,13 @@
 .links:hover,
 .links:focus {
 	text-decoration: none;
-	color: #43999b;
+	color: #175449;
 	background-color: transparent;
 }
 
 .links:hover .icons__svg-color,
 .links:focus .icons__svg-color {
-	fill: #43999b;
+	fill: #175449;
 }
 
 /*Links colors (end)*/
@@ -116,7 +116,7 @@
 .btn:hover,
 .btn:focus {
 	color: inherit;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .button {
@@ -131,7 +131,7 @@
 
 .button:hover .icons__svg-color,
 .button:focus .icons__svg-color {
-	fill: #43999b;
+	fill: #175449;
 }
 
 /*Buttons colors( end )*/
@@ -143,19 +143,19 @@
 /*Bootstrap list-group colors (begin)*/
 
 .list-group-item.active {
-	background-color: #43999b;
-	border-color: #43999b;
+	background-color: #175449;
+	border-color: #175449;
 }
 
 .list-group-item.active.active:hover,
 .list-group-item.active.active:focus {
 	background-color: #ffffff;
-	border-color: #43999b;
+	border-color: #175449;
 }
 
 .list-group-item.active > .badge,
 .nav-pills > .active > .links > .badge {
-	color: #43999b;
+	color: #175449;
 }
 
 /*Bootstrap list-group colors (end)*/
@@ -192,7 +192,7 @@
 
 .marker-sale,
 .marker-discont {
-	background-color: #43999b;
+	background-color: #175449;
 	color: #ffffff;
 }
 
@@ -345,8 +345,8 @@ button {
 .pagination > .active > a,
 .pagination > .active > a:hover,
 .pagination > .active > a:focus {
-	background-color: #43999b;
-	border-color: #43999b;
+	background-color: #175449;
+	border-color: #175449;
 }
 
 .pager li > a,
@@ -854,7 +854,7 @@ html {
 .carousel .btn:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .carousel .btn:hover .icons__svg-color,
@@ -872,7 +872,7 @@ html {
 .carousel .carousel-wrapper .btn:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .carousel .carousel-wrapper .btn:hover .icons__svg-color,
@@ -930,7 +930,7 @@ html {
 	background-color: #333333;
 	box-shadow: none;
 	border-width: 2px;
-	border-color: #43999b;
+	border-color: #175449;
 }
 
 .noUi-handle:before,
@@ -1261,7 +1261,7 @@ html {
 .single-post .btn:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .single-post .btn:hover .icons__svg-color,
@@ -1271,7 +1271,7 @@ html {
 
 .single-post__label {
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .single-post__label .icons__svg-color {
@@ -1301,7 +1301,7 @@ html {
 .blog .btn:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .blog .btn:hover .icons__svg-color,
@@ -1353,7 +1353,7 @@ html {
 .contact-us .btn:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .contact-us .btn:hover .icons__svg-color,
@@ -1389,7 +1389,7 @@ html {
 .home .btn:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .home .btn:hover .icons__svg-color,
@@ -1407,7 +1407,7 @@ html {
 .home .carousel-wrapper .btn:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .home .carousel-wrapper .btn:hover .icons__svg-color,
@@ -1468,12 +1468,12 @@ html {
 }
 
 .slider-1__subtitle {
-	color: #43999b;
+	color: #175449;
 	background-color: transparent;
 }
 
 .slider-1__subtitle .icons__svg-color {
-	fill: #43999b;
+	fill: #175449;
 }
 
 .owl-prev,
@@ -1624,7 +1624,7 @@ html {
 
 .carousel-4__table {
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .carousel-4__table .icons__svg-color {
@@ -1657,7 +1657,7 @@ html {
 .carousel-5 .btn:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .carousel-5 .btn:hover .icons__svg-color,
@@ -1841,7 +1841,7 @@ html {
 .product .btn:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .product .btn:hover .icons__svg-color,
@@ -1858,14 +1858,14 @@ html {
 .active .links.product__info-tab-title,
 .active .links.product__info-tab-title:hover,
 .active .links.product__info-tab-title:focus {
-	color: #43999b;
+	color: #175449;
 	background-color: transparent;
 }
 
 .active .links.product__info-tab-title .icons__svg-color,
 .active .links.product__info-tab-title:hover .icons__svg-color,
 .active .links.product__info-tab-title:focus .icons__svg-color {
-	fill: #43999b;
+	fill: #175449;
 }
 
 /*SeparatoR*/
@@ -1925,7 +1925,7 @@ html {
 .products-list .btn:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .products-list .btn:hover .icons__svg-color,
@@ -2005,7 +2005,7 @@ html {
 .shopping-cart .theme-buttons__links--default:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .shopping-cart .theme-buttons__buttons--more-less:hover .icons__svg-color,
@@ -2027,7 +2027,7 @@ html {
 .shopping-cart .theme-buttons__buttons--input-group:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .shopping-cart .theme-buttons__buttons--input-group:hover .icons__svg-color,
@@ -2118,7 +2118,7 @@ html {
 .aside-1 .btn:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .aside-1 .btn:hover .icons__svg-color,
@@ -2136,7 +2136,7 @@ html {
 .aside-1 .banner-3 .btn:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .aside-1 .banner-3 .btn:hover .icons__svg-color,
@@ -2186,7 +2186,7 @@ html {
 .aside-blog .theme-buttons__buttons--input-group:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .aside-blog .theme-buttons__buttons--input-group:hover .icons__svg-color,
@@ -2197,19 +2197,19 @@ html {
 .aside-blog .list-group-item.active {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .aside-blog .list-group-item.active:hover,
 .aside-blog .list-group-item.active:focus {
-	border-color: #43999b;
-	color: #43999b;
+	border-color: #175449;
+	color: #175449;
 	background-color: transparent;
 }
 
 .aside-blog .list-group-item.active:hover .icons__svg-color,
 .aside-blog .list-group-item.active:focus .icons__svg-color {
-	fill: #43999b;
+	fill: #175449;
 }
 
 /*SeparatoR*/
@@ -2263,7 +2263,7 @@ html {
 .banner-1 .btn:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .banner-1 .btn:hover .icons__svg-color,
@@ -2281,12 +2281,12 @@ html {
 }
 
 .banner-1__title {
-	color: #43999b;
+	color: #175449;
 	background-color: transparent;
 }
 
 .banner-1__title .icons__svg-color {
-	fill: #43999b;
+	fill: #175449;
 }
 
 /*SeparatoR*/
@@ -2378,7 +2378,7 @@ html {
 .banner-3 .btn:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .banner-3 .btn:hover .icons__svg-color,
@@ -2439,12 +2439,12 @@ html {
 }
 
 .post__date {
-	color: #43999b;
+	color: #175449;
 	background-color: transparent;
 }
 
 .post__date .icons__svg-color {
-	fill: #43999b;
+	fill: #175449;
 }
 
 /*SeparatoR*/
@@ -2620,12 +2620,12 @@ html {
 }
 
 .comments__date {
-	color: #43999b;
+	color: #175449;
 	background-color: transparent;
 }
 
 .comments__date .icons__svg-color {
-	fill: #43999b;
+	fill: #175449;
 }
 
 /*SeparatoR*/
@@ -2713,11 +2713,11 @@ html {
 }
 
 .logo-link__title-fitst-letter {
-	color: #43999b;
+	color: #175449;
 }
 
 .logo-link__title-last-letters .logo-link__color-letters {
-	color: #43999b;
+	color: #175449;
 }
 
 /*SeparatoR*/
@@ -3042,7 +3042,7 @@ html {
 }
 
 .footer-1 .form-control::-moz-placeholder {
-	color: #43999b;
+	color: #175449;
 }
 
 .footer-1 .icons__svg-color {
@@ -3050,7 +3050,7 @@ html {
 }
 
 .footer-1 .circle-icons .icons__svg-color {
-	fill: #43999b;
+	fill: #175449;
 }
 
 .footer-1 .circle-icons__icon-wrapper {
@@ -3067,22 +3067,22 @@ html {
 
 .footer-1 .social-posts-list__title,
 .footer-1 .social-posts-list__icons-wrapper {
-	color: #43999b;
+	color: #175449;
 	background-color: transparent;
 }
 
 .footer-1 .social-posts-list__title .icons__svg-color,
 .footer-1 .social-posts-list__icons-wrapper .icons__svg-color {
-	fill: #43999b;
+	fill: #175449;
 }
 
 .footer-1 .support__color {
-	color: #43999b;
+	color: #175449;
 	background-color: transparent;
 }
 
 .footer-1 .support__color .icons__svg-color {
-	fill: #43999b;
+	fill: #175449;
 }
 
 /*SeparatoR*/
@@ -3154,7 +3154,7 @@ html {
 
 .header-1 .circle-icons__icon-wrapper {
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .header-1 .circle-icons__icon-wrapper .icons__svg-color {
@@ -3171,7 +3171,7 @@ html {
 .header-1 .shopping-basket .theme-buttons__buttons--default:focus {
 	border-color: #ffffff;
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .header-1 .shopping-basket .theme-buttons__buttons--default:hover .icons__svg-color,
@@ -3187,14 +3187,14 @@ html {
 
 .header-1 .shopping-basket .theme-buttons__links--delete:hover,
 .header-1 .shopping-basket .theme-buttons__links--delete:focus {
-	border-color: #43999b;
-	color: #43999b;
+	border-color: #175449;
+	color: #175449;
 	background-color: transparent;
 }
 
 .header-1 .shopping-basket .theme-buttons__links--delete:hover .icons__svg-color,
 .header-1 .shopping-basket .theme-buttons__links--delete:focus .icons__svg-color {
-	fill: #43999b;
+	fill: #175449;
 }
 
 .header-1 .mobile-menu-button .mobile-menu-button__icon-bar {
@@ -3207,12 +3207,12 @@ html {
 }
 
 .header-1 .mobile-menu-button[aria-expanded="true"] .mobile-menu-button__icon-bar {
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .header-1 .shopping-basket__badge {
 	color: #ffffff;
-	background-color: #43999b;
+	background-color: #175449;
 }
 
 .header-1 .shopping-basket__badge .icons__svg-color {
@@ -3220,7 +3220,7 @@ html {
 }
 
 .header-1 .shopping-basket__button[aria-expanded="true"] .icons__svg-color {
-	fill: #43999b;
+	fill: #175449;
 }
 
 @media (min-width: 380px) and (max-width: 767px) {
