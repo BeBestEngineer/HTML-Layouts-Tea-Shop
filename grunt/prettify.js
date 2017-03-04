@@ -4,9 +4,9 @@ module.exports = {
 	},
 	all: {
 		expand: true,
-				cwd: 'build/',
-				ext: '.html',
-				src: ['*.html'],
-				dest: 'build/'
+		cwd: 'build/',
+		ext: '.html',
+		src: ['*.html'],
+		dest: 'build/'
 	}
 };
