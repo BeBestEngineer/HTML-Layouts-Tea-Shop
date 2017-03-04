@@ -1,0 +1,16 @@
+default: []
+
+build:
+- 'clean'
+- 'concat'
+- 'less'
+- 'postcss:sourceLayoutStylesPrefixes'
+- 'cmq'
+- 'csscomb'
+- 'copy'
+- 'shell:convertPagesToHTML'
+- 'replace'
+- 'shell:renamePageToIndex'
+- 'cssmin'
+- 'uglify'
+- 'imagemin'
